@@ -16,6 +16,7 @@ import { type JitOrganization } from '#src/queries/organization/email-domains.js
 import { createUsersRolesQueries } from '#src/queries/users-roles.js';
 import type Queries from '#src/tenants/Queries.js';
 import assertThat from '#src/utils/assert-that.js';
+import { getCertusPlan } from '#src/utils/getcertus-plan.js';
 import type { OmitAutoSetFields } from '#src/utils/sql.js';
 
 import { captureDeveloperEvent } from '../utils/posthog.js';
@@ -37,6 +38,7 @@ export const createUserLibrary = (tenantId: string, queries: Queries) => {
       hasUserWithId,
       hasUserWithNormalizedPhone,
       hasUserWithIdentity,
+      countUsers,
       findUsersByIds,
       updateUserById,
       insertUser: insertUserQuery,
@@ -81,6 +83,20 @@ export const createUserLibrary = (tenantId: string, queries: Queries) => {
     options?: InsertUserOptions
   ): Promise<InsertUserResult> => {
     const { isInteractive = false } = options ?? {};
+
+    // GetCertus: user limit of a hosted instance (see utils/getcertus-plan.ts).
+    const { maxUsers } = getCertusPlan();
+    if (maxUsers !== undefined && tenantId !== adminTenantId) {
+      const { count } = await countUsers({});
+      assertThat(
+        Number(count) < maxUsers,
+        new RequestError({
+          code: 'subscription.limit_exceeded',
+          status: 403,
+          data: { key: 'usersLimit', limit: maxUsers },
+        })
+      );
+    }
     const roleNames = [...EnvSet.values.userDefaultRoleNames, ...(options?.roleNames ?? [])];
     const [parameterRoles, defaultRoles] = await Promise.all([
       findRolesByRoleNames(roleNames),

@@ -24,9 +24,22 @@ not affiliated with or endorsed by Logto or Silverhand.
 Code identifiers, package names (`@logto/*`), database schema and APIs are unchanged, so upstream
 Logto releases can still be merged.
 
+## Plan limits (hosted instances)
+
+Set by the customer portal on each customer's instance; unset means unlimited.
+
+| Variable | Limits | Error when reached |
+|---|---|---|
+| `GETCERTUS_MAX_APPS` | applications of any type | 403 `subscription.limit_exceeded` |
+| `GETCERTUS_MAX_USERS` | end users (Management API and sign-up) | 403 `subscription.limit_exceeded` |
+| `GETCERTUS_MAX_SSO` | enterprise SSO connectors | 403 `subscription.limit_exceeded` |
+| `GETCERTUS_BRANDING=1` | allows hiding the "Secured by GetCertus" signature | otherwise the setting is refused |
+
+Code: `packages/core/src/utils/getcertus-plan.ts`, used in `libraries/quota.ts`, `libraries/user.ts`
+and `libraries/subscription.ts`. The admin tenant is never limited.
+
 ## Not changed yet
 
 - Links to Logto documentation (`docs.logto.io`) in the console.
 - Logto Cloud upsell banners in the self-hosted console.
 - New languages: Hebrew, Irish, Dutch, Swedish, Danish, Finnish, Romanian, Greek.
-- GetCertus plans and limits (Starter, Pro, Studio).

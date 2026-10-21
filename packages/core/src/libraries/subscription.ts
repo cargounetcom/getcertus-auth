@@ -10,6 +10,7 @@ import { type TokenUsageCounts, tokenUsageCountsGuard } from '#src/queries/daily
 import type Queries from '#src/tenants/Queries.js';
 import { getTenantSubscription } from '#src/utils/subscription/index.js';
 import { type SelfHostedSubscription, type Subscription } from '#src/utils/subscription/types.js';
+import { getCertusPlan } from '#src/utils/getcertus-plan.js';
 
 import { type CloudConnectionLibrary } from './cloud-connection.js';
 
@@ -117,7 +118,8 @@ export class SubscriptionLibrary {
         currentPeriodEnd: now,
         isEnterprisePlan: false,
         status: 'active',
-        quota: { ...ossDefaultQuota },
+        // GetCertus: the branding add-on unlocks hiding the signature (see utils/getcertus-plan.ts).
+        quota: { ...ossDefaultQuota, ...(getCertusPlan().branding && { hideLogtoBranding: true }) },
         systemLimit: {},
       };
     }
@@ -134,7 +136,10 @@ export class SubscriptionLibrary {
       currentPeriodEnd: new Date(exp * 1000).toISOString(),
       isEnterprisePlan: plan === ReservedPlanId.SelfHostedEnterprise,
       status: 'active',
-      quota: license.quota,
+      quota: {
+        ...license.quota,
+        ...(getCertusPlan().branding && { hideLogtoBranding: true }),
+      },
       systemLimit: {},
     };
   }

@@ -4,6 +4,7 @@ import { EnvSet } from '#src/env-set/index.js';
 import RequestError from '#src/errors/RequestError/index.js';
 import { type SubscriptionLibrary } from '#src/libraries/subscription.js';
 import assertThat from '#src/utils/assert-that.js';
+import { getCertusLimitForKey } from '#src/utils/getcertus-plan.js';
 import {
   reportSubscriptionUpdates,
   isReportSubscriptionUpdatesUsageKey,
@@ -152,6 +153,9 @@ export class QuotaLibrary {
     const { isCloud } = EnvSet.values;
 
     if (!isCloud) {
+      // GetCertus: plan limits of a hosted instance (see utils/getcertus-plan.ts).
+      await this.assertGetCertusLimit(key, entityId, consumeUsageCount);
+
       /**
        * Self-hosted plans: the SAML application cap and the IdP-initiated SSO entitlement are the
        * only limits enforced outside Cloud, and both follow the installed license (the OSS default
@@ -199,6 +203,32 @@ export class QuotaLibrary {
         consumeUsageCount,
       });
     }
+  };
+
+  /** GetCertus: enforce GETCERTUS_* plan limits outside Cloud. The admin tenant is never limited. */
+  private readonly assertGetCertusLimit = async (
+    key: UsageKey,
+    entityId: string | undefined,
+    consumeUsageCount: number
+  ) => {
+    if (this.tenantId === adminTenantId) {
+      return;
+    }
+    const limit = getCertusLimitForKey(key);
+    if (limit === undefined) {
+      return;
+    }
+    const usage = await this.queries.tenantUsage.getSelfComputedUsageByKey(
+      this.tenantId,
+      // Only self-computed keys are mapped in getCertusLimitForKey.
+      // eslint-disable-next-line no-restricted-syntax
+      key as Parameters<typeof this.queries.tenantUsage.getSelfComputedUsageByKey>[1],
+      entityId
+    );
+    assertThat(
+      usage + consumeUsageCount <= limit,
+      new RequestError({ code: 'subscription.limit_exceeded', status: 403, data: { key, limit, usage } })
+    );
   };
 
   reportSubscriptionUpdatesUsage = async (key: keyof SubscriptionUsage) => {
