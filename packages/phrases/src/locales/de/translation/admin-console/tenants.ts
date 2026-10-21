@@ -15,7 +15,7 @@ const tenants = {
   license: {
     purchase_title: 'SELF-HOSTED-PLÄNE',
     purchase_description:
-      'Self-Hosted Pro und Enterprise schalten kostenpflichtige Funktionen auf deiner eigenen Instanz frei, etwa das Ausblenden des Logto-Brandings, eine eigene UI, Zusammenarbeit in der Konsole und unbegrenzte SAML-Anwendungen. Kaufe einen Plan, um deinen Lizenzschlüssel zu erhalten.',
+      'Self-Hosted Pro und Enterprise schalten kostenpflichtige Funktionen auf deiner eigenen Instanz frei, etwa das Ausblenden des GetCertus-Brandings, eine eigene UI, Zusammenarbeit in der Konsole und unbegrenzte SAML-Anwendungen. Kaufe einen Plan, um deinen Lizenzschlüssel zu erhalten.',
     purchase_button: 'Self-Hosted-Pläne ansehen',
     install_title: 'LIZENZ INSTALLIEREN',
     install_description:
@@ -23,7 +23,7 @@ const tenants = {
     install_button: 'Lizenz installieren',
     key_field: 'Lizenzschlüssel',
     key_field_description:
-      'Der Schlüssel wird auf deiner Instanz geprüft und verlässt sie nie. Kontaktiere Logto für einen neuen Schlüssel, wenn der vorhandene abgelaufen ist.',
+      'Der Schlüssel wird auf deiner Instanz geprüft und verlässt sie nie. Kontaktiere GetCertus für einen neuen Schlüssel, wenn der vorhandene abgelaufen ist.',
     key_placeholder: 'Füge hier deinen Lizenzschlüssel ein',
     installed_toast: 'Lizenz erfolgreich installiert.',
     details_title: 'LIZENZ',
@@ -37,7 +37,7 @@ const tenants = {
     last_refreshed_at_field: 'Zuletzt aktualisiert am',
     grace_ends_at_field: 'Kulanzzeit endet am',
     refresh_expired_description:
-      'Der Lizenzschlüssel ist am {{expiresAt}} abgelaufen. Lizenzierte Funktionen bleiben bis {{graceEndsAt}} verfügbar, während Logto versucht, ihn zu aktualisieren.',
+      'Der Lizenzschlüssel ist am {{expiresAt}} abgelaufen. Lizenzierte Funktionen bleiben bis {{graceEndsAt}} verfügbar, während GetCertus versucht, ihn zu aktualisieren.',
     refresh_refused_description:
       'Die Lizenzaktualisierung wurde abgelehnt, weil die Lizenz {{reason}} ist. Lizenzierte Funktionen bleiben bis {{graceEndsAt}} verfügbar.',
     refusal_reason_canceled: 'gekündigt',
@@ -46,15 +46,15 @@ const tenants = {
     refusal_reason_revoked: 'widerrufen',
     refusal_reason_unknown: 'nicht verfügbar',
     grace_expired_description:
-      'Die Kulanzzeit der Lizenz endete am {{graceEndsAt}}. Diese Bereitstellung verwendet wieder die OSS-Standards. Kontaktiere Logto für einen neuen Lizenzschlüssel und installiere ihn erneut.',
+      'Die Kulanzzeit der Lizenz endete am {{graceEndsAt}}. Diese Bereitstellung verwendet wieder die OSS-Standards. Kontaktiere GetCertus für einen neuen Lizenzschlüssel und installiere ihn erneut.',
     get_fresh_key_button: 'Neuen Lizenzschlüssel abrufen',
     replace_button: 'Lizenz ersetzen',
   },
   members: {
-    card_title: 'Verwalten Sie Mandanten sicherer mit Logto Cloud',
+    card_title: 'Verwalten Sie Mandanten sicherer mit GetCertus Cloud',
     card_description:
       'Fügen Sie Ihrem Mandanten Admins oder Mitwirkende hinzu, ohne ein einzelnes Admin-Konto gemeinsam zu nutzen.',
-    card_action: 'Logto Cloud entdecken',
+    card_action: 'GetCertus Cloud entdecken',
     self_hosted_card_title: 'Verwalten Sie Mandanten sicherer mit Self-Hosted-Plänen',
     self_hosted_card_description:
       'Fügen Sie Ihrem Mandanten Admins oder Mitwirkende hinzu, ohne ein einzelnes Admin-Konto gemeinsam zu nutzen.',
@@ -68,7 +68,7 @@ const tenants = {
     tenant_name: 'Mietername',
     tenant_instance: 'Wähle deine Instanz aus',
     tenant_instance_description:
-      'Wählen Sie, wo Ihr Mandant gehostet wird. Wählen Sie Logto Cloud für eine öffentliche geteilte Infrastruktur oder eine private Instanz für dedizierte Ressourcen.',
+      'Wählen Sie, wo Ihr Mandant gehostet wird. Wählen Sie GetCertus Cloud für eine öffentliche geteilte Infrastruktur oder eine private Instanz für dedizierte Ressourcen.',
     tenant_region: 'Gehostete Region der Daten',
     tenant_region_description:
       'Der physische Ort, an dem Ihre Mandantenressourcen (Benutzer, Apps, usw.) gehostet werden. Dies kann nach Erstellung nicht mehr geändert werden.',
@@ -97,7 +97,7 @@ const tenants = {
     tenant_mfa_setup_action: 'MFA einrichten',
     enterprise_sso: 'Enterprise SSO',
     enterprise_sso_description:
-      'Verfügbar in kostenpflichtigen Plänen. Kontaktieren Sie uns, um Enterprise SSO zu aktivieren, damit alle Mitglieder sich mit dem Identitätsanbieter Ihrer Organisation bei der Logto Cloud Console anmelden können.',
+      'Verfügbar in kostenpflichtigen Plänen. Kontaktieren Sie uns, um Enterprise SSO zu aktivieren, damit alle Mitglieder sich mit dem Identitätsanbieter Ihrer Organisation bei der GetCertus Cloud Console anmelden können.',
   },
   full_env_tag: {
     development: 'Entwicklung',
@@ -142,7 +142,7 @@ const tenants = {
       'Die Mandanten-ID darf nur Kleinbuchstaben, Zahlen und Bindestriche enthalten und darf {{max}} Zeichen nicht überschreiten.',
     tenant_id_placeholder: 'Ihre Mandanten-ID',
     tenant_id_tip:
-      'Passen Sie die Mandanten-ID an. Wenn leer gelassen, generiert Logto eine Standard-ID. Die Mandanten-ID kann nach der Erstellung nicht geändert werden.',
+      'Passen Sie die Mandanten-ID an. Wenn leer gelassen, generiert GetCertus eine Standard-ID. Die Mandanten-ID kann nach der Erstellung nicht geändert werden.',
   },
   dev_tenant_migration: {
     title:
@@ -175,7 +175,7 @@ const tenants = {
   tenant_landing_page: {
     title: 'Du hast noch keinen Mandanten erstellt',
     description:
-      'Um Ihr Projekt mit Logto zu konfigurieren, erstellen Sie bitte einen neuen Mandanten. Wenn Sie sich abmelden oder Ihr Konto löschen möchten, klicken Sie einfach auf die Avatar-Taste in der oberen rechten Ecke.',
+      'Um Ihr Projekt mit GetCertus zu konfigurieren, erstellen Sie bitte einen neuen Mandanten. Wenn Sie sich abmelden oder Ihr Konto löschen möchten, klicken Sie einfach auf die Avatar-Taste in der oberen rechten Ecke.',
     create_tenant_button: 'Mandanten erstellen',
   },
   status: {

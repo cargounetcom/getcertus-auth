@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+1 555-123-4567',
   test_message_sent: 'ส่งข้อความทดสอบแล้ว',
   test_sender_description:
-    'Logto ใช้แม่แบบ "Generic" สำหรับการทดสอบ คุณจะได้รับข้อความหากตัวเชื่อมต่อของคุณตั้งค่าอย่างถูกต้อง',
+    'GetCertus ใช้แม่แบบ "Generic" สำหรับการทดสอบ คุณจะได้รับข้อความหากตัวเชื่อมต่อของคุณตั้งค่าอย่างถูกต้อง',
   options_change_email: 'เปลี่ยนตัวเชื่อมต่ออีเมล',
   options_change_sms: 'เปลี่ยนตัวเชื่อมต่อ SMS',
   connector_deleted: 'ลบตัวเชื่อมต่อเรียบร้อยแล้ว',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'อีเมลที่ส่งทั้งหมด: {{value, number}}',
     total_email_sent_tip:
-      'Logto ใช้ SendGrid เพื่อความปลอดภัยและเสถียรภาพในการส่งอีเมลที่ติดตั้งมาในตัว ใช้งานได้ฟรี <a>เรียนรู้เพิ่มเติม</a>',
+      'GetCertus ใช้ SendGrid เพื่อความปลอดภัยและเสถียรภาพในการส่งอีเมลที่ติดตั้งมาในตัว ใช้งานได้ฟรี <a>เรียนรู้เพิ่มเติม</a>',
     hosted_email_usage: {
       daily: 'รายวัน <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'รายวัน <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'แผน Free และ Development มีขีดจำกัดบริการอีเมลในตัวรายวันและรายเดือน',
       banner: {
         approaching:
-          'คุณกำลังใกล้ถึงขีดจำกัดการส่งอีเมลของบริการอีเมลในตัวของ Logto <provider>เชื่อมต่อผู้ให้บริการอีเมลของคุณเอง</provider> หรือ <upgrade>อัปเกรดแผนของคุณ</upgrade> เพื่อใช้บริการอีเมลในตัวของ Logto ต่อไป',
+          'คุณกำลังใกล้ถึงขีดจำกัดการส่งอีเมลของบริการอีเมลในตัวของ GetCertus <provider>เชื่อมต่อผู้ให้บริการอีเมลของคุณเอง</provider> หรือ <upgrade>อัปเกรดแผนของคุณ</upgrade> เพื่อใช้บริการอีเมลในตัวของ GetCertus ต่อไป',
         reached:
-          'คุณถึงขีดจำกัดการส่งอีเมลของบริการอีเมลในตัวของ Logto แล้ว ซึ่งอาจขัดจังหวะอีเมลการเข้าสู่ระบบ <provider>เชื่อมต่อผู้ให้บริการอีเมลของคุณเอง</provider> หรือ <upgrade>อัปเกรดแผนของคุณ</upgrade> เพื่อใช้บริการอีเมลในตัวของ Logto ต่อไป',
+          'คุณถึงขีดจำกัดการส่งอีเมลของบริการอีเมลในตัวของ GetCertus แล้ว ซึ่งอาจขัดจังหวะอีเมลการเข้าสู่ระบบ <provider>เชื่อมต่อผู้ให้บริการอีเมลของคุณเอง</provider> หรือ <upgrade>อัปเกรดแผนของคุณ</upgrade> เพื่อใช้บริการอีเมลในตัวของ GetCertus ต่อไป',
       },
     },
     email_template_title: 'แม่แบบอีเมล',
@@ -68,7 +68,7 @@ const connector_details = {
     email_logo_field: 'โลโก้อีเมล',
     email_logo_tip: 'แสดงโลโก้แบรนด์ของคุณที่ด้านบนของอีเมล ใช้ภาพเดียวกันกับโหมดสว่างและโหมดมืด',
     urls_not_allowed: 'ไม่อนุญาตให้ใส่ URL',
-    test_notes: 'Logto ใช้แม่แบบ “Generic” สำหรับการทดสอบ',
+    test_notes: 'GetCertus ใช้แม่แบบ “Generic” สำหรับการทดสอบ',
   },
   google_one_tap: {
     title: 'Google One Tap',

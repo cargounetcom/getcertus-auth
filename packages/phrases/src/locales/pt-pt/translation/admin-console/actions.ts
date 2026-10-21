@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Execute código personalizado em pontos específicos do fluxo de autenticação para expandir o comportamento do Logto.',
+    'Execute código personalizado em pontos específicos do fluxo de autenticação para expandir o comportamento do GetCertus.',
   status: {
     not_configured: 'Não configurado',
     configured: 'Configurado',
@@ -29,7 +29,7 @@ const actions = {
   },
   result_data: {
     title: 'Resultado da ação',
-    subtitle: 'Devolva um objeto de resultado que o Logto compreenda para este tipo de ação.',
+    subtitle: 'Devolva um objeto de resultado que o GetCertus compreenda para este tipo de ação.',
   },
   environment_variables: {
     title: 'Definir variáveis de ambiente',
@@ -53,11 +53,11 @@ const actions = {
     on_execution_error: {
       title: 'Em caso de erro no script',
       description:
-        'Escolha como o Logto se deve comportar quando o script falhar em tempo de execução.',
+        'Escolha como o GetCertus se deve comportar quando o script falhar em tempo de execução.',
       block: 'Bloquear o fluxo de autenticação',
       allow: 'Permitir que o fluxo de autenticação continue',
       post_first_factor_description:
-        'Quando este script falha, o Logto rejeita sempre credenciais inválidas para que a verificação da palavra-passe não possa ser contornada.',
+        'Quando este script falha, o GetCertus rejeita sempre credenciais inválidas para que a verificação da palavra-passe não possa ser contornada.',
     },
   },
   test_context: {
@@ -79,12 +79,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Os scripts são executados com privilégios do servidor',
     description:
-      'No Logto self-hosted, este script é executado no mesmo ambiente que o próprio Logto: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor. Esta ação é executada apenas após a falha da verificação da palavra-passe local — devolva `passwordVerified: true` apenas depois de verificar de forma independente a palavra-passe submetida. Os utilizadores provisionados por esta ação contornam proteções exclusivas do registo, incluindo a blocklist de e-mail, o domínio apenas SSO, o modo de registo desativado e as verificações de perfil obrigatório no registo. As escritas de perfil e palavra-passe de utilizadores existentes também ocorrem antes da conclusão da MFA.',
+      'No GetCertus self-hosted, este script é executado no mesmo ambiente que o próprio GetCertus: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor. Esta ação é executada apenas após a falha da verificação da palavra-passe local — devolva `passwordVerified: true` apenas depois de verificar de forma independente a palavra-passe submetida. Os utilizadores provisionados por esta ação contornam proteções exclusivas do registo, incluindo a blocklist de e-mail, o domínio apenas SSO, o modo de registo desativado e as verificações de perfil obrigatório no registo. As escritas de perfil e palavra-passe de utilizadores existentes também ocorrem antes da conclusão da MFA.',
   },
   sandbox_warning: {
     title: 'Os scripts são executados com privilégios do servidor',
     description:
-      'No Logto self-hosted, este script é executado no mesmo ambiente que o próprio Logto: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor.',
+      'No GetCertus self-hosted, este script é executado no mesmo ambiente que o próprio GetCertus: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor.',
   },
   security_warning: {
     title: 'Aviso de segurança',

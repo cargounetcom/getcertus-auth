@@ -30,7 +30,7 @@ const sign_in_exp = {
     dark_primary_color: 'ブランドカラー（ダーク）',
     dark_mode: 'ダークモードを有効にする',
     dark_mode_description:
-      'あなたのアプリは、ブランドカラーと Logto アルゴリズムに基づいて自動生成されたダークモードのテーマを持っています。自由にカスタマイズしてください。',
+      'あなたのアプリは、ブランドカラーと GetCertus アルゴリズムに基づいて自動生成されたダークモードのテーマを持っています。自由にカスタマイズしてください。',
     dark_mode_reset_tip: 'ブランドカラーに基づいてダークモードの色を再計算します。',
     reset: 'リセット',
   },
@@ -42,11 +42,11 @@ const sign_in_exp = {
     app_logo_and_favicon: 'アプリロゴとファビコン',
     company_logo_and_favicon: '企業ロゴとファビコン',
     organization_logo_and_favicon: '組織のロゴとファビコン',
-    hide_logto_branding: 'Logtoのブランディングを非表示にする',
+    hide_logto_branding: 'GetCertusのブランディングを非表示にする',
     hide_logto_branding_description:
-      '「Powered by Logto」を削除します。クリーンでプロフェッショナルなサインイン体験で自社ブランドだけを際立たせましょう。',
+      '「Powered by GetCertus」を削除します。クリーンでプロフェッショナルなサインイン体験で自社ブランドだけを際立たせましょう。',
     hide_logto_branding_oss_note:
-      'この機能は <a>Logto Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。',
+      'この機能は <a>GetCertus Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。',
   },
   branding_uploads: {
     app_logo: {
@@ -93,10 +93,10 @@ const sign_in_exp = {
     bring_your_ui_title: 'あなたの UI を持参',
     bring_your_ui_upload_title: 'カスタム UI アセットをアップロード',
     bring_your_ui_description:
-      '圧縮パッケージ (.zip) をアップロードして、Logto のビルトイン UI を独自のコードで置き換えます。<a>詳しくはこちら</a>',
+      '圧縮パッケージ (.zip) をアップロードして、GetCertus のビルトイン UI を独自のコードで置き換えます。<a>詳しくはこちら</a>',
     bring_your_ui_oss_description: '独自のコードでサインイン UI をカスタマイズします。',
     bring_your_ui_oss_card_description:
-      'カスタム UI のアップロードは <a>Logto Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。フォークや再デプロイは不要です。',
+      'カスタム UI のアップロードは <a>GetCertus Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。フォークや再デプロイは不要です。',
     bring_your_ui_oss_try_cloud: 'Cloud を試す',
     preview_with_bring_your_ui_description:
       'カスタム UI のアセットは正常にアップロードされ、現在提供されています。したがって、組み込みのプレビューウィンドウは無効になりました。\nパーソナライズされたサインイン UI をテストするには、「ライブプレビュー」ボタンをクリックして新しいブラウザタブで開きます。',
@@ -114,10 +114,10 @@ const sign_in_exp = {
   },
   account_center: {
     title: 'アカウントセンター',
-    description: 'Logto API を使用してアカウントセンターのフローをカスタマイズします。',
+    description: 'GetCertus API を使用してアカウントセンターのフローをカスタマイズします。',
     enable_account_api: 'アカウントセンターと Account API を有効化',
     enable_account_api_description:
-      'エンドユーザー向けの Account API と Logto のすぐに使えるアカウントセンターを同時に有効にします。オフにすると、両方の機能が利用できなくなります。',
+      'エンドユーザー向けの Account API と GetCertus のすぐに使えるアカウントセンターを同時に有効にします。オフにすると、両方の機能が利用できなくなります。',
     field_options: {
       off: 'オフ',
       edit: '編集',

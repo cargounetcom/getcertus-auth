@@ -3,7 +3,7 @@ const applications = {
   title: 'Uygulamalar',
   subtitle:
     'Kimlik doğrulaması için Logtoyu kullanmak üzere mobil, tek sayfa, machine to machine veya geleneksel bir uygulama ayarlayınız',
-  subtitle_with_app_type: 'Logto Doğrulamasını {{name}} uygulamanız için yapılandırın',
+  subtitle_with_app_type: 'GetCertus Doğrulamasını {{name}} uygulamanız için yapılandırın',
   create_device_flow_description:
     'Giriş kısıtlı cihazlar veya headless uygulamalar için OAuth 2.0 Cihaz Yetkilendirme Hakkı kullanan yerel bir uygulama oluşturun.',
   create: 'Uygulama oluştur',
@@ -45,7 +45,7 @@ const applications = {
     },
     protected: {
       title: 'Korunan Uygulama',
-      subtitle: 'Logto tarafından korunan bir uygulama',
+      subtitle: 'GetCertus tarafından korunan bir uygulama',
       description: 'N/A',
     },
     saml: {
@@ -75,7 +75,7 @@ const applications = {
   },
   placeholder_title: 'Devam etmek için bir uygulama tipi seçin',
   placeholder_description:
-    'Logto, uygulamanızı tanımlamaya, oturum açmayı yönetmeye ve denetim kayıtları oluşturmaya yardımcı olmak için OIDC için bir uygulama varlığı kullanır.',
+    'GetCertus, uygulamanızı tanımlamaya, oturum açmayı yönetmeye ve denetim kayıtları oluşturmaya yardımcı olmak için OIDC için bir uygulama varlığı kullanır.',
   third_party_application_placeholder_description:
     'Üçüncü taraf hizmetlere OAuth yetkilendirmesi sağlamak için Logtoyu bir Kimlik Sağlayıcı olarak kullanın. \n Kaynak erişimi için önceden oluşturulmuş bir kullanıcı onay ekranı içerir. <a>Daha fazla bilgi edinin</a>',
   dynamic_app: {
@@ -117,17 +117,17 @@ const applications = {
     client_compatibility: {
       title: 'İstemci uyumluluğu',
       description:
-        "Logto'nun, OpenID Connect'i henüz tam olarak desteklemeyen OAuth istemcilerinden gelen yetkilendirme isteklerini nasıl işlediğini ayarlayın. Bu ayarlar deneyseldir ve değiştirilebilir veya kaldırılabilir.",
+        "GetCertus'nun, OpenID Connect'i henüz tam olarak desteklemeyen OAuth istemcilerinden gelen yetkilendirme isteklerini nasıl işlediğini ayarlayın. Bu ayarlar deneyseldir ve değiştirilebilir veya kaldırılabilir.",
       add_consent_prompt_for_offline_access: 'Çevrimdışı erişim için onay istemi ekle',
       add_consent_prompt_for_offline_access_description:
-        'Bir OAuth istemcisi `prompt=consent` olmadan `offline_access` istediğinde Logto, istemcinin bir yenileme belirteci alabilmesi için onay istemini ekler. ChatGPT ve Codex gibi istemciler için önerilir.',
+        'Bir OAuth istemcisi `prompt=consent` olmadan `offline_access` istediğinde GetCertus, istemcinin bir yenileme belirteci alabilmesi için onay istemini ekler. ChatGPT ve Codex gibi istemciler için önerilir.',
     },
   },
   guide: {
     third_party: {
       title: 'Üçüncü taraf uygulamayı entegre et',
       description:
-        "Üçüncü taraf hizmetlere OAuth yetkilendirmesi sağlamak için Logto'yu Kimlik Sağlayıcınız olarak kullanın. Güvenli kaynak erişimi için önceden oluşturulmuş bir kullanıcı onay ekranı içerir. <a>Daha fazla bilgi</a>",
+        "Üçüncü taraf hizmetlere OAuth yetkilendirmesi sağlamak için GetCertus'yu Kimlik Sağlayıcınız olarak kullanın. Güvenli kaynak erişimi için önceden oluşturulmuş bir kullanıcı onay ekranı içerir. <a>Daha fazla bilgi</a>",
     },
   },
 };

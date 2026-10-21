@@ -42,12 +42,12 @@ const paywall = {
   scopes_per_role_other:
     'Osiągnięto limit {{count, number}} uprawnień na rolę w planie <planName/>. Ulepsz plan, aby dodać dodatkowe role i uprawnienia. W razie potrzeb, skontaktuj się z nami <a>tutaj</a>.',
   saml_applications_oss:
-    'Dodatkowa aplikacja SAML jest dostępna w planie Logto Enterprise. Skontaktuj się z nami, jeśli potrzebujesz pomocy.',
+    'Dodatkowa aplikacja SAML jest dostępna w planie GetCertus Enterprise. Skontaktuj się z nami, jeśli potrzebujesz pomocy.',
   saml_applications_oss_limit_notice:
-    'Twoja instancja open source obsługuje do {{limit}} aplikacji SAML. Aby dodać więcej aplikacji, poznaj <selfHostedPlans>plany self-hosted</selfHostedPlans> lub skorzystaj z Logto Cloud.',
-  logto_pricing_button_text: 'Cennik Logto Cloud',
+    'Twoja instancja open source obsługuje do {{limit}} aplikacji SAML. Aby dodać więcej aplikacji, poznaj <selfHostedPlans>plany self-hosted</selfHostedPlans> lub skorzystaj z GetCertus Cloud.',
+  logto_pricing_button_text: 'Cennik GetCertus Cloud',
   saml_applications:
-    'Dodatkowa aplikacja SAML jest dostępna w planie Logto Enterprise. Skontaktuj się z nami, jeśli potrzebujesz pomocy.',
+    'Dodatkowa aplikacja SAML jest dostępna w planie GetCertus Enterprise. Skontaktuj się z nami, jeśli potrzebujesz pomocy.',
   saml_applications_add_on:
     'Odblokuj funkcję aplikacji SAML, ulepszając do płatnego planu. Nie wahaj się <a>skontaktować z nami</a>, jeśli potrzebujesz pomocy.',
   hooks:
@@ -58,7 +58,7 @@ const paywall = {
   organizations:
     'Odblokuj organizacje, ulepszając do płatnego planu. Nie wahaj się <a>skontaktować z nami</a>, jeśli potrzebujesz pomocy.',
   third_party_apps:
-    'Odblokuj Logto jako IdP dla aplikacji stron trzecich, ulepszając do płatnego planu. W razie potrzeby pomocy, proszę <a>skontaktuj się z nami</a>.',
+    'Odblokuj GetCertus jako IdP dla aplikacji stron trzecich, ulepszając do płatnego planu. W razie potrzeby pomocy, proszę <a>skontaktuj się z nami</a>.',
   sso_connectors:
     'Odblokuj logowanie jednokrotne dla przedsiębiorstw, ulepszając do płatnego planu. W razie potrzeby pomocy, proszę <a>skontaktuj się z nami</a>.',
   tenant_members:
@@ -71,7 +71,7 @@ const paywall = {
       'Ulepsz do płatnego planu, aby uzyskać funkcjonalność niestandardowego JWT i korzyści premium. Jeśli masz jakieś pytania, nie wahaj się <a>skontaktować z nami</a>.',
   },
   branding_customization:
-    'Ulepsz swój plan, aby uzyskać pełną kontrolę nad brandingiem dzięki funkcjom "Ukryj branding Logto" i "Przynieś swój interfejs użytkownika".',
+    'Ulepsz swój plan, aby uzyskać pełną kontrolę nad brandingiem dzięki funkcjom "Ukryj branding GetCertus" i "Przynieś swój interfejs użytkownika".',
   bring_your_ui:
     'Ulepsz do płatnego planu, aby uzyskać funkcję własnego interfejsu użytkownika i korzyści premium.',
   security_features:

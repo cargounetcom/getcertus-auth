@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+1 555-123-4567',
   test_message_sent: 'پیام آزمایشی ارسال شد',
   test_sender_description:
-    'Logto از قالب "عمومی" برای آزمایش استفاده می‌کند. اگر کانکتور شما به درستی پیکربندی شده باشد، یک پیام دریافت خواهید کرد.',
+    'GetCertus از قالب "عمومی" برای آزمایش استفاده می‌کند. اگر کانکتور شما به درستی پیکربندی شده باشد، یک پیام دریافت خواهید کرد.',
   options_change_email: 'تغییر کانکتور ایمیل',
   options_change_sms: 'تغییر کانکتور پیامک',
   connector_deleted: 'کانکتور با موفقیت حذف شد',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'مجموع ایمیل‌های ارسال‌شده: {{value, number}}',
     total_email_sent_tip:
-      'Logto از SendGrid برای ایمیل داخلی امن و پایدار استفاده می‌کند. استفاده از آن کاملاً رایگان است. <a>بیشتر بدانید</a>',
+      'GetCertus از SendGrid برای ایمیل داخلی امن و پایدار استفاده می‌کند. استفاده از آن کاملاً رایگان است. <a>بیشتر بدانید</a>',
     hosted_email_usage: {
       daily: 'روزانه <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'روزانه <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'طرح‌های Free و Development شامل محدودیت‌های روزانه و ماهانه سرویس ایمیل داخلی هستند.',
       banner: {
         approaching:
-          'شما به حد ارسال سرویس ایمیل داخلی Logto نزدیک می‌شوید. برای ادامه استفاده از سرویس ایمیل داخلی Logto، <provider>ارائه‌دهنده ایمیل خود را متصل کنید</provider> یا <upgrade>طرح خود را ارتقا دهید</upgrade>.',
+          'شما به حد ارسال سرویس ایمیل داخلی GetCertus نزدیک می‌شوید. برای ادامه استفاده از سرویس ایمیل داخلی GetCertus، <provider>ارائه‌دهنده ایمیل خود را متصل کنید</provider> یا <upgrade>طرح خود را ارتقا دهید</upgrade>.',
         reached:
-          'به حد ارسال سرویس ایمیل داخلی Logto رسیده‌اید که ممکن است ایمیل‌های ورود را مختل کند. برای ادامه استفاده از سرویس ایمیل داخلی Logto، <provider>ارائه‌دهنده ایمیل خود را متصل کنید</provider> یا <upgrade>طرح خود را ارتقا دهید</upgrade>.',
+          'به حد ارسال سرویس ایمیل داخلی GetCertus رسیده‌اید که ممکن است ایمیل‌های ورود را مختل کند. برای ادامه استفاده از سرویس ایمیل داخلی GetCertus، <provider>ارائه‌دهنده ایمیل خود را متصل کنید</provider> یا <upgrade>طرح خود را ارتقا دهید</upgrade>.',
       },
     },
     email_template_title: 'قالب ایمیل',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'لوگوی برند خود را در بالای ایمیل‌ها نمایش دهید. از یک تصویر برای هر دو حالت روشن و تاریک استفاده کنید.',
     urls_not_allowed: 'آدرس‌های URL مجاز نیستند',
-    test_notes: 'Logto از قالب "عمومی" برای آزمایش استفاده می‌کند.',
+    test_notes: 'GetCertus از قالب "عمومی" برای آزمایش استفاده می‌کند.',
   },
   google_one_tap: {
     title: 'Google One Tap',

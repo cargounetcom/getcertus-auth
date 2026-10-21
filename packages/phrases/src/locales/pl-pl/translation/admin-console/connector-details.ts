@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+48 123-456-789',
   test_message_sent: 'Wiadomość testowa została wysłana',
   test_sender_description:
-    'Logto używa szablonu "Ogólny" do testów. Otrzymasz wiadomość, jeśli twój konektor jest prawidłowo skonfigurowany.',
+    'GetCertus używa szablonu "Ogólny" do testów. Otrzymasz wiadomość, jeśli twój konektor jest prawidłowo skonfigurowany.',
   options_change_email: 'Zmień konektor e-mail',
   options_change_sms: 'Zmień konektor SMS',
   connector_deleted: 'Konektor został pomyślnie usunięty',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'Wysłano łącznie emaili: {{value, number}}',
     total_email_sent_tip:
-      'Logto wykorzystuje SendGrid do bezpiecznej i stabilnej wysyłki wbudowanych wiadomości e-mail. Jest to całkowicie darmowe do użytku. <a>Więcej informacji</a>',
+      'GetCertus wykorzystuje SendGrid do bezpiecznej i stabilnej wysyłki wbudowanych wiadomości e-mail. Jest to całkowicie darmowe do użytku. <a>Więcej informacji</a>',
     hosted_email_usage: {
       daily: 'Dziennie <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'Dziennie <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'Plany Free i Development obejmują dzienne i miesięczne limity wbudowanej usługi e-mail.',
       banner: {
         approaching:
-          'Zbliżasz się do limitu wysyłki wbudowanej usługi e-mail Logto. <provider>Podłącz własnego dostawcę poczty e-mail</provider> lub <upgrade>ulepsz swój plan</upgrade>, aby nadal korzystać z wbudowanej usługi e-mail Logto.',
+          'Zbliżasz się do limitu wysyłki wbudowanej usługi e-mail GetCertus. <provider>Podłącz własnego dostawcę poczty e-mail</provider> lub <upgrade>ulepsz swój plan</upgrade>, aby nadal korzystać z wbudowanej usługi e-mail GetCertus.',
         reached:
-          'Osiągnięto limit wysyłki wbudowanej usługi e-mail Logto, co może przerwać e-maile logowania. <provider>Podłącz własnego dostawcę poczty e-mail</provider> lub <upgrade>ulepsz swój plan</upgrade>, aby nadal korzystać z wbudowanej usługi e-mail Logto.',
+          'Osiągnięto limit wysyłki wbudowanej usługi e-mail GetCertus, co może przerwać e-maile logowania. <provider>Podłącz własnego dostawcę poczty e-mail</provider> lub <upgrade>ulepsz swój plan</upgrade>, aby nadal korzystać z wbudowanej usługi e-mail GetCertus.',
       },
     },
     email_template_title: 'Szablon e-maila',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'Wyświetl logo swojej marki na górze wiadomości e-mail. Użyj tego samego obrazu zarówno dla trybu jasnego, jak i ciemnego.',
     urls_not_allowed: 'Nie dozwolone adresy URL',
-    test_notes: 'Logto używa szablonu "Ogólny" do testów.',
+    test_notes: 'GetCertus używa szablonu "Ogólny" do testów.',
   },
   google_one_tap: {
     title: 'Google One Tap',

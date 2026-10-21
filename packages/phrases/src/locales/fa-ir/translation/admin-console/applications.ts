@@ -2,7 +2,7 @@ const applications = {
   page_title: 'برنامه‌ها',
   title: 'برنامه‌ها',
   subtitle: 'برنامه‌های OIDC را ایجاد و مدیریت کنید.',
-  subtitle_with_app_type: 'احراز هویت Logto را برای برنامه {{name}} خود راه‌اندازی کنید',
+  subtitle_with_app_type: 'احراز هویت GetCertus را برای برنامه {{name}} خود راه‌اندازی کنید',
   create_device_flow_description:
     'یک برنامه بومی ایجاد کنید که از OAuth 2.0 Device Authorization Grant برای دستگاه‌های با ورودی محدود یا برنامه‌های بدون رابط گرافیکی استفاده می‌کند.',
   create: 'ایجاد برنامه',
@@ -44,7 +44,7 @@ const applications = {
     },
     protected: {
       title: 'برنامه محافظت‌شده',
-      subtitle: 'برنامه‌ای که توسط Logto محافظت می‌شود', // Not in use
+      subtitle: 'برنامه‌ای که توسط GetCertus محافظت می‌شود', // Not in use
       description: 'N/A', // Not in use
     },
     saml: {
@@ -74,9 +74,9 @@ const applications = {
   },
   placeholder_title: 'نوع برنامه را برای ادامه انتخاب کنید',
   placeholder_description:
-    'Logto از یک موجودیت برنامه برای OIDC استفاده می‌کند تا در کارهایی مانند شناسایی برنامه‌ها، مدیریت ورود و ایجاد گزارش‌های حسابرسی کمک کند.',
+    'GetCertus از یک موجودیت برنامه برای OIDC استفاده می‌کند تا در کارهایی مانند شناسایی برنامه‌ها، مدیریت ورود و ایجاد گزارش‌های حسابرسی کمک کند.',
   third_party_application_placeholder_description:
-    'از Logto به‌عنوان Identity Provider برای ارائه مجوز OAuth به سرویس‌های شخص ثالث استفاده کنید. شامل یک صفحه رضایت کاربر از پیش‌ساخته برای دسترسی به منابع می‌شود. <a>بیشتر بدانید</a>',
+    'از GetCertus به‌عنوان Identity Provider برای ارائه مجوز OAuth به سرویس‌های شخص ثالث استفاده کنید. شامل یک صفحه رضایت کاربر از پیش‌ساخته برای دسترسی به منابع می‌شود. <a>بیشتر بدانید</a>',
   dynamic_app: {
     title: 'برنامه پویا',
     subtitle: 'CIMD',
@@ -115,17 +115,17 @@ const applications = {
     client_compatibility: {
       title: 'سازگاری با کلاینت‌ها',
       description:
-        'نحوه پردازش درخواست‌های مجوز از کلاینت‌های OAuth را که هنوز به‌طور کامل از OpenID Connect پشتیبانی نمی‌کنند، در Logto تنظیم کنید. این تنظیمات آزمایشی هستند و ممکن است تغییر کنند یا حذف شوند.',
+        'نحوه پردازش درخواست‌های مجوز از کلاینت‌های OAuth را که هنوز به‌طور کامل از OpenID Connect پشتیبانی نمی‌کنند، در GetCertus تنظیم کنید. این تنظیمات آزمایشی هستند و ممکن است تغییر کنند یا حذف شوند.',
       add_consent_prompt_for_offline_access: 'افزودن درخواست رضایت برای دسترسی آفلاین',
       add_consent_prompt_for_offline_access_description:
-        'وقتی یک کلاینت OAuth `offline_access` را بدون `prompt=consent` درخواست می‌کند، Logto درخواست رضایت را اضافه می‌کند تا کلاینت بتواند توکن بازیابی دریافت کند. برای کلاینت‌هایی مانند ChatGPT و Codex توصیه می‌شود.',
+        'وقتی یک کلاینت OAuth `offline_access` را بدون `prompt=consent` درخواست می‌کند، GetCertus درخواست رضایت را اضافه می‌کند تا کلاینت بتواند توکن بازیابی دریافت کند. برای کلاینت‌هایی مانند ChatGPT و Codex توصیه می‌شود.',
     },
   },
   guide: {
     third_party: {
       title: 'یکپارچه‌سازی برنامه شخص ثالث',
       description:
-        'از Logto به‌عنوان Identity Provider خود برای ارائه مجوز OAuth به سرویس‌های شخص ثالث استفاده کنید. شامل یک صفحه رضایت کاربر از پیش‌ساخته برای دسترسی ایمن به منابع می‌شود. <a>بیشتر بدانید</a>',
+        'از GetCertus به‌عنوان Identity Provider خود برای ارائه مجوز OAuth به سرویس‌های شخص ثالث استفاده کنید. شامل یک صفحه رضایت کاربر از پیش‌ساخته برای دسترسی ایمن به منابع می‌شود. <a>بیشتر بدانید</a>',
     },
   },
 };

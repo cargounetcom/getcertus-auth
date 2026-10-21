@@ -39,7 +39,7 @@ const cloud = {
     create: 'Konnektor hinzufügen',
     title: 'Konsolen-SSO',
     description:
-      'Konfiguriere deinen eigenen Identitätsanbieter, um dich per Single Sign-on bei der Logto Console anzumelden.',
+      'Konfiguriere deinen eigenen Identitätsanbieter, um dich per Single Sign-on bei der GetCertus Console anzumelden.',
     domain_bound: 'Gebunden',
     domain_pending: 'Wird überprüft',
     domain_verify_step: 'Domain verifizieren',
@@ -75,17 +75,17 @@ const cloud = {
     page_title: 'Mandant erstellen',
     title: 'Erstellen Sie Ihren ersten Mandanten',
     description:
-      'Ein Mandant ist eine isolierte Umgebung, in der Sie Benutzeridentitäten, Anwendungen und alle anderen Logto-Ressourcen verwalten können.',
+      'Ein Mandant ist eine isolierte Umgebung, in der Sie Benutzeridentitäten, Anwendungen und alle anderen GetCertus-Ressourcen verwalten können.',
     invite_collaborators: 'Laden Sie Ihre Mitarbeiter per E-Mail ein',
     hear_about_us: {
-      title: 'Wie haben Sie zum ersten Mal von Logto erfahren?',
+      title: 'Wie haben Sie zum ersten Mal von GetCertus erfahren?',
       detail_placeholder: 'Erzählen Sie uns mehr (optional)',
       options: {
         search_engine: 'Suchmaschine (Google, Bing...)',
         ai_assistant: 'KI-Assistent (ChatGPT, Claude, Gemini...)',
         github_oss: 'GitHub oder Open-Source-Verzeichnisse',
         friend_colleague: 'Freund oder Kollege',
-        powered_by: 'Anmeldeseite einer App, die Logto verwendet',
+        powered_by: 'Anmeldeseite einer App, die GetCertus verwendet',
         content_social: 'Soziale Medien, Artikel oder Video (YouTube, X, Reddit...)',
         other: 'Sonstiges',
       },
@@ -94,7 +94,7 @@ const cloud = {
   social_callback: {
     title: 'Sie haben sich erfolgreich angemeldet',
     description:
-      'Sie haben sich erfolgreich mit Ihrem Social-Account angemeldet. Um eine nahtlose Integration und den Zugriff auf alle Funktionen von Logto zu gewährleisten, empfehlen wir Ihnen, Ihren eigenen Social-Connector zu konfigurieren.',
+      'Sie haben sich erfolgreich mit Ihrem Social-Account angemeldet. Um eine nahtlose Integration und den Zugriff auf alle Funktionen von GetCertus zu gewährleisten, empfehlen wir Ihnen, Ihren eigenen Social-Connector zu konfigurieren.',
     notice:
       'Bitte vermeiden Sie die Verwendung des Demo-Connectors für Produktionszwecke. Sobald Sie die Tests abgeschlossen haben, löschen Sie bitte den Demo-Connector und richten Sie Ihren eigenen Connector mit Ihren Anmeldedaten ein.',
   },

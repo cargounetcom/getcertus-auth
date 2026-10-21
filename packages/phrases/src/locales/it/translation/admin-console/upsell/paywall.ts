@@ -42,12 +42,12 @@ const paywall = {
   scopes_per_role_other:
     'Hai raggiunto il limite di {{count, number}} autorizzazioni per ruolo di <planName/>. Aggiorna il piano per aggiungere ruoli e autorizzazioni aggiuntive. Non esitare a <a>contattarci</a> se hai bisogno di assistenza.',
   saml_applications_oss:
-    "L'app SAML aggiuntiva è disponibile con il piano Logto Enterprise. Contattaci se hai bisogno di assistenza.",
+    "L'app SAML aggiuntiva è disponibile con il piano GetCertus Enterprise. Contattaci se hai bisogno di assistenza.",
   saml_applications_oss_limit_notice:
-    'La tua istanza open source supporta fino a {{limit}} applicazioni SAML. Per aggiungere altre applicazioni, esplora i <selfHostedPlans>piani self-hosted</selfHostedPlans> o usa Logto Cloud.',
-  logto_pricing_button_text: 'Prezzi del Logto Cloud',
+    'La tua istanza open source supporta fino a {{limit}} applicazioni SAML. Per aggiungere altre applicazioni, esplora i <selfHostedPlans>piani self-hosted</selfHostedPlans> o usa GetCertus Cloud.',
+  logto_pricing_button_text: 'Prezzi del GetCertus Cloud',
   saml_applications:
-    "L'app SAML aggiuntiva è disponibile con il piano Logto Enterprise. Contattaci se hai bisogno di assistenza.",
+    "L'app SAML aggiuntiva è disponibile con il piano GetCertus Enterprise. Contattaci se hai bisogno di assistenza.",
   saml_applications_add_on:
     "Sblocca la funzionalità dell'app SAML passando a un piano a pagamento. Per qualsiasi assistenza, non esitare a <a>contattarci</a>.",
   hooks:
@@ -58,7 +58,7 @@ const paywall = {
   organizations:
     'Sblocca le organizzazioni passando a un piano a pagamento. Non esitare a <a>contattarci</a> se hai bisogno di assistenza.',
   third_party_apps:
-    'Sblocca Logto come IdP per applicazioni di terze parti passando a un piano a pagamento. Per qualsiasi assistenza, non esitare a <a>contattarci</a>.',
+    'Sblocca GetCertus come IdP per applicazioni di terze parti passando a un piano a pagamento. Per qualsiasi assistenza, non esitare a <a>contattarci</a>.',
   sso_connectors:
     'Sblocca SSO aziendale passando a un piano a pagamento. Per qualsiasi assistenza, non esitare a <a>contattarci</a>.',
   tenant_members:
@@ -71,7 +71,7 @@ const paywall = {
       'Aggiorna a un piano a pagamento per la funzionalità JWT personalizzata e benefici premium. Non esitare a <a>contattarci</a> se hai domande.',
   },
   branding_customization:
-    'Sblocca il controllo completo del branding con le funzionalità "Nascondi il branding Logto" e "Porta la tua UI" aggiornando il tuo piano.',
+    'Sblocca il controllo completo del branding con le funzionalità "Nascondi il branding GetCertus" e "Porta la tua UI" aggiornando il tuo piano.',
   bring_your_ui:
     'Aggiorna a un piano a pagamento per portare la tua funzionalità di interfaccia utente personalizzata e beneficiare dei vantaggi premium.',
   security_features:

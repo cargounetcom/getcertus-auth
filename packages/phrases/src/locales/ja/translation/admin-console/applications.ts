@@ -2,8 +2,8 @@ const applications = {
   page_title: 'アプリケーション ',
   title: 'アプリケーション ',
   subtitle:
-    'ネイティブ、シングルページ、マシン・トゥ・マシン、または従来のアプリケーションに Logto 認証を設定する',
-  subtitle_with_app_type: 'あなたの {{name}} アプリケーションに Logto 認証を設定する',
+    'ネイティブ、シングルページ、マシン・トゥ・マシン、または従来のアプリケーションに GetCertus 認証を設定する',
+  subtitle_with_app_type: 'あなたの {{name}} アプリケーションに GetCertus 認証を設定する',
   create_device_flow_description:
     'OAuth 2.0 デバイス認可グラントを使用するネイティブアプリケーションを作成します。入力制限のあるデバイスやヘッドレスアプリ向けです。',
   create: 'アプリケーションを作成する',
@@ -44,7 +44,7 @@ const applications = {
     },
     protected: {
       title: 'Protected App',
-      subtitle: 'Logto によって保護されたアプリ',
+      subtitle: 'GetCertus によって保護されたアプリ',
       description: 'N/A',
     },
     saml: {
@@ -74,9 +74,9 @@ const applications = {
   },
   placeholder_title: '続行するにはアプリケーションタイプを選択してください',
   placeholder_description:
-    'Logto は OIDC のためにアプリケーションエンティティを使用して、アプリケーションの識別、サインインの管理、監査ログの作成などのタスクをサポートします。',
+    'GetCertus は OIDC のためにアプリケーションエンティティを使用して、アプリケーションの識別、サインインの管理、監査ログの作成などのタスクをサポートします。',
   third_party_application_placeholder_description:
-    'Logto を ID プロバイダーとして使用して、サードパーティのサービスに OAuth 承認を提供します。 \n リソースアクセスのための事前構築されたユーザー同意画面が含まれています。<a>詳細を確認</a>',
+    'GetCertus を ID プロバイダーとして使用して、サードパーティのサービスに OAuth 承認を提供します。 \n リソースアクセスのための事前構築されたユーザー同意画面が含まれています。<a>詳細を確認</a>',
   dynamic_app: {
     title: 'ダイナミックアプリ',
     subtitle: 'CIMD',
@@ -115,17 +115,17 @@ const applications = {
     client_compatibility: {
       title: 'クライアントの互換性',
       description:
-        'OpenID Connect をまだ完全にはサポートしていない OAuth クライアントからの認可リクエストを、Logto がどのように処理するかを調整します。これらの設定は試験的なもので、変更または削除される可能性があります。',
+        'OpenID Connect をまだ完全にはサポートしていない OAuth クライアントからの認可リクエストを、GetCertus がどのように処理するかを調整します。これらの設定は試験的なもので、変更または削除される可能性があります。',
       add_consent_prompt_for_offline_access: 'オフラインアクセスに同意プロンプトを追加',
       add_consent_prompt_for_offline_access_description:
-        'OAuth クライアントが `prompt=consent` なしで `offline_access` を要求した場合、Logto は同意プロンプトを追加し、クライアントがリフレッシュトークンを受け取れるようにします。ChatGPT や Codex などのクライアントでの利用を推奨します。',
+        'OAuth クライアントが `prompt=consent` なしで `offline_access` を要求した場合、GetCertus は同意プロンプトを追加し、クライアントがリフレッシュトークンを受け取れるようにします。ChatGPT や Codex などのクライアントでの利用を推奨します。',
     },
   },
   guide: {
     third_party: {
       title: 'サードパーティアプリケーションを統合する',
       description:
-        'Logto を ID プロバイダーとして使用して、サードパーティのサービスに OAuth 承認を提供します。安全なリソースアクセスのための事前構築されたユーザー同意画面が含まれています。<a>詳細はこちら</a>',
+        'GetCertus を ID プロバイダーとして使用して、サードパーティのサービスに OAuth 承認を提供します。安全なリソースアクセスのための事前構築されたユーザー同意画面が含まれています。<a>詳細はこちら</a>',
     },
   },
 };

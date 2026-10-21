@@ -27,7 +27,7 @@ const sign_in_exp = {
     dark_primary_color: '品牌顏色 (深色)',
     dark_mode: '開啟深色模式',
     dark_mode_description:
-      '基於品牌顏色和 Logto 的算法，應用將會有一個自動生成的深色模式。當然，你可以自定義和修改。',
+      '基於品牌顏色和 GetCertus 的算法，應用將會有一個自動生成的深色模式。當然，你可以自定義和修改。',
     dark_mode_reset_tip: '基於品牌顏色，重新生成深色模式顏色。',
     reset: '重新生成',
   },
@@ -39,11 +39,11 @@ const sign_in_exp = {
     app_logo_and_favicon: '應用圖標和 Favicon',
     company_logo_and_favicon: '公司圖標和 Favicon',
     organization_logo_and_favicon: '組織圖標和 Favicon',
-    hide_logto_branding: '隱藏 Logto 品牌',
+    hide_logto_branding: '隱藏 GetCertus 品牌',
     hide_logto_branding_description:
-      '移除「Powered by Logto」。以乾淨、專業的登入體驗讓你的品牌成為焦點。',
+      '移除「Powered by GetCertus」。以乾淨、專業的登入體驗讓你的品牌成為焦點。',
     hide_logto_branding_oss_note:
-      '此功能可在 <a>Logto Cloud</a> 或<selfHosted>自託管方案</selfHosted>中使用。',
+      '此功能可在 <a>GetCertus Cloud</a> 或<selfHosted>自託管方案</selfHosted>中使用。',
   },
   branding_uploads: {
     app_logo: {
@@ -90,10 +90,10 @@ const sign_in_exp = {
     bring_your_ui_title: '帶上你的界面',
     bring_your_ui_upload_title: '上傳自訂 UI 資源',
     bring_your_ui_description:
-      '上傳壓縮包 (.zip) 來用你的代碼替換 Logto 的預構建界面。<a>了解更多</a>',
+      '上傳壓縮包 (.zip) 來用你的代碼替換 GetCertus 的預構建界面。<a>了解更多</a>',
     bring_your_ui_oss_description: '用你的程式碼自訂登入介面。',
     bring_your_ui_oss_card_description:
-      '自訂介面上傳功能可在 <a>Logto Cloud</a> 或<selfHosted>自託管方案</selfHosted>中使用。無需 fork 和重新部署。',
+      '自訂介面上傳功能可在 <a>GetCertus Cloud</a> 或<selfHosted>自託管方案</selfHosted>中使用。無需 fork 和重新部署。',
     bring_your_ui_oss_try_cloud: '試用 Cloud',
     preview_with_bring_your_ui_description:
       '你的自定義界面資源已成功上傳並正在服務。因此，內置預覽窗口已被禁用。\n若要測試你的個性化登錄界面，請點擊「實時預覽」按鈕在新瀏覽器標籤頁中打開。',
@@ -110,10 +110,10 @@ const sign_in_exp = {
   },
   account_center: {
     title: '帳號中心',
-    description: '使用 Logto API 自訂你的帳號中心流程。',
+    description: '使用 GetCertus API 自訂你的帳號中心流程。',
     enable_account_api: '啟用帳號中心和 Account API',
     enable_account_api_description:
-      '同時啟用面向使用者的 Account API 和 Logto 的開箱即用帳號中心。關閉後，這兩項功能都將不可用。',
+      '同時啟用面向使用者的 Account API 和 GetCertus 的開箱即用帳號中心。關閉後，這兩項功能都將不可用。',
     field_options: {
       off: '關閉',
       edit: '可編輯',

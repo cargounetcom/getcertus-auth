@@ -15,14 +15,14 @@ const tenants = {
   license: {
     purchase_title: 'PLANY SELF-HOSTED',
     purchase_description:
-      'Plany Pro i Przedsiębiorstwo self-hosted odblokowują płatne funkcje na Twojej instancji, takie jak ukrycie marki Logto, własny interfejs, współpraca w konsoli oraz nieograniczona liczba aplikacji SAML. Kup plan, aby otrzymać klucz licencyjny.',
+      'Plany Pro i Przedsiębiorstwo self-hosted odblokowują płatne funkcje na Twojej instancji, takie jak ukrycie marki GetCertus, własny interfejs, współpraca w konsoli oraz nieograniczona liczba aplikacji SAML. Kup plan, aby otrzymać klucz licencyjny.',
     purchase_button: 'Zobacz plany self-hosted',
     install_title: 'INSTALACJA LICENCJI',
     install_description: 'Wklej klucz licencyjny otrzymany po zakupie planu self-hosted.',
     install_button: 'Zainstaluj licencję',
     key_field: 'Klucz licencyjny',
     key_field_description:
-      'Klucz jest weryfikowany na Twojej instancji i nigdy jej nie opuszcza. Jeśli Twój klucz wygasł, skontaktuj się z Logto, aby otrzymać nowy.',
+      'Klucz jest weryfikowany na Twojej instancji i nigdy jej nie opuszcza. Jeśli Twój klucz wygasł, skontaktuj się z GetCertus, aby otrzymać nowy.',
     key_placeholder: 'Wklej tutaj swój klucz licencyjny',
     installed_toast: 'Licencja została zainstalowana.',
     details_title: 'LICENCJA',
@@ -36,7 +36,7 @@ const tenants = {
     last_refreshed_at_field: 'Ostatnio odświeżono',
     grace_ends_at_field: 'Okres karencji kończy się',
     refresh_expired_description:
-      'Klucz licencyjny wygasł {{expiresAt}}. Funkcje objęte licencją pozostaną dostępne do {{graceEndsAt}}, gdy Logto będzie próbować go odświeżyć.',
+      'Klucz licencyjny wygasł {{expiresAt}}. Funkcje objęte licencją pozostaną dostępne do {{graceEndsAt}}, gdy GetCertus będzie próbować go odświeżyć.',
     refresh_refused_description:
       'Odświeżenie licencji odrzucono, ponieważ licencja jest {{reason}}. Funkcje objęte licencją pozostaną dostępne do {{graceEndsAt}}.',
     refusal_reason_canceled: 'anulowana',
@@ -45,15 +45,15 @@ const tenants = {
     refusal_reason_revoked: 'unieważniona',
     refusal_reason_unknown: 'niedostępna',
     grace_expired_description:
-      'Okres karencji licencji zakończył się {{graceEndsAt}}. To wdrożenie wróciło do domyślnych ustawień OSS. Skontaktuj się z Logto, aby otrzymać nowy klucz licencyjny, i zainstaluj go ponownie.',
+      'Okres karencji licencji zakończył się {{graceEndsAt}}. To wdrożenie wróciło do domyślnych ustawień OSS. Skontaktuj się z GetCertus, aby otrzymać nowy klucz licencyjny, i zainstaluj go ponownie.',
     get_fresh_key_button: 'Pobierz nowy klucz licencyjny',
     replace_button: 'Zmień licencję',
   },
   members: {
-    card_title: 'Zarządzaj tenantami bezpieczniej dzięki Logto Cloud',
+    card_title: 'Zarządzaj tenantami bezpieczniej dzięki GetCertus Cloud',
     card_description:
       'Dodawaj administratorów lub współpracowników do swojego tenantu bez współdzielenia jednego konta administratora.',
-    card_action: 'Poznaj Logto Cloud',
+    card_action: 'Poznaj GetCertus Cloud',
     self_hosted_card_title: 'Zarządzaj tenantami bezpieczniej dzięki planom self-hosted',
     self_hosted_card_description:
       'Dodawaj administratorów lub współpracowników do swojego tenantu bez współdzielenia jednego konta administratora.',
@@ -67,7 +67,7 @@ const tenants = {
     tenant_name: 'Nazwa Najemcy',
     tenant_instance: 'Wybierz swoją instancję',
     tenant_instance_description:
-      'Wybierz, gdzie będzie hostowany twój najemca. Wybierz Logto Cloud dla publicznej, współdzielonej infrastruktury, lub prywatną instancję dla dedykowanych zasobów.',
+      'Wybierz, gdzie będzie hostowany twój najemca. Wybierz GetCertus Cloud dla publicznej, współdzielonej infrastruktury, lub prywatną instancję dla dedykowanych zasobów.',
     tenant_region: 'Region hostowania danych',
     tenant_region_description:
       'Fizyczna lokalizacja, w której hostowane są zasoby twojego najemcy (użytkownicy, aplikacje itp.). Tego nie można zmienić po utworzeniu.',
@@ -97,7 +97,7 @@ const tenants = {
     tenant_mfa_setup_action: 'Skonfiguruj MFA',
     enterprise_sso: 'Enterprise SSO',
     enterprise_sso_description:
-      'Dostępne w płatnych planach. Skontaktuj się z nami, aby włączyć Enterprise SSO, dzięki czemu wszyscy członkowie będą mogli logować się do konsoli Logto Cloud za pomocą dostawcy tożsamości Twojej organizacji.',
+      'Dostępne w płatnych planach. Skontaktuj się z nami, aby włączyć Enterprise SSO, dzięki czemu wszyscy członkowie będą mogli logować się do konsoli GetCertus Cloud za pomocą dostawcy tożsamości Twojej organizacji.',
   },
   full_env_tag: {
     development: 'Development',
@@ -142,7 +142,7 @@ const tenants = {
       'Identyfikator najemcy może zawierać tylko małe litery, cyfry i myślniki oraz nie może przekraczać {{max}} znaków.',
     tenant_id_placeholder: 'Identyfikator najemcy',
     tenant_id_tip:
-      'Dostosuj identyfikator najemcy. Jeśli pozostawisz puste, Logto wygeneruje domyślny identyfikator. Identyfikator najemcy nie może zostać zmieniony po utworzeniu.',
+      'Dostosuj identyfikator najemcy. Jeśli pozostawisz puste, GetCertus wygeneruje domyślny identyfikator. Identyfikator najemcy nie może zostać zmieniony po utworzeniu.',
   },
   dev_tenant_migration: {
     title:
@@ -175,7 +175,7 @@ const tenants = {
   tenant_landing_page: {
     title: 'Nie utworzyłeś jeszcze najemcy',
     description:
-      'Aby rozpocząć konfigurowanie projektu z Logto, utwórz nowego najemcę. Jeśli musisz się wylogować lub usunąć swoje konto, wystarczy kliknąć przycisk awatara w prawym górnym rogu.',
+      'Aby rozpocząć konfigurowanie projektu z GetCertus, utwórz nowego najemcę. Jeśli musisz się wylogować lub usunąć swoje konto, wystarczy kliknąć przycisk awatara w prawym górnym rogu.',
     create_tenant_button: 'Utwórz najemcę',
   },
   status: {

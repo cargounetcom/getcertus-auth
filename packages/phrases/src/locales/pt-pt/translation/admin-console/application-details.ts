@@ -6,10 +6,10 @@ const application_details = {
   check_guide: 'Guia de verificação',
   settings: 'Definições',
   settings_description:
-    'Uma aplicação é um software ou serviço registado que pode aceder às informações do utilizador ou agir em seu nome. As aplicações ajudam o Logto a identificar quem está a pedir o quê e tratam do início de sessão e das permissões. Preencha os campos obrigatórios para a autenticação.',
+    'Uma aplicação é um software ou serviço registado que pode aceder às informações do utilizador ou agir em seu nome. As aplicações ajudam o GetCertus a identificar quem está a pedir o quê e tratam do início de sessão e das permissões. Preencha os campos obrigatórios para a autenticação.',
   integration: 'Integração',
   integration_description:
-    'Implemente com os trabalhadores seguros da Logto, alimentados pela rede de borda da Cloudflare para um desempenho de primeira classe e inícios instantâneos a 0ms em todo o mundo.',
+    'Implemente com os trabalhadores seguros da GetCertus, alimentados pela rede de borda da Cloudflare para um desempenho de primeira classe e inícios instantâneos a 0ms em todo o mundo.',
   service_configuration: 'Configuração do serviço',
   service_configuration_description: 'Complete as configurações necessárias no seu serviço.',
   session: 'Sessão',
@@ -32,10 +32,10 @@ const application_details = {
     'O endpoint para realizar a autenticação e autorização. É usado para <a>autenticação</a> OpenID Connect.',
   show_endpoint_details: 'Mostrar detalhes do endpoint',
   hide_endpoint_details: 'Ocultar detalhes do endpoint',
-  logto_endpoint: 'Endpoint Logto',
+  logto_endpoint: 'Endpoint GetCertus',
   application_id: 'ID da aplicação',
   application_id_tip:
-    'O identificador exclusivo da aplicação normalmente gerado pelo Logto. Também representa “<a>client_id</a>” no OpenID Connect.',
+    'O identificador exclusivo da aplicação normalmente gerado pelo GetCertus. Também representa “<a>client_id</a>” no OpenID Connect.',
   application_secret: 'Segredo da aplicação',
   application_secret_other: 'Segredos da aplicação',
   redirect_uri: 'URI de redirecionamento',
@@ -64,15 +64,15 @@ const application_details = {
     'Ativar ou desativar o acesso à API de gestão. Uma vez ativado, pode utilizar tokens de acesso para chamar a API de gestão em nome desta aplicação.',
   always_issue_refresh_token: 'Sempre emitir token de atualização',
   always_issue_refresh_token_label:
-    'Ao ativar essa configuração, a Logto sempre emitirá tokens de atualização, independentemente de `prompt = consent` ser apresentado na solicitação de autenticação. No entanto, essa prática é desencorajada, a menos que seja necessária, pois não é compatível com OpenID Connect e pode causar problemas.',
+    'Ao ativar essa configuração, a GetCertus sempre emitirá tokens de atualização, independentemente de `prompt = consent` ser apresentado na solicitação de autenticação. No entanto, essa prática é desencorajada, a menos que seja necessária, pois não é compatível com OpenID Connect e pode causar problemas.',
   refresh_token_ttl: 'Tempo de vida do token de atualização em dias',
   refresh_token_ttl_tip:
     'O tempo pelo qual um token de atualização pode ser usado para solicitar novos tokens de acesso antes de expirar e se tornar inválido. As solicitações de token estenderão o TTL do token de atualização para esse valor.',
   rotate_refresh_token: 'Rotacionar o token de atualização',
   rotate_refresh_token_label:
-    'Quando ativado, o Logto emitirá um novo token de atualização para solicitações de token quando 70% do tempo de vida original (TTL) tiver passado ou certas condições forem atendidas. <a>Saiba mais</a>',
+    'Quando ativado, o GetCertus emitirá um novo token de atualização para solicitações de token quando 70% do tempo de vida original (TTL) tiver passado ou certas condições forem atendidas. <a>Saiba mais</a>',
   rotate_refresh_token_label_for_public_clients:
-    'Quando ativado, o Logto emitirá um novo token de atualização para cada solicitação de token. <a>Saiba mais</a>',
+    'Quando ativado, o GetCertus emitirá um novo token de atualização para cada solicitação de token. <a>Saiba mais</a>',
   backchannel_logout: 'Logout de backchannel',
   backchannel_logout_description:
     'Configure o endpoint de logout de backchannel do OpenID Connect e se a sessão é necessária para esta aplicação.',
@@ -97,7 +97,7 @@ const application_details = {
   application_deleted: 'Aplicação {{name}} eliminada com sucesso',
   redirect_uri_required: 'Deve inserir pelo menos um URI de redirecionamento',
   app_domain_description_1:
-    'Sinta-se à vontade para utilizar o seu domínio com {{domain}} alimentado pela Logto, que é permanentemente válido.',
+    'Sinta-se à vontade para utilizar o seu domínio com {{domain}} alimentado pela GetCertus, que é permanentemente válido.',
   app_domain_description_2:
     'Sinta-se à vontade para utilizar o seu domínio <domain>{{domain}}</domain> que é permanentemente válido.',
   custom_rules: 'Regras de autenticação personalizadas',
@@ -113,7 +113,7 @@ const application_details = {
   protect_origin_server_description:
     'Assegure-se de proteger o seu servidor de origem do acesso direto. Consulte o guia para mais <a>instruções detalhadas</a>.',
   third_party_settings_description:
-    'Integre aplicações de terceiros com a Logto como seu Provedor de Identidade (IdP) usando OIDC / OAuth 2.0, apresentando uma tela de consentimento para autorização do utilizador.',
+    'Integre aplicações de terceiros com a GetCertus como seu Provedor de Identidade (IdP) usando OIDC / OAuth 2.0, apresentando uma tela de consentimento para autorização do utilizador.',
   session_duration: 'Duração da sessão (dias)',
   try_it: 'Experimente',
   no_organization_placeholder: 'Nenhuma organização encontrada. <a>Ir para organizações</a>',
@@ -203,7 +203,7 @@ const application_details = {
     user_data_permission_description_tips:
       'Pode modificar a descrição das permissões de dados pessoais do utilizador através de "Experiência de Início de Sessão > Conteúdo > Gerir Idioma"',
     permission_description_tips:
-      'Quando o Logto é usado como um Prestador de Identidades (IdP) para autenticação em aplicações de terceiros, e os utilizadores são solicitados para autorização, esta descrição aparece no ecrã de consentimento.',
+      'Quando o GetCertus é usado como um Prestador de Identidades (IdP) para autenticação em aplicações de terceiros, e os utilizadores são solicitados para autorização, esta descrição aparece no ecrã de consentimento.',
     user_title: 'Utilizador',
     user_description:
       'Selecione as permissões solicitadas pela aplicação de terceiros para aceder a dados específicos do utilizador.',
@@ -294,20 +294,20 @@ const application_details = {
     title: 'Formato do ID de Nome',
     description: 'Selecione o formato do ID de Nome do IdP SAML.',
     persistent: 'Persistente',
-    persistent_description: 'Usar o ID de utilizador do Logto como ID de Nome',
+    persistent_description: 'Usar o ID de utilizador do GetCertus como ID de Nome',
     transient: 'Transitório',
     transient_description: 'Usar um ID de utilizador único como ID de Nome',
     unspecified: 'Não especificado',
-    unspecified_description: 'Usar o ID de utilizador do Logto como ID de Nome',
+    unspecified_description: 'Usar o ID de utilizador do GetCertus como ID de Nome',
     email_address: 'Endereço de email',
     email_address_description: 'Usar o endereço de email como ID de Nome',
   },
   saml_idp_authentication: {
     always_force_authn: 'Sempre forçar autenticação',
     always_force_authn_description:
-      'Exigir que os utilizadores façam login novamente sempre que acessem esta aplicação, mesmo que já possuam uma sessão Logto.',
+      'Exigir que os utilizadores façam login novamente sempre que acessem esta aplicação, mesmo que já possuam uma sessão GetCertus.',
     always_force_authn_tip:
-      'Quando ativado, o Logto sempre pede aos utilizadores que façam login novamente para esta aplicação. Quando desativado, uma sessão Logto existente é reutilizada a menos que o fornecedor de serviços solicite uma autenticação fresca com ForceAuthn.',
+      'Quando ativado, o GetCertus sempre pede aos utilizadores que façam login novamente para esta aplicação. Quando desativado, uma sessão GetCertus existente é reutilizada a menos que o fornecedor de serviços solicite uma autenticação fresca com ForceAuthn.',
   },
   saml_encryption_config: {
     encrypt_assertion: 'Criptografar asserção SAML',
@@ -328,8 +328,8 @@ const application_details = {
     name: 'Mapeamentos de atributos',
     title: 'Mapeamentos de atributos base',
     description:
-      'Adicione mapeamentos de atributos para sincronizar o perfil do utilizador do Logto para a sua aplicação.',
-    col_logto_claims: 'Valor do Logto',
+      'Adicione mapeamentos de atributos para sincronizar o perfil do utilizador do GetCertus para a sua aplicação.',
+    col_logto_claims: 'Valor do GetCertus',
     col_sp_claims: 'Nome do valor da sua aplicação',
     add_button: 'Adicionar outro',
   },

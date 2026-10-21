@@ -1,12 +1,12 @@
 const inkeep_ai_bot = {
   intro_message:
-    'こんにちは、Logto AI です！\n\nドキュメント、ヘルプ記事、およびその他のコンテンツで訓練された AI アシスタントです。\n\n`Logto` に関して何でも質問してください。',
-  chat_placeholder: 'Logto AI に質問して、ステップバイステップのガイドを受け取る',
-  disclaimer_label: 'Logto AI 免責事項',
+    'こんにちは、GetCertus AI です！\n\nドキュメント、ヘルプ記事、およびその他のコンテンツで訓練された AI アシスタントです。\n\n`GetCertus` に関して何でも質問してください。',
+  chat_placeholder: 'GetCertus AI に質問して、ステップバイステップのガイドを受け取る',
+  disclaimer_label: 'GetCertus AI 免責事項',
   disclaimer_tooltip: '回答は AI によって生成され、検証が必要な場合があります。',
   example_questions_label: '質問の例',
   example_questions: [
-    'Logto セットアップのクイックスタートガイド',
+    'GetCertus セットアップのクイックスタートガイド',
     'マルチテナンシーアーキテクチャの構成',
     'ユーザープロファイルを統合する方法？',
   ],

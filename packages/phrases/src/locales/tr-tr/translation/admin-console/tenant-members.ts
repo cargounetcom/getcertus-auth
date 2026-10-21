@@ -10,9 +10,9 @@ const tenant_members = {
   inviter: 'Davet eden',
   expiration_date: 'Son kullanma tarihi',
   invite_modal: {
-    title: "Logto Cloud'e Kişileri Davet Et",
+    title: "GetCertus Cloud'e Kişileri Davet Et",
     subtitle: 'Bir kuruluşa üye davet etmek için daveti kabul etmeleri gerekmektedir.',
-    subtitle_oss: 'Davet edilen üyeler bu Logto örneğine tam yönetici erişimi elde eder.',
+    subtitle_oss: 'Davet edilen üyeler bu GetCertus örneğine tam yönetici erişimi elde eder.',
     to: 'Kime',
     added_as: 'Şu rollerle eklendi',
     email_input_placeholder: 'johndoe@example.com',

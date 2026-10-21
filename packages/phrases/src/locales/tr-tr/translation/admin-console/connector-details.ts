@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+90 555 123 45 67',
   test_message_sent: 'Test mesajı gönderildi',
   test_sender_description:
-    'Logto testler için "Generic" şablonunu kullanır. Bağlantınız doğru şekilde yapılandırılmışsa bir mesaj alacaksınız.',
+    'GetCertus testler için "Generic" şablonunu kullanır. Bağlantınız doğru şekilde yapılandırılmışsa bir mesaj alacaksınız.',
   options_change_email: 'Eposta bağdaştırıcınızı değiştirin',
   options_change_sms: 'SMS bağdaştırıcınızı değiştirin',
   connector_deleted: 'Bağdaştırıcı başarıyla silindi',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'Toplam e-posta gönderildi: {{value, number}}',
     total_email_sent_tip:
-      'Logto dahili e-posta için güvenli ve stabil SendGrid kullanır. Tamamen ücretsizdir. <a>Daha fazla bilgi edinin</a>',
+      'GetCertus dahili e-posta için güvenli ve stabil SendGrid kullanır. Tamamen ücretsizdir. <a>Daha fazla bilgi edinin</a>',
     hosted_email_usage: {
       daily: 'Günlük <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'Günlük <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'Free ve Development planları, günlük ve aylık yerleşik e-posta hizmeti limitleri içerir.',
       banner: {
         approaching:
-          'Logto yerleşik e-posta hizmeti gönderim sınırınıza yaklaşıyorsunuz. Logto yerleşik e-posta hizmetini kullanmaya devam etmek için <provider>kendi e-posta sağlayıcınızı bağlayın</provider> veya <upgrade>planınızı yükseltin</upgrade>.',
+          'GetCertus yerleşik e-posta hizmeti gönderim sınırınıza yaklaşıyorsunuz. GetCertus yerleşik e-posta hizmetini kullanmaya devam etmek için <provider>kendi e-posta sağlayıcınızı bağlayın</provider> veya <upgrade>planınızı yükseltin</upgrade>.',
         reached:
-          'Logto yerleşik e-posta hizmeti gönderim sınırınıza ulaştınız, bu da oturum açma e-postalarını kesintiye uğratabilir. Logto yerleşik e-posta hizmetini kullanmaya devam etmek için <provider>kendi e-posta sağlayıcınızı bağlayın</provider> veya <upgrade>planınızı yükseltin</upgrade>.',
+          'GetCertus yerleşik e-posta hizmeti gönderim sınırınıza ulaştınız, bu da oturum açma e-postalarını kesintiye uğratabilir. GetCertus yerleşik e-posta hizmetini kullanmaya devam etmek için <provider>kendi e-posta sağlayıcınızı bağlayın</provider> veya <upgrade>planınızı yükseltin</upgrade>.',
       },
     },
     email_template_title: 'E-posta Şablonu',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'Marka logonuzu e-postaların en üstüne yerleştirin. Hem açık mod hem de koyu mod için aynı resmi kullanın.',
     urls_not_allowed: 'URLler izin verilmez',
-    test_notes: 'Logto testler için "Generic" şablonunu kullanır.',
+    test_notes: 'GetCertus testler için "Generic" şablonunu kullanır.',
   },
   google_one_tap: {
     title: 'Google One Tap',

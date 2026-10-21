@@ -30,7 +30,7 @@ const sign_in_exp = {
     dark_primary_color: 'رنگ برند (تاریک)',
     dark_mode: 'فعال‌سازی حالت تاریک',
     dark_mode_description:
-      'برنامه شما یک تم حالت تاریک به صورت خودکار بر اساس رنگ برند و الگوریتم Logto خواهد داشت. می‌توانید آن را سفارشی کنید.',
+      'برنامه شما یک تم حالت تاریک به صورت خودکار بر اساس رنگ برند و الگوریتم GetCertus خواهد داشت. می‌توانید آن را سفارشی کنید.',
     dark_mode_reset_tip: 'محاسبه مجدد رنگ حالت تاریک بر اساس رنگ برند.',
     reset: 'محاسبه مجدد',
   },
@@ -42,11 +42,11 @@ const sign_in_exp = {
     app_logo_and_favicon: 'لوگو برنامه و فاویکون',
     company_logo_and_favicon: 'لوگو شرکت و فاویکون',
     organization_logo_and_favicon: 'لوگو سازمان و فاویکون',
-    hide_logto_branding: 'پنهان کردن برندینگ Logto',
+    hide_logto_branding: 'پنهان کردن برندینگ GetCertus',
     hide_logto_branding_description:
-      'عبارت "Powered by Logto" را حذف کنید. برند خود را با یک تجربه ورود تمیز و حرفه‌ای برجسته کنید.',
+      'عبارت "Powered by GetCertus" را حذف کنید. برند خود را با یک تجربه ورود تمیز و حرفه‌ای برجسته کنید.',
     hide_logto_branding_oss_note:
-      'این ویژگی در <a>Logto Cloud</a> یا <selfHosted>طرح‌های self-hosted</selfHosted> در دسترس است.',
+      'این ویژگی در <a>GetCertus Cloud</a> یا <selfHosted>طرح‌های self-hosted</selfHosted> در دسترس است.',
   },
   branding_uploads: {
     app_logo: {
@@ -93,10 +93,10 @@ const sign_in_exp = {
     bring_your_ui_title: 'رابط کاربری خود را بیاورید',
     bring_your_ui_upload_title: 'آپلود دارایی‌های رابط کاربری سفارشی',
     bring_your_ui_description:
-      'یک بسته فشرده (.zip) آپلود کنید تا رابط کاربری از پیش‌ساخته Logto را با کد خود جایگزین کنید. <a>بیشتر بدانید</a>',
+      'یک بسته فشرده (.zip) آپلود کنید تا رابط کاربری از پیش‌ساخته GetCertus را با کد خود جایگزین کنید. <a>بیشتر بدانید</a>',
     bring_your_ui_oss_description: 'رابط کاربری ورود را با کد خود سفارشی کنید.',
     bring_your_ui_oss_card_description:
-      'آپلود رابط کاربری سفارشی در <a>Logto Cloud</a> یا <selfHosted>طرح‌های self-hosted</selfHosted> در دسترس است. نیازی به fork و استقرار مجدد نیست.',
+      'آپلود رابط کاربری سفارشی در <a>GetCertus Cloud</a> یا <selfHosted>طرح‌های self-hosted</selfHosted> در دسترس است. نیازی به fork و استقرار مجدد نیست.',
     bring_your_ui_oss_try_cloud: 'امتحان Cloud',
     preview_with_bring_your_ui_description:
       'دارایی‌های رابط کاربری سفارشی شما با موفقیت آپلود شده و در حال ارائه هستند. در نتیجه، پنجره پیش‌نمایش داخلی غیرفعال شده است.\nبرای آزمایش رابط کاربری ورود شخصی‌سازی‌شده خود، روی دکمه "پیش‌نمایش زنده" کلیک کنید تا در یک تب جدید مرورگر باز شود.',
@@ -118,7 +118,7 @@ const sign_in_exp = {
       'مرکز حساب کاربری خود را برای مدیریت امنیت حساب و اطلاعات پروفایل توسط کاربران نهایی پیاده‌سازی کنید.',
     enable_account_api: 'فعال‌سازی مرکز حساب و Account API',
     enable_account_api_description:
-      'هم Account API کاربرمحور و هم مرکز حساب آماده Logto را فعال کنید. در صورت خاموش بودن، هر دو ویژگی در دسترس نیستند.',
+      'هم Account API کاربرمحور و هم مرکز حساب آماده GetCertus را فعال کنید. در صورت خاموش بودن، هر دو ویژگی در دسترس نیستند.',
     field_options: {
       off: 'خاموش',
       edit: 'ویرایش',

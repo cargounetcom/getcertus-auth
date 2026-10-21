@@ -1,7 +1,7 @@
 const get_started = {
   page_title: 'Comenzar',
   title: 'Algo para explorar que te ayudará a tener éxito',
-  subtitle: 'Algunas cosas que puedes hacer para obtener rápidamente el valor de Logto',
+  subtitle: 'Algunas cosas que puedes hacer para obtener rápidamente el valor de GetCertus',
   develop: {
     title: 'Desarrollar: Dedica 5 minutos para integrar tu aplicación',
     title_cloud: 'Desarrollar: Integra tu aplicación de forma segura en minutos',
@@ -14,7 +14,7 @@ const get_started = {
     preview: {
       title:
         'Ver la vista previa en directo de la experiencia de inicio de sesión que acabas de personalizar',
-      subtitle: 'Prueba la experiencia de inicio de sesión de Logto ahora y ve cómo funciona',
+      subtitle: 'Prueba la experiencia de inicio de sesión de GetCertus ahora y ve cómo funciona',
     },
     connector: {
       title: 'Añadir más conectores para admitir más métodos de inicio de sesión sociales',
@@ -46,23 +46,23 @@ const get_started = {
   },
   oss_cloud: {
     try: {
-      title: 'Evita el trabajo operativo y prueba Logto Cloud gratis',
+      title: 'Evita el trabajo operativo y prueba GetCertus Cloud gratis',
       badge: 'Recomendado',
       description:
-        'Obtén un Logto totalmente administrado sin mantenimiento, además de integración rápida con MCP, soporte multiinquilino, colaboración en equipo y todas las funciones premium incluidas. Empieza gratis, sin tarjeta de crédito.',
-      action: 'Explorar Logto Cloud',
+        'Obtén un GetCertus totalmente administrado sin mantenimiento, además de integración rápida con MCP, soporte multiinquilino, colaboración en equipo y todas las funciones premium incluidas. Empieza gratis, sin tarjeta de crédito.',
+      action: 'Explorar GetCertus Cloud',
     },
     private_cloud: {
       title: '¿Necesitas cumplimiento o un despliegue personalizado?',
       card_title: 'Nube privada',
       description:
-        'Obtén una instancia dedicada de Logto con aislamiento total de datos, dominio personalizado y garantías de SLA. Ideal para empresas con estrictos requisitos de residencia de datos o cumplimiento normativo. Nosotros gestionamos la infraestructura para que puedas centrarte en tu producto.',
+        'Obtén una instancia dedicada de GetCertus con aislamiento total de datos, dominio personalizado y garantías de SLA. Ideal para empresas con estrictos requisitos de residencia de datos o cumplimiento normativo. Nosotros gestionamos la infraestructura para que puedas centrarte en tu producto.',
     },
     sidebar: {
       title: 'Concéntrate en crear, no en alojar.',
       description:
-        'Deja que Logto Cloud se encargue de la infraestructura de autenticación por ti.',
-      action: 'Probar Logto Cloud',
+        'Deja que GetCertus Cloud se encargue de la infraestructura de autenticación por ti.',
+      action: 'Probar GetCertus Cloud',
     },
   },
   view_all: 'Ver todo →',

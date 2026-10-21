@@ -10,10 +10,10 @@ const tenant_members = {
   inviter: 'Chi ha invitato',
   expiration_date: 'Data di scadenza',
   invite_modal: {
-    title: 'Invita persone in Logto Cloud',
+    title: 'Invita persone in GetCertus Cloud',
     subtitle: "Per invitare membri a un'organizzazione, devono accettare l'invito.",
     subtitle_oss:
-      'I membri invitati ricevono accesso completo come amministratori a questa istanza di Logto.',
+      'I membri invitati ricevono accesso completo come amministratori a questa istanza di GetCertus.',
     to: 'A',
     added_as: 'Aggiunti come ruoli',
     email_input_placeholder: 'johndoe@example.com',

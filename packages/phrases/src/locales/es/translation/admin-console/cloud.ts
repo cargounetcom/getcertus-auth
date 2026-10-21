@@ -38,7 +38,7 @@ const cloud = {
     create: 'Añadir conector',
     title: 'SSO de la consola',
     description:
-      'Configura tu propio proveedor de identidad para acceder a Logto Console mediante el inicio de sesión único.',
+      'Configura tu propio proveedor de identidad para acceder a GetCertus Console mediante el inicio de sesión único.',
     domain_bound: 'Vinculado',
     domain_pending: 'Verificando',
     domain_verify_step: 'Verifica tu dominio',
@@ -74,17 +74,17 @@ const cloud = {
     page_title: 'Crear inquilino',
     title: 'Crea tu primer inquilino',
     description:
-      'Un inquilino es un entorno aislado donde puedes gestionar identidades de usuarios, aplicaciones y todos los demás recursos de Logto.',
+      'Un inquilino es un entorno aislado donde puedes gestionar identidades de usuarios, aplicaciones y todos los demás recursos de GetCertus.',
     invite_collaborators: 'Invita a tus colaboradores por correo electrónico',
     hear_about_us: {
-      title: '¿Cómo conociste Logto por primera vez?',
+      title: '¿Cómo conociste GetCertus por primera vez?',
       detail_placeholder: 'Cuéntanos más (opcional)',
       options: {
         search_engine: 'Motor de búsqueda (Google, Bing...)',
         ai_assistant: 'Asistente de IA (ChatGPT, Claude, Gemini...)',
         github_oss: 'GitHub o directorios de código abierto',
         friend_colleague: 'Un amigo o colega',
-        powered_by: 'Página de inicio de sesión de una aplicación que usa Logto',
+        powered_by: 'Página de inicio de sesión de una aplicación que usa GetCertus',
         content_social: 'Redes sociales, artículo o video (YouTube, X, Reddit...)',
         other: 'Otro',
       },
@@ -93,7 +93,7 @@ const cloud = {
   social_callback: {
     title: 'Ha iniciado sesión correctamente',
     description:
-      'Ha iniciado sesión correctamente utilizando su cuenta social. Para garantizar una integración perfecta y el acceso a todas las funciones de Logto, recomendamos que proceda a configurar su propio conector social.',
+      'Ha iniciado sesión correctamente utilizando su cuenta social. Para garantizar una integración perfecta y el acceso a todas las funciones de GetCertus, recomendamos que proceda a configurar su propio conector social.',
     notice:
       'Evita usar el conector de demostración para fines de producción. Una vez que hayas completado las pruebas, elimina amablemente el conector de demostración y configura tu propio conector con tus credenciales.',
   },

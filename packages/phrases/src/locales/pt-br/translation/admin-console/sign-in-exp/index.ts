@@ -30,7 +30,7 @@ const sign_in_exp = {
     dark_primary_color: 'Cor da marca (Escuro)',
     dark_mode: 'Ativar modo escuro',
     dark_mode_description:
-      'Seu aplicativo terá um tema de modo escuro gerado automaticamente com base na cor da sua marca e no algoritmo Logto. Você é livre para personalizar.',
+      'Seu aplicativo terá um tema de modo escuro gerado automaticamente com base na cor da sua marca e no algoritmo GetCertus. Você é livre para personalizar.',
     dark_mode_reset_tip: 'Recalcule a cor do modo escuro com base na cor da marca.',
     reset: 'Recalcular',
   },
@@ -42,11 +42,11 @@ const sign_in_exp = {
     app_logo_and_favicon: 'Logo do aplicativo e favicon',
     company_logo_and_favicon: 'Logo da empresa e favicon',
     organization_logo_and_favicon: 'Logo da organização e favicon',
-    hide_logto_branding: 'Ocultar a marca Logto',
+    hide_logto_branding: 'Ocultar a marca GetCertus',
     hide_logto_branding_description:
-      'Remova "Powered by Logto". Destaque apenas a sua marca com uma experiência de login limpa e profissional.',
+      'Remova "Powered by GetCertus". Destaque apenas a sua marca com uma experiência de login limpa e profissional.',
     hide_logto_branding_oss_note:
-      'Este recurso está disponível no <a>Logto Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>.',
+      'Este recurso está disponível no <a>GetCertus Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>.',
   },
   branding_uploads: {
     app_logo: {
@@ -93,10 +93,10 @@ const sign_in_exp = {
     bring_your_ui_title: 'Traga sua UI',
     bring_your_ui_upload_title: 'Enviar recursos de UI personalizados',
     bring_your_ui_description:
-      'Carregue um pacote compactado (.zip) para substituir a UI pré-construída do Logto pelo seu próprio código. <a>Saiba mais</a>',
+      'Carregue um pacote compactado (.zip) para substituir a UI pré-construída do GetCertus pelo seu próprio código. <a>Saiba mais</a>',
     bring_your_ui_oss_description: 'Personalize a interface de login com o seu próprio código.',
     bring_your_ui_oss_card_description:
-      'O upload de uma interface personalizada está disponível no <a>Logto Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>. Não é preciso fazer fork nem implantar novamente.',
+      'O upload de uma interface personalizada está disponível no <a>GetCertus Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>. Não é preciso fazer fork nem implantar novamente.',
     bring_your_ui_oss_try_cloud: 'Experimentar Cloud',
     preview_with_bring_your_ui_description:
       'Seus ativos de UI personalizados foram carregados com sucesso e agora estão sendo servidos. Consequentemente, a janela de visualização interna foi desativada.\nPara testar sua UI de login personalizada, clique no botão "Visualização em tempo real" para abri-la em uma nova aba do navegador.',
@@ -114,10 +114,10 @@ const sign_in_exp = {
   },
   account_center: {
     title: 'CENTRO DE CONTA',
-    description: 'Personalize os fluxos do centro de conta com as APIs do Logto.',
+    description: 'Personalize os fluxos do centro de conta com as APIs do GetCertus.',
     enable_account_api: 'Ativar o centro de conta e a Account API',
     enable_account_api_description:
-      'Ativa tanto a Account API voltada ao usuário final quanto o centro de contas pronto para uso da Logto. Quando desativado, ambos os recursos ficam indisponíveis.',
+      'Ativa tanto a Account API voltada ao usuário final quanto o centro de contas pronto para uso da GetCertus. Quando desativado, ambos os recursos ficam indisponíveis.',
     field_options: {
       off: 'Desativado',
       edit: 'Editar',

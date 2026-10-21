@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+1 555-123-4567',
   test_message_sent: 'تم إرسال رسالة الاختبار',
   test_sender_description:
-    'يستخدم Logto القالب "العام" للفحص. ستتلقى رسالة إذا تم تكوين الموصل الخاص بك بشكل صحيح.',
+    'يستخدم GetCertus القالب "العام" للفحص. ستتلقى رسالة إذا تم تكوين الموصل الخاص بك بشكل صحيح.',
   options_change_email: 'تغيير موصل البريد الإلكتروني',
   options_change_sms: 'تغيير موصل الرسائل القصيرة',
   connector_deleted: 'تم حذف الموصل بنجاح',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'إجمالي البريد الإلكتروني المرسل: {{value, number}}',
     total_email_sent_tip:
-      'يستخدم Logto SendGrid للبريد الإلكتروني المدمج الآمن والمستقر. إنه مجاني تمامًا للاستخدام. <a>تعرف على المزيد</a>',
+      'يستخدم GetCertus SendGrid للبريد الإلكتروني المدمج الآمن والمستقر. إنه مجاني تمامًا للاستخدام. <a>تعرف على المزيد</a>',
     hosted_email_usage: {
       daily: 'يومي <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'يومي <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'تتضمن خطتا Free و Development حدودًا يومية وشهرية لخدمة البريد الإلكتروني المدمجة.',
       banner: {
         approaching:
-          'أنت تقترب من حد إرسال خدمة البريد الإلكتروني المدمجة من Logto. <provider>قم بتوصيل مزود البريد الإلكتروني الخاص بك</provider> أو <upgrade>قم بترقية خطتك</upgrade> لمواصلة استخدام خدمة البريد الإلكتروني المدمجة من Logto.',
+          'أنت تقترب من حد إرسال خدمة البريد الإلكتروني المدمجة من GetCertus. <provider>قم بتوصيل مزود البريد الإلكتروني الخاص بك</provider> أو <upgrade>قم بترقية خطتك</upgrade> لمواصلة استخدام خدمة البريد الإلكتروني المدمجة من GetCertus.',
         reached:
-          'لقد وصلت إلى حد إرسال خدمة البريد الإلكتروني المدمجة من Logto، مما قد يعطل رسائل تسجيل الدخول. <provider>قم بتوصيل مزود البريد الإلكتروني الخاص بك</provider> أو <upgrade>قم بترقية خطتك</upgrade> لمواصلة استخدام خدمة البريد الإلكتروني المدمجة من Logto.',
+          'لقد وصلت إلى حد إرسال خدمة البريد الإلكتروني المدمجة من GetCertus، مما قد يعطل رسائل تسجيل الدخول. <provider>قم بتوصيل مزود البريد الإلكتروني الخاص بك</provider> أو <upgrade>قم بترقية خطتك</upgrade> لمواصلة استخدام خدمة البريد الإلكتروني المدمجة من GetCertus.',
       },
     },
     email_template_title: 'قالب البريد الإلكتروني',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'عرض شعار العلامة التجارية الخاصة بك في أعلى الرسائل الإلكترونية. استخدم نفس الصورة لكل من وضع الضوء الفاتح ووضع الضوء الداكن.',
     urls_not_allowed: 'غير مسموح بالروابط',
-    test_notes: 'يستخدم Logto القالب "العام" للفحص.',
+    test_notes: 'يستخدم GetCertus القالب "العام" للفحص.',
   },
   google_one_tap: {
     title: 'Google One Tap',

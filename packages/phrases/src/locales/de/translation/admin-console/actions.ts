@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Führe benutzerdefinierten Code an bestimmten Punkten im Authentifizierungsablauf aus, um das Verhalten von Logto zu erweitern.',
+    'Führe benutzerdefinierten Code an bestimmten Punkten im Authentifizierungsablauf aus, um das Verhalten von GetCertus zu erweitern.',
   status: {
     not_configured: 'Nicht konfiguriert',
     configured: 'Konfiguriert',
@@ -30,7 +30,7 @@ const actions = {
   },
   result_data: {
     title: 'Aktionsergebnis',
-    subtitle: 'Gib ein Ergebnisobjekt zurück, das Logto für diesen Aktionstyp versteht.',
+    subtitle: 'Gib ein Ergebnisobjekt zurück, das GetCertus für diesen Aktionstyp versteht.',
   },
   environment_variables: {
     title: 'Umgebungsvariablen festlegen',
@@ -54,11 +54,11 @@ const actions = {
     on_execution_error: {
       title: 'Bei Skriptfehler',
       description:
-        'Wähle, wie sich Logto verhalten soll, wenn das Skript zur Laufzeit fehlschlägt.',
+        'Wähle, wie sich GetCertus verhalten soll, wenn das Skript zur Laufzeit fehlschlägt.',
       block: 'Authentifizierungsablauf blockieren',
       allow: 'Authentifizierungsablauf fortsetzen lassen',
       post_first_factor_description:
-        'Wenn dieses Skript fehlschlägt, lehnt Logto ungültige Anmeldedaten immer ab, damit die Passwortprüfung nicht umgangen werden kann.',
+        'Wenn dieses Skript fehlschlägt, lehnt GetCertus ungültige Anmeldedaten immer ab, damit die Passwortprüfung nicht umgangen werden kann.',
     },
   },
   test_context: {
@@ -80,12 +80,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Skripte laufen mit Serverrechten',
     description:
-      'Bei selbst gehostetem Logto läuft dieses Skript in derselben Umgebung wie Logto selbst: Es kann Server-Umgebungsvariablen lesen und Dienste in deinem internen Netzwerk erreichen. Es ist nicht sandboxed. Gib nur Personen Zugriff auf diese Seite, denen du auch Zugriff auf den Server anvertrauen würdest. Diese Aktion wird nur ausgeführt, nachdem die lokale Passwortüberprüfung fehlgeschlagen ist — gib `passwordVerified: true` erst zurück, nachdem das übermittelte Passwort unabhängig überprüft wurde. Durch diese Aktion bereitgestellte Benutzer umgehen nur für die Registrierung geltende Schutzmaßnahmen, einschließlich E-Mail-Blockliste, SSO-only-Domain, deaktiviertem Anmeldemodus und Pflichtprofilprüfungen bei der Registrierung. Profil- und Passwortänderungen bestehender Benutzer erfolgen außerdem, bevor MFA abgeschlossen ist.',
+      'Bei selbst gehostetem GetCertus läuft dieses Skript in derselben Umgebung wie GetCertus selbst: Es kann Server-Umgebungsvariablen lesen und Dienste in deinem internen Netzwerk erreichen. Es ist nicht sandboxed. Gib nur Personen Zugriff auf diese Seite, denen du auch Zugriff auf den Server anvertrauen würdest. Diese Aktion wird nur ausgeführt, nachdem die lokale Passwortüberprüfung fehlgeschlagen ist — gib `passwordVerified: true` erst zurück, nachdem das übermittelte Passwort unabhängig überprüft wurde. Durch diese Aktion bereitgestellte Benutzer umgehen nur für die Registrierung geltende Schutzmaßnahmen, einschließlich E-Mail-Blockliste, SSO-only-Domain, deaktiviertem Anmeldemodus und Pflichtprofilprüfungen bei der Registrierung. Profil- und Passwortänderungen bestehender Benutzer erfolgen außerdem, bevor MFA abgeschlossen ist.',
   },
   sandbox_warning: {
     title: 'Skripte laufen mit Serverrechten',
     description:
-      'Bei selbst gehostetem Logto läuft dieses Skript in derselben Umgebung wie Logto selbst: Es kann Server-Umgebungsvariablen lesen und Dienste in deinem internen Netzwerk erreichen. Es ist nicht sandboxed. Gib nur Personen Zugriff auf diese Seite, denen du auch Zugriff auf den Server anvertrauen würdest.',
+      'Bei selbst gehostetem GetCertus läuft dieses Skript in derselben Umgebung wie GetCertus selbst: Es kann Server-Umgebungsvariablen lesen und Dienste in deinem internen Netzwerk erreichen. Es ist nicht sandboxed. Gib nur Personen Zugriff auf diese Seite, denen du auch Zugriff auf den Server anvertrauen würdest.',
   },
   security_warning: {
     title: 'Sicherheitswarnung',

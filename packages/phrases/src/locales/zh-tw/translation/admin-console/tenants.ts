@@ -14,14 +14,14 @@ const tenants = {
   license: {
     purchase_title: '自託管方案',
     purchase_description:
-      '自託管專業方案與企業方案可在你自己的執行個體上解鎖付費功能，例如隱藏 Logto 品牌標誌、使用自訂 UI、主控台多人協作以及不限數量的 SAML 應用。購買方案即可取得授權金鑰。',
+      '自託管專業方案與企業方案可在你自己的執行個體上解鎖付費功能，例如隱藏 GetCertus 品牌標誌、使用自訂 UI、主控台多人協作以及不限數量的 SAML 應用。購買方案即可取得授權金鑰。',
     purchase_button: '查看自託管方案',
     install_title: '安裝授權',
     install_description: '貼上你購買自託管方案後取得的授權金鑰。',
     install_button: '安裝授權',
     key_field: '授權金鑰',
     key_field_description:
-      '金鑰會在你的執行個體上驗證，不會離開執行個體。如果現有金鑰已過期，請聯絡 Logto 取得新的金鑰。',
+      '金鑰會在你的執行個體上驗證，不會離開執行個體。如果現有金鑰已過期，請聯絡 GetCertus 取得新的金鑰。',
     key_placeholder: '在此貼上你的授權金鑰',
     installed_toast: '授權安裝成功。',
     details_title: '授權',
@@ -35,7 +35,7 @@ const tenants = {
     last_refreshed_at_field: '上次更新時間',
     grace_ends_at_field: '寬限期結束日期',
     refresh_expired_description:
-      '授權金鑰已於 {{expiresAt}} 到期。Logto 嘗試更新金鑰期間，授權功能仍可使用至 {{graceEndsAt}}。',
+      '授權金鑰已於 {{expiresAt}} 到期。GetCertus 嘗試更新金鑰期間，授權功能仍可使用至 {{graceEndsAt}}。',
     refresh_refused_description:
       '授權更新被拒絕，因為授權已{{reason}}。授權功能仍可使用至 {{graceEndsAt}}。',
     refusal_reason_canceled: '取消',
@@ -44,14 +44,14 @@ const tenants = {
     refusal_reason_revoked: '撤銷',
     refusal_reason_unknown: '不可用',
     grace_expired_description:
-      '授權寬限期已於 {{graceEndsAt}} 結束。此執行個體已恢復為 OSS 預設值。請聯絡 Logto 取得新的授權金鑰並重新安裝。',
+      '授權寬限期已於 {{graceEndsAt}} 結束。此執行個體已恢復為 OSS 預設值。請聯絡 GetCertus 取得新的授權金鑰並重新安裝。',
     get_fresh_key_button: '取得新的授權金鑰',
     replace_button: '更換授權',
   },
   members: {
-    card_title: '透過 Logto Cloud 更安全地管理租戶',
+    card_title: '透過 GetCertus Cloud 更安全地管理租戶',
     card_description: '無需共用單一管理員帳號，也能為你的租戶新增管理員或協作者。',
-    card_action: '探索 Logto Cloud',
+    card_action: '探索 GetCertus Cloud',
     self_hosted_card_title: '透過自託管方案更安全地管理租戶',
     self_hosted_card_description: '無需共用單一管理員帳號，也能為你的租戶新增管理員或協作者。',
     self_hosted_card_action: '探索自託管方案',
@@ -63,7 +63,7 @@ const tenants = {
     tenant_name: '租戶名稱',
     tenant_instance: '選擇你的實例',
     tenant_instance_description:
-      '選擇租戶將托管的位置。選擇 Logto Cloud 的公共共享基礎設施，或選擇專用實例以獲得專屬資源。',
+      '選擇租戶將托管的位置。選擇 GetCertus Cloud 的公共共享基礎設施，或選擇專用實例以獲得專屬資源。',
     tenant_region: '資料托管地區',
     tenant_region_description: '您的租戶資源（使用者、應用程式等）所在的實體位置。建立後無法更改。',
     tenant_region_tip: '您的租戶資源托管於 {{region}}。 <a>了解更多</a>',
@@ -86,7 +86,7 @@ const tenants = {
     tenant_mfa_setup_action: '設定 MFA',
     enterprise_sso: '企業 SSO',
     enterprise_sso_description:
-      '僅限付費方案。聯繫我們啟用企業 SSO，讓所有成員可以使用您組織的身分提供者登入 Logto Cloud 控制台。',
+      '僅限付費方案。聯繫我們啟用企業 SSO，讓所有成員可以使用您組織的身分提供者登入 GetCertus Cloud 控制台。',
   },
   full_env_tag: {
     development: '開發',
@@ -121,7 +121,7 @@ const tenants = {
     tenant_type_description: '這一點在建立後無法更改。',
     tenant_id_invalid: '租戶 ID 只能包含小寫字母、數字和連字符，且不能超過 {{max}} 個字元。',
     tenant_id_placeholder: '你的租戶 ID',
-    tenant_id_tip: '自訂租戶 ID。如果留空，Logto 將產生預設 ID。租戶 ID 在建立後無法更改。',
+    tenant_id_tip: '自訂租戶 ID。如果留空，GetCertus 將產生預設 ID。租戶 ID 在建立後無法更改。',
   },
   dev_tenant_migration: {
     title: '您現在可以通過創建新的 "開發租戶" 免費試用我們的專業功能！',
@@ -152,7 +152,7 @@ const tenants = {
   tenant_landing_page: {
     title: '您尚未建立租戶',
     description:
-      '要開始使用 Logto 配置您的項目，請創建一個新租戶。如果您需要登出或刪除您的帳戶，只需點擊右上角的頭像按鈕。',
+      '要開始使用 GetCertus 配置您的項目，請創建一個新租戶。如果您需要登出或刪除您的帳戶，只需點擊右上角的頭像按鈕。',
     create_tenant_button: '創建租戶',
   },
   status: {

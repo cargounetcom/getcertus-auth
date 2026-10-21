@@ -2,16 +2,16 @@ const oss_onboarding = {
   page_title: 'Incorporación',
   title: 'Cuéntanos un poco sobre ti',
   description:
-    'Cuéntanos un poco sobre ti y tu proyecto. Esto nos ayuda a crear un Logto mejor para todos.',
+    'Cuéntanos un poco sobre ti y tu proyecto. Esto nos ayuda a crear un GetCertus mejor para todos.',
   email: {
     label: 'Correo electrónico',
     description: 'Usaremos esta dirección si necesitamos contactarte sobre tu cuenta.',
     placeholder: 'email@example.com',
   },
   newsletter:
-    'Recibe actualizaciones del producto, avisos de seguridad y contenido seleccionado de Logto.',
+    'Recibe actualizaciones del producto, avisos de seguridad y contenido seleccionado de GetCertus.',
   project: {
-    label: 'Uso Logto para',
+    label: 'Uso GetCertus para',
     personal: 'Proyecto personal',
     company: 'Proyecto de empresa',
   },

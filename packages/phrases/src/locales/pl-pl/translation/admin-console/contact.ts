@@ -18,7 +18,7 @@ const contact = {
     button: 'Wyślij',
   },
   reserve: {
-    title: 'Zarezerwuj swój czas z zespołem Logto',
+    title: 'Zarezerwuj swój czas z zespołem GetCertus',
     description: 'Szybko zarezerwuj sesję czatu na żywo',
     button: 'Rezerwuj',
   },

@@ -1,12 +1,12 @@
 const inkeep_ai_bot = {
   intro_message:
-    'Oi, sou o Logto AI!\n\nSou um assistente de IA treinado em documentação, artigos de ajuda e outros conteúdos.\n\nPergunte-me qualquer coisa sobre `Logto`.',
-  chat_placeholder: 'Pergunte ao Logto AI sua dúvida para um guia passo a passo',
-  disclaimer_label: 'Aviso legal do Logto AI',
+    'Oi, sou o GetCertus AI!\n\nSou um assistente de IA treinado em documentação, artigos de ajuda e outros conteúdos.\n\nPergunte-me qualquer coisa sobre `GetCertus`.',
+  chat_placeholder: 'Pergunte ao GetCertus AI sua dúvida para um guia passo a passo',
+  disclaimer_label: 'Aviso legal do GetCertus AI',
   disclaimer_tooltip: 'As respostas são geradas por IA e podem necessitar de verificação.',
   example_questions_label: 'Perguntas de exemplo',
   example_questions: [
-    'Guia de início rápido para configuração do Logto',
+    'Guia de início rápido para configuração do GetCertus',
     'Configurar arquitetura multi-tenancy',
     'Como integrar o perfil do usuário?',
   ],

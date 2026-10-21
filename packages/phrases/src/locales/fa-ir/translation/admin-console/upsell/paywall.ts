@@ -44,8 +44,8 @@ const paywall = {
   saml_applications_oss:
     'اپلیکیشن SAML اضافی با پلن Enterprise لاگتو در دسترس است. اگر به کمک نیاز دارید با ما تماس بگیرید.',
   saml_applications_oss_limit_notice:
-    'نمونه متن‌باز شما تا {{limit}} اپلیکیشن SAML را پشتیبانی می‌کند. برای افزودن اپلیکیشن‌های بیشتر، <selfHostedPlans>پلن‌های خودمیزبان</selfHostedPlans> را بررسی کنید یا از Logto Cloud استفاده کنید.',
-  logto_pricing_button_text: 'قیمت‌گذاری Logto Cloud',
+    'نمونه متن‌باز شما تا {{limit}} اپلیکیشن SAML را پشتیبانی می‌کند. برای افزودن اپلیکیشن‌های بیشتر، <selfHostedPlans>پلن‌های خودمیزبان</selfHostedPlans> را بررسی کنید یا از GetCertus Cloud استفاده کنید.',
+  logto_pricing_button_text: 'قیمت‌گذاری GetCertus Cloud',
   saml_applications:
     'اپلیکیشن SAML اضافی با پلن Enterprise لاگتو در دسترس است. اگر به کمک نیاز دارید با ما تماس بگیرید.',
   saml_applications_add_on:

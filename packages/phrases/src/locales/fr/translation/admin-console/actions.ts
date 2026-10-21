@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Exécutez du code personnalisé à des étapes précises du flux d’authentification pour étendre le comportement de Logto.',
+    'Exécutez du code personnalisé à des étapes précises du flux d’authentification pour étendre le comportement de GetCertus.',
   status: {
     not_configured: 'Non configuré',
     configured: 'Configuré',
@@ -31,7 +31,7 @@ const actions = {
   },
   result_data: {
     title: 'Résultat de l’action',
-    subtitle: 'Renvoyez un objet de résultat que Logto comprend pour ce type d’action.',
+    subtitle: 'Renvoyez un objet de résultat que GetCertus comprend pour ce type d’action.',
   },
   environment_variables: {
     title: 'Définir les variables d’environnement',
@@ -55,11 +55,11 @@ const actions = {
     },
     on_execution_error: {
       title: 'En cas d’erreur du script',
-      description: 'Choisissez le comportement de Logto lorsque le script échoue à l’exécution.',
+      description: 'Choisissez le comportement de GetCertus lorsque le script échoue à l’exécution.',
       block: 'Bloquer le flux d’authentification',
       allow: 'Autoriser la poursuite du flux d’authentification',
       post_first_factor_description:
-        'Lorsque ce script échoue, Logto rejette toujours les identifiants invalides afin que la vérification du mot de passe ne puisse pas être contournée.',
+        'Lorsque ce script échoue, GetCertus rejette toujours les identifiants invalides afin que la vérification du mot de passe ne puisse pas être contournée.',
     },
   },
   test_context: {
@@ -81,12 +81,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Les scripts s’exécutent avec les privilèges du serveur',
     description:
-      'Sur Logto auto-hébergé, ce script s’exécute dans le même environnement que Logto lui-même : il peut lire les variables d’environnement du serveur et atteindre les services de votre réseau interne. Il n’est pas isolé dans un bac à sable. N’accordez l’accès à cette page qu’aux personnes auxquelles vous feriez confiance pour accéder au serveur. Cette action s’exécute uniquement après l’échec de la vérification du mot de passe local — ne renvoyez `passwordVerified: true` qu’après avoir vérifié indépendamment le mot de passe soumis. Les utilisateurs provisionnés par cette action contournent les protections réservées à l’inscription, y compris la liste de blocage des e-mails, le domaine SSO uniquement, le mode inscription désactivée et les contrôles de profil obligatoire à l’inscription. Les écritures de profil et de mot de passe des utilisateurs existants se produisent aussi avant la fin de la MFA.',
+      'Sur GetCertus auto-hébergé, ce script s’exécute dans le même environnement que GetCertus lui-même : il peut lire les variables d’environnement du serveur et atteindre les services de votre réseau interne. Il n’est pas isolé dans un bac à sable. N’accordez l’accès à cette page qu’aux personnes auxquelles vous feriez confiance pour accéder au serveur. Cette action s’exécute uniquement après l’échec de la vérification du mot de passe local — ne renvoyez `passwordVerified: true` qu’après avoir vérifié indépendamment le mot de passe soumis. Les utilisateurs provisionnés par cette action contournent les protections réservées à l’inscription, y compris la liste de blocage des e-mails, le domaine SSO uniquement, le mode inscription désactivée et les contrôles de profil obligatoire à l’inscription. Les écritures de profil et de mot de passe des utilisateurs existants se produisent aussi avant la fin de la MFA.',
   },
   sandbox_warning: {
     title: 'Les scripts s’exécutent avec les privilèges du serveur',
     description:
-      'Sur Logto auto-hébergé, ce script s’exécute dans le même environnement que Logto lui-même : il peut lire les variables d’environnement du serveur et atteindre les services de votre réseau interne. Il n’est pas isolé dans un bac à sable. N’accordez l’accès à cette page qu’aux personnes auxquelles vous feriez confiance pour accéder au serveur.',
+      'Sur GetCertus auto-hébergé, ce script s’exécute dans le même environnement que GetCertus lui-même : il peut lire les variables d’environnement du serveur et atteindre les services de votre réseau interne. Il n’est pas isolé dans un bac à sable. N’accordez l’accès à cette page qu’aux personnes auxquelles vous feriez confiance pour accéder au serveur.',
   },
   security_warning: {
     title: 'Avertissement de sécurité',

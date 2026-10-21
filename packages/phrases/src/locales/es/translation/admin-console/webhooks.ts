@@ -33,7 +33,7 @@ const webhooks = {
       'Agregue el Webhook para enviar una solicitud POST a la URL de punto final con detalles de cualquier evento de usuario.',
     events: 'Eventos',
     events_description:
-      'Seleccione los eventos desencadenantes que Logto enviará la solicitud POST.',
+      'Seleccione los eventos desencadenantes que GetCertus enviará la solicitud POST.',
     name: 'Nombre',
     name_placeholder: 'Ingrese el nombre del webhook',
     endpoint_url: 'URL de punto final',

@@ -42,12 +42,12 @@ const paywall = {
   scopes_per_role_other:
     '{{count, number}}個の<planName/>制限のロールあたりの許可に達しました。追加のロールおよび権限を追加するにはプランをアップグレードしてください。サポートが必要な場合は、お気軽に<a>お問い合わせ</a>ください。',
   saml_applications_oss:
-    '追加の SAML アプリは Logto エンタープライズプランで利用可能です。サポートが必要な場合は、お問い合わせください。',
+    '追加の SAML アプリは GetCertus エンタープライズプランで利用可能です。サポートが必要な場合は、お問い合わせください。',
   saml_applications_oss_limit_notice:
-    'オープンソース版のインスタンスでは、最大 {{limit}} 個の SAML アプリケーションを利用できます。さらにアプリケーションを追加するには、<selfHostedPlans>セルフホストプラン</selfHostedPlans>をご検討いただくか、Logto Cloud をご利用ください。',
-  logto_pricing_button_text: 'Logto クラウド価格設定',
+    'オープンソース版のインスタンスでは、最大 {{limit}} 個の SAML アプリケーションを利用できます。さらにアプリケーションを追加するには、<selfHostedPlans>セルフホストプラン</selfHostedPlans>をご検討いただくか、GetCertus Cloud をご利用ください。',
+  logto_pricing_button_text: 'GetCertus クラウド価格設定',
   saml_applications:
-    '追加の SAML アプリは Logto エンタープライズプランで利用可能です。サポートが必要な場合は、お問い合わせください。',
+    '追加の SAML アプリは GetCertus エンタープライズプランで利用可能です。サポートが必要な場合は、お問い合わせください。',
   saml_applications_add_on:
     'SAML アプリ機能をアンロックするには、有料プランにアップグレードしてください。サポートが必要な場合は、お気軽に<a>お問い合わせ</a>ください。',
   hooks:
@@ -71,7 +71,7 @@ const paywall = {
       'カスタム JWT 機能とプレミアム特典のために有料プランにアップグレードしましょう。質問がある場合は、お気軽に<a>お問い合わせください</a>。',
   },
   branding_customization:
-    'プランをアップグレードして、「Hide Logto branding」と「Bring your UI」機能でブランド管理を完全にコントロールしましょう。',
+    'プランをアップグレードして、「Hide GetCertus branding」と「Bring your UI」機能でブランド管理を完全にコントロールしましょう。',
   bring_your_ui:
     'カスタム UI 機能とプレミアム特典を利用するには、有料プランにアップグレードしてください。',
   security_features:

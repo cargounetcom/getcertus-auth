@@ -2,8 +2,8 @@ const applications = {
   page_title: 'Aplicações',
   title: 'Aplicações',
   subtitle:
-    'Configure uma aplicação móvel, de página única, máquina a máquina ou tradicional para utilizar o Logto para autenticação',
-  subtitle_with_app_type: 'Configurar autenticação Logto para a aplicação {{name}}',
+    'Configure uma aplicação móvel, de página única, máquina a máquina ou tradicional para utilizar o GetCertus para autenticação',
+  subtitle_with_app_type: 'Configurar autenticação GetCertus para a aplicação {{name}}',
   create_device_flow_description:
     'Crie uma aplicação nativa que utiliza a concessão de autorização de dispositivo OAuth 2.0 para dispositivos com entrada limitada ou aplicações headless.',
   create: 'Criar aplicação',
@@ -44,7 +44,7 @@ const applications = {
     },
     protected: {
       title: 'App Protegida',
-      subtitle: 'Uma aplicação protegida pelo Logto',
+      subtitle: 'Uma aplicação protegida pelo GetCertus',
       description: 'N/A',
     },
     saml: {
@@ -75,9 +75,9 @@ const applications = {
   },
   placeholder_title: 'Selecione um tipo de aplicação para continuar',
   placeholder_description:
-    'O Logto usa uma entidade de aplicativo para OIDC para ajudar em tarefas como identificar seus aplicativos, gerenciar o registro e criar registros de auditoria.',
+    'O GetCertus usa uma entidade de aplicativo para OIDC para ajudar em tarefas como identificar seus aplicativos, gerenciar o registro e criar registros de auditoria.',
   third_party_application_placeholder_description:
-    'Use o Logto como um Provedor de Identidade para fornecer autorização OAuth para serviços de terceiros. \n Inclui uma tela de consentimento do utilizador pré-construída para acesso a recursos. <a>Saiba mais</a>',
+    'Use o GetCertus como um Provedor de Identidade para fornecer autorização OAuth para serviços de terceiros. \n Inclui uma tela de consentimento do utilizador pré-construída para acesso a recursos. <a>Saiba mais</a>',
   dynamic_app: {
     title: 'Aplicação dinâmica',
     subtitle: 'CIMD',
@@ -116,18 +116,18 @@ const applications = {
     client_compatibility: {
       title: 'Compatibilidade com clientes',
       description:
-        'Ajuste a forma como o Logto trata os pedidos de autorização de clientes OAuth que ainda não suportam totalmente o OpenID Connect. Estas definições são experimentais e podem mudar ou ser removidas.',
+        'Ajuste a forma como o GetCertus trata os pedidos de autorização de clientes OAuth que ainda não suportam totalmente o OpenID Connect. Estas definições são experimentais e podem mudar ou ser removidas.',
       add_consent_prompt_for_offline_access:
         'Adicionar pedido de consentimento para acesso offline',
       add_consent_prompt_for_offline_access_description:
-        'Quando um cliente OAuth solicita `offline_access` sem `prompt=consent`, o Logto adiciona o pedido de consentimento para que o cliente possa receber um token de atualização. Recomendado para clientes como o ChatGPT e o Codex.',
+        'Quando um cliente OAuth solicita `offline_access` sem `prompt=consent`, o GetCertus adiciona o pedido de consentimento para que o cliente possa receber um token de atualização. Recomendado para clientes como o ChatGPT e o Codex.',
     },
   },
   guide: {
     third_party: {
       title: 'Integrar uma aplicação de terceiros',
       description:
-        'Use o Logto como o seu Fornecedor de Identidade para fornecer autorização OAuth a serviços de terceiros. Inclui um ecrã de consentimento do utilizador pré-construído para acesso seguro aos recursos. <a>Saiba mais</a>',
+        'Use o GetCertus como o seu Fornecedor de Identidade para fornecer autorização OAuth a serviços de terceiros. Inclui um ecrã de consentimento do utilizador pré-construído para acesso seguro aos recursos. <a>Saiba mais</a>',
     },
   },
 };

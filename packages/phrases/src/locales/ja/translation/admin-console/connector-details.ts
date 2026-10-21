@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+1 555-123-4567',
   test_message_sent: 'テストメッセージが送信されました',
   test_sender_description:
-    'Logto はテストのために「共通」テンプレートを使用しています。コネクタが正しく構成されている場合、メッセージを受信します。',
+    'GetCertus はテストのために「共通」テンプレートを使用しています。コネクタが正しく構成されている場合、メッセージを受信します。',
   options_change_email: 'メールコネクタの変更',
   options_change_sms: 'SMS コネクタの変更',
   connector_deleted: 'コネクタが正常に削除されました',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: '総送信数: {{value, number}}',
     total_email_sent_tip:
-      'Logto はセキュアかつ安定した組み込みメールのために SendGrid を利用しています。完全に無料です。<a>詳細を見る</a>',
+      'GetCertus はセキュアかつ安定した組み込みメールのために SendGrid を利用しています。完全に無料です。<a>詳細を見る</a>',
     hosted_email_usage: {
       daily: '日次 <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: '日次 <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: 'Free および Development プランには、組み込みメールサービスの日次および月次の上限が含まれます。',
       banner: {
         approaching:
-          'Logto の組み込みメールサービスの送信上限に近づいています。Logto の組み込みメールサービスを引き続き使用するには、<provider>独自のメールプロバイダーを接続</provider>するか、<upgrade>プランをアップグレード</upgrade>してください。',
+          'GetCertus の組み込みメールサービスの送信上限に近づいています。GetCertus の組み込みメールサービスを引き続き使用するには、<provider>独自のメールプロバイダーを接続</provider>するか、<upgrade>プランをアップグレード</upgrade>してください。',
         reached:
-          'Logto の組み込みメールサービスの送信上限に達しました。サインインメールが中断される可能性があります。Logto の組み込みメールサービスを引き続き使用するには、<provider>独自のメールプロバイダーを接続</provider>するか、<upgrade>プランをアップグレード</upgrade>してください。',
+          'GetCertus の組み込みメールサービスの送信上限に達しました。サインインメールが中断される可能性があります。GetCertus の組み込みメールサービスを引き続き使用するには、<provider>独自のメールプロバイダーを接続</provider>するか、<upgrade>プランをアップグレード</upgrade>してください。',
       },
     },
     email_template_title: 'メールテンプレート',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'メールの上部にブランドロゴを表示します。ライトモードとダークモードの両方で同じ画像を使用します。',
     urls_not_allowed: 'URLは許可されません',
-    test_notes: 'Logto はテストのために「共通」テンプレートを使用しています。',
+    test_notes: 'GetCertus はテストのために「共通」テンプレートを使用しています。',
   },
   google_one_tap: {
     title: 'Google ワンタップ',

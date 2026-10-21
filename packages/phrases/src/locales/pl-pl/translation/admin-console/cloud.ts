@@ -37,7 +37,7 @@ const cloud = {
     create: 'Dodaj konektor',
     title: 'SSO konsoli',
     description:
-      'Skonfiguruj własnego dostawcę tożsamości, aby logować się do Logto Console za pomocą jednokrotnego logowania.',
+      'Skonfiguruj własnego dostawcę tożsamości, aby logować się do GetCertus Console za pomocą jednokrotnego logowania.',
     domain_bound: 'Powiązana',
     domain_pending: 'Weryfikowanie',
     domain_verify_step: 'Zweryfikuj domenę',
@@ -72,17 +72,17 @@ const cloud = {
     page_title: 'Utwórz najemcę',
     title: 'Utwórz swojego pierwszego najemcę',
     description:
-      'Najemca to odizolowane środowisko, w którym możesz zarządzać tożsamościami użytkowników, aplikacjami i wszystkimi innymi zasobami Logto.',
+      'Najemca to odizolowane środowisko, w którym możesz zarządzać tożsamościami użytkowników, aplikacjami i wszystkimi innymi zasobami GetCertus.',
     invite_collaborators: 'Zaproś swoich współpracowników za pomocą e-maila',
     hear_about_us: {
-      title: 'Jak po raz pierwszy dowiedziałeś się o Logto?',
+      title: 'Jak po raz pierwszy dowiedziałeś się o GetCertus?',
       detail_placeholder: 'Powiedz nam więcej (opcjonalnie)',
       options: {
         search_engine: 'Wyszukiwarka (Google, Bing...)',
         ai_assistant: 'Asystent AI (ChatGPT, Claude, Gemini...)',
         github_oss: 'GitHub lub katalogi open source',
         friend_colleague: 'Znajomy lub współpracownik',
-        powered_by: 'Strona logowania aplikacji korzystającej z Logto',
+        powered_by: 'Strona logowania aplikacji korzystającej z GetCertus',
         content_social: 'Media społecznościowe, artykuł lub wideo (YouTube, X, Reddit...)',
         other: 'Inne',
       },
@@ -91,7 +91,7 @@ const cloud = {
   social_callback: {
     title: 'Zalogowałeś się pomyślnie',
     description:
-      'Zalogowałeś się pomyślnie używając swojego konta społecznościowego. Aby zapewnić bezproblemową integrację i dostęp do wszystkich funkcji Logto, zalecamy przejście do konfiguracji własnego konektora społecznościowego.',
+      'Zalogowałeś się pomyślnie używając swojego konta społecznościowego. Aby zapewnić bezproblemową integrację i dostęp do wszystkich funkcji GetCertus, zalecamy przejście do konfiguracji własnego konektora społecznościowego.',
     notice:
       'Prosimy unikać używania łącznika demo do celów produkcyjnych. Po zakończeniu testowania, uprzejmie prosimy o usunięcie łącznika demo i skonfigurowanie własnego łącznika przy użyciu swoich danych uwierzytelniających.',
   },

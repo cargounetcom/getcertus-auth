@@ -108,7 +108,7 @@ const jwt_claims = {
   sandbox_warning: {
     title: 'Os scripts são executados com privilégios do servidor',
     description:
-      'No Logto self-hosted, este script é executado no mesmo ambiente que o próprio Logto: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor.',
+      'No GetCertus self-hosted, este script é executado no mesmo ambiente que o próprio GetCertus: pode ler variáveis de ambiente do servidor e alcançar serviços na sua rede interna. Não está em sandbox. Dê acesso a esta página apenas a pessoas a quem confiaria o acesso ao servidor.',
   },
   form_error: {
     invalid_json: 'Formato JSON inválido',

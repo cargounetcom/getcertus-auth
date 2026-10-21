@@ -2,7 +2,7 @@ const applications = {
   page_title: 'التطبيقات',
   title: 'التطبيقات',
   subtitle: 'إنشاء وإدارة التطبيقات للمصادقة بواسطة OIDC.',
-  subtitle_with_app_type: 'قم بإعداد مصادقة Logto لتطبيقك {{name}}',
+  subtitle_with_app_type: 'قم بإعداد مصادقة GetCertus لتطبيقك {{name}}',
   create_device_flow_description:
     'أنشئ تطبيقًا أصليًا يستخدم منح تفويض جهاز OAuth 2.0 للأجهزة ذات الإدخال المحدود أو التطبيقات بدون واجهة.',
   create: 'إنشاء تطبيق',
@@ -44,7 +44,7 @@ const applications = {
     },
     protected: {
       title: 'تطبيق محمي',
-      subtitle: 'تطبيق محمي بواسطة Logto',
+      subtitle: 'تطبيق محمي بواسطة GetCertus',
       description: 'غير متوفر',
     },
     saml: {
@@ -74,9 +74,9 @@ const applications = {
   },
   placeholder_title: 'حدد نوع التطبيق للمتابعة',
   placeholder_description:
-    'يستخدم Logto كيان التطبيق لـ OIDC للمساعدة في مهام مثل تحديد التطبيقات الخاصة بك وإدارة تسجيل الدخول وإنشاء سجلات التدقيق.',
+    'يستخدم GetCertus كيان التطبيق لـ OIDC للمساعدة في مهام مثل تحديد التطبيقات الخاصة بك وإدارة تسجيل الدخول وإنشاء سجلات التدقيق.',
   third_party_application_placeholder_description:
-    'استخدم Logto كمزود هوية لتوفير تفويض OAuth للخدمات الخارجية. \n يتضمن شاشة موافقة المستخدم المُبنية مسبقًا للوصول إلى الموارد. <a>اعرف المزيد</a>',
+    'استخدم GetCertus كمزود هوية لتوفير تفويض OAuth للخدمات الخارجية. \n يتضمن شاشة موافقة المستخدم المُبنية مسبقًا للوصول إلى الموارد. <a>اعرف المزيد</a>',
   dynamic_app: {
     title: 'تطبيق ديناميكي',
     subtitle: 'CIMD',
@@ -114,17 +114,17 @@ const applications = {
     client_compatibility: {
       title: 'توافق العملاء',
       description:
-        'اضبط كيفية تعامل Logto مع طلبات التفويض الواردة من عملاء OAuth التي لا تدعم بعد OpenID Connect بشكل كامل. هذه الإعدادات تجريبية وقد تتغير أو تُزال.',
+        'اضبط كيفية تعامل GetCertus مع طلبات التفويض الواردة من عملاء OAuth التي لا تدعم بعد OpenID Connect بشكل كامل. هذه الإعدادات تجريبية وقد تتغير أو تُزال.',
       add_consent_prompt_for_offline_access: 'إضافة طلب الموافقة للوصول دون اتصال',
       add_consent_prompt_for_offline_access_description:
-        'عندما يطلب عميل OAuth `offline_access` بدون `prompt=consent`، يضيف Logto طلب الموافقة ليتمكن العميل من الحصول على رمز التحديث. يُنصح بتفعيله لعملاء مثل ChatGPT وCodex.',
+        'عندما يطلب عميل OAuth `offline_access` بدون `prompt=consent`، يضيف GetCertus طلب الموافقة ليتمكن العميل من الحصول على رمز التحديث. يُنصح بتفعيله لعملاء مثل ChatGPT وCodex.',
     },
   },
   guide: {
     third_party: {
       title: 'دمج تطبيق جهة خارجية',
       description:
-        'استخدم Logto كمزوّد هوية لتوفير تفويض OAuth لخدمات الجهات الخارجية. يتضمن شاشة موافقة مستخدم مُعدّة مسبقًا للوصول الآمن إلى الموارد. <a>معرفة المزيد</a>',
+        'استخدم GetCertus كمزوّد هوية لتوفير تفويض OAuth لخدمات الجهات الخارجية. يتضمن شاشة موافقة مستخدم مُعدّة مسبقًا للوصول الآمن إلى الموارد. <a>معرفة المزيد</a>',
     },
   },
 };

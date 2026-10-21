@@ -35,7 +35,7 @@ const enterprise_sso = {
       entity_id_field_placeholder: 'urn:your-domain.com:sp:saml:{serviceProviderId}',
       sign_auth_request: 'امضای درخواست احراز هویت',
       sign_auth_request_tooltip:
-        'Logto درخواست‌های احراز هویت SAML را با گواهی تولیدشده امضا می‌کند. فقط در صورتی فعال کنید که ارائه‌دهنده هویت شما برای تأیید درخواست‌های امضاشده پیکربندی شده باشد.',
+        'GetCertus درخواست‌های احراز هویت SAML را با گواهی تولیدشده امضا می‌کند. فقط در صورتی فعال کنید که ارائه‌دهنده هویت شما برای تأیید درخواست‌های امضاشده پیکربندی شده باشد.',
       signing_certificate_field_name: 'گواهی امضای درخواست',
       signing_keys_empty: 'هنوز هیچ کلید امضایی تولید نشده است.',
       generate_signing_key: 'تولید کلید جدید',

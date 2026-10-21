@@ -21,7 +21,7 @@ const connector_details = {
   test_sms_placeholder: '+33 6 12 34 56 78',
   test_message_sent: 'Message de test envoyé',
   test_sender_description:
-    'Logto utilise le modèle "Generic" pour les tests. Tu recevras un message si ton connecteur est correctement configuré.',
+    'GetCertus utilise le modèle "Generic" pour les tests. Tu recevras un message si ton connecteur est correctement configuré.',
   options_change_email: 'Modifier le connecteur Email',
   options_change_sms: 'Changer le connecteur SMS',
   connector_deleted: 'Le connecteur a été supprimé avec succès',
@@ -37,7 +37,7 @@ const connector_details = {
   logto_email: {
     total_email_sent: 'Total email envoyé: {{value, number}}',
     total_email_sent_tip:
-      "Logto utilise SendGrid pour une livraison sécurisée et stable des emails intégrés. C'est totalement gratuit. <a>En savoir plus</a>",
+      "GetCertus utilise SendGrid pour une livraison sécurisée et stable des emails intégrés. C'est totalement gratuit. <a>En savoir plus</a>",
     hosted_email_usage: {
       daily: 'Quotidien <value>{{usage, number}}</value> / {{limit, number}}',
       daily_unlimited: 'Quotidien <value>{{usage, number}}</value>',
@@ -46,9 +46,9 @@ const connector_details = {
       tip: "Les forfaits Free et Development incluent des limites quotidiennes et mensuelles pour le service d'e-mail intégré.",
       banner: {
         approaching:
-          "Vous approchez de la limite d'envoi de votre service d'e-mail intégré Logto. <provider>Connectez votre propre fournisseur d'email</provider> ou <upgrade>mettez à niveau votre forfait</upgrade> pour continuer à utiliser le service d'e-mail intégré Logto.",
+          "Vous approchez de la limite d'envoi de votre service d'e-mail intégré GetCertus. <provider>Connectez votre propre fournisseur d'email</provider> ou <upgrade>mettez à niveau votre forfait</upgrade> pour continuer à utiliser le service d'e-mail intégré GetCertus.",
         reached:
-          "Vous avez atteint la limite d'envoi de votre service d'e-mail intégré Logto, ce qui peut interrompre les emails de connexion. <provider>Connectez votre propre fournisseur d'email</provider> ou <upgrade>mettez à niveau votre forfait</upgrade> pour continuer à utiliser le service d'e-mail intégré Logto.",
+          "Vous avez atteint la limite d'envoi de votre service d'e-mail intégré GetCertus, ce qui peut interrompre les emails de connexion. <provider>Connectez votre propre fournisseur d'email</provider> ou <upgrade>mettez à niveau votre forfait</upgrade> pour continuer à utiliser le service d'e-mail intégré GetCertus.",
       },
     },
     email_template_title: 'Modèle d’email',
@@ -69,7 +69,7 @@ const connector_details = {
     email_logo_tip:
       'Affichez le logo de votre marque en haut des emails. Utilisez la même image pour le mode clair et le mode sombre.',
     urls_not_allowed: 'Les URLs ne sont pas autorisées',
-    test_notes: 'Logto utilise le modèle "Generic" pour les tests.',
+    test_notes: 'GetCertus utilise le modèle "Generic" pour les tests.',
   },
   google_one_tap: {
     title: 'Google One Tap',

@@ -38,7 +38,7 @@ const cloud = {
     create: 'Aggiungi connettore',
     title: 'SSO della console',
     description:
-      'Configura il tuo provider di identità per accedere a Logto Console con il single sign-on.',
+      'Configura il tuo provider di identità per accedere a GetCertus Console con il single sign-on.',
     domain_bound: 'Associato',
     domain_pending: 'Verifica in corso',
     domain_verify_step: 'Verifica il tuo dominio',
@@ -74,17 +74,17 @@ const cloud = {
     page_title: 'Crea tenant',
     title: 'Crea il tuo primo tenant',
     description:
-      'Un tenant è un ambiente isolato in cui puoi gestire identità degli utenti, applicazioni e tutte le altre risorse di Logto.',
+      'Un tenant è un ambiente isolato in cui puoi gestire identità degli utenti, applicazioni e tutte le altre risorse di GetCertus.',
     invite_collaborators: 'Invita i tuoi collaboratori via email',
     hear_about_us: {
-      title: 'Come hai sentito parlare di Logto per la prima volta?',
+      title: 'Come hai sentito parlare di GetCertus per la prima volta?',
       detail_placeholder: 'Raccontaci di più (facoltativo)',
       options: {
         search_engine: 'Motore di ricerca (Google, Bing...)',
         ai_assistant: 'Assistente IA (ChatGPT, Claude, Gemini...)',
         github_oss: 'GitHub o directory open source',
         friend_colleague: 'Un amico o collega',
-        powered_by: "Pagina di accesso di un'app che utilizza Logto",
+        powered_by: "Pagina di accesso di un'app che utilizza GetCertus",
         content_social: 'Social media, articolo o video (YouTube, X, Reddit...)',
         other: 'Altro',
       },
@@ -93,7 +93,7 @@ const cloud = {
   social_callback: {
     title: 'Accesso effettuato con successo',
     description:
-      "Hai effettuato l'accesso con successo utilizzando il tuo account social. Per garantire integrazione senza problemi e accesso a tutte le funzionalità di Logto, ti consigliamo di procedere alla configurazione del tuo connettore social.",
+      "Hai effettuato l'accesso con successo utilizzando il tuo account social. Per garantire integrazione senza problemi e accesso a tutte le funzionalità di GetCertus, ti consigliamo di procedere alla configurazione del tuo connettore social.",
     notice:
       'Evita di utilizzare il connettore demo per scopi di produzione. Una volta completato il test, ti invitiamo a eliminare il connettore demo e a configurare il tuo connettore con le tue credenziali.',
   },

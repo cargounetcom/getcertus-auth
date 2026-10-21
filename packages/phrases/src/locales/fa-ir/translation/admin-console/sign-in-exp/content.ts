@@ -38,9 +38,9 @@ const content = {
     subtitle:
       'با افزودن زبان‌ها و ترجمه‌ها، تجربه محصول را بومی‌سازی کنید. مشارکت شما می‌تواند به عنوان زبان پیش‌فرض تنظیم شود.',
     add_language: 'افزودن زبان',
-    logto_provided: 'ارائه‌شده توسط Logto',
+    logto_provided: 'ارائه‌شده توسط GetCertus',
     key: 'کلید',
-    logto_source_values: 'مقادیر منبع Logto',
+    logto_source_values: 'مقادیر منبع GetCertus',
     custom_values: 'مقادیر سفارشی',
     clear_all_tip: 'پاک کردن همه مقادیر',
     unsaved_description: 'اگر این صفحه را بدون ذخیره ترک کنید، تغییرات ذخیره نخواهند شد.',

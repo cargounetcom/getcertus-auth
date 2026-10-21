@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Esegui codice personalizzato in punti specifici del flusso di autenticazione per estendere il comportamento di Logto.',
+    'Esegui codice personalizzato in punti specifici del flusso di autenticazione per estendere il comportamento di GetCertus.',
   status: {
     not_configured: 'Non configurato',
     configured: 'Configurato',
@@ -30,7 +30,7 @@ const actions = {
   },
   result_data: {
     title: 'Risultato dell’azione',
-    subtitle: 'Restituisci un oggetto risultato che Logto comprende per questo tipo di azione.',
+    subtitle: 'Restituisci un oggetto risultato che GetCertus comprende per questo tipo di azione.',
   },
   environment_variables: {
     title: 'Imposta le variabili d’ambiente',
@@ -53,11 +53,11 @@ const actions = {
     },
     on_execution_error: {
       title: 'In caso di errore dello script',
-      description: 'Scegli come deve comportarsi Logto quando lo script fallisce a runtime.',
+      description: 'Scegli come deve comportarsi GetCertus quando lo script fallisce a runtime.',
       block: 'Blocca il flusso di autenticazione',
       allow: 'Consenti al flusso di autenticazione di continuare',
       post_first_factor_description:
-        'Quando questo script fallisce, Logto rifiuta sempre le credenziali non valide così la verifica della password non può essere aggirata.',
+        'Quando questo script fallisce, GetCertus rifiuta sempre le credenziali non valide così la verifica della password non può essere aggirata.',
     },
   },
   test_context: {
@@ -79,12 +79,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Gli script vengono eseguiti con i privilegi del server',
     description:
-      'Su Logto self-hosted, questo script viene eseguito nello stesso ambiente di Logto: può leggere le variabili d’ambiente del server e raggiungere i servizi della rete interna. Non è sandboxato. Concedi l’accesso a questa pagina solo a persone a cui fidaresti l’accesso al server. Questa azione viene eseguita solo dopo che la verifica della password locale non riesce — restituisci `passwordVerified: true` solo dopo aver verificato in modo indipendente la password inviata. Gli utenti provisionati da questa azione aggirano le protezioni riservate alla registrazione, inclusa la blocklist email, il dominio solo SSO, la modalità registrazione disabilitata e i controlli del profilo obbligatorio in registrazione. Anche le scritture di profilo e password degli utenti esistenti avvengono prima del completamento della MFA.',
+      'Su GetCertus self-hosted, questo script viene eseguito nello stesso ambiente di GetCertus: può leggere le variabili d’ambiente del server e raggiungere i servizi della rete interna. Non è sandboxato. Concedi l’accesso a questa pagina solo a persone a cui fidaresti l’accesso al server. Questa azione viene eseguita solo dopo che la verifica della password locale non riesce — restituisci `passwordVerified: true` solo dopo aver verificato in modo indipendente la password inviata. Gli utenti provisionati da questa azione aggirano le protezioni riservate alla registrazione, inclusa la blocklist email, il dominio solo SSO, la modalità registrazione disabilitata e i controlli del profilo obbligatorio in registrazione. Anche le scritture di profilo e password degli utenti esistenti avvengono prima del completamento della MFA.',
   },
   sandbox_warning: {
     title: 'Gli script vengono eseguiti con i privilegi del server',
     description:
-      'Su Logto self-hosted, questo script viene eseguito nello stesso ambiente di Logto: può leggere le variabili d’ambiente del server e raggiungere i servizi della rete interna. Non è sandboxato. Concedi l’accesso a questa pagina solo a persone a cui fidaresti l’accesso al server.',
+      'Su GetCertus self-hosted, questo script viene eseguito nello stesso ambiente di GetCertus: può leggere le variabili d’ambiente del server e raggiungere i servizi della rete interna. Non è sandboxato. Concedi l’accesso a questa pagina solo a persone a cui fidaresti l’accesso al server.',
   },
   security_warning: {
     title: 'Avviso di sicurezza',

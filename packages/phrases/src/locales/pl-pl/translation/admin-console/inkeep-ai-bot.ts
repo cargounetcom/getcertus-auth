@@ -1,12 +1,12 @@
 const inkeep_ai_bot = {
   intro_message:
-    'Cześć, jestem Logto AI!\n\nJestem asystentem AI szkolonym na dokumentacji, artykułach pomocy i innych treściach.\n\nZapytaj mnie o wszystko związane z `Logto`.',
-  chat_placeholder: 'Zadaj pytanie Logto AI, aby uzyskać przewodnik krok po kroku',
-  disclaimer_label: 'Zastrzeżenie Logto AI',
+    'Cześć, jestem GetCertus AI!\n\nJestem asystentem AI szkolonym na dokumentacji, artykułach pomocy i innych treściach.\n\nZapytaj mnie o wszystko związane z `GetCertus`.',
+  chat_placeholder: 'Zadaj pytanie GetCertus AI, aby uzyskać przewodnik krok po kroku',
+  disclaimer_label: 'Zastrzeżenie GetCertus AI',
   disclaimer_tooltip: 'Odpowiedzi są generowane przez AI i mogą wymagać weryfikacji.',
   example_questions_label: 'Przykładowe pytania',
   example_questions: [
-    'Przewodnik szybkiego startu dla konfiguracji Logto',
+    'Przewodnik szybkiego startu dla konfiguracji GetCertus',
     'Konfiguracja architektury wielojednostkowej',
     'Jak zintegrować profil użytkownika?',
   ],

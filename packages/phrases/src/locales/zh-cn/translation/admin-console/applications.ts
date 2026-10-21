@@ -1,8 +1,8 @@
 const applications = {
   page_title: '全部应用',
   title: '全部应用',
-  subtitle: '创建一个移动、单页、machine-to-machine 或传统 web 应用程序，并通过 Logto 进行身份验证',
-  subtitle_with_app_type: '为你的 {{name}} 应用程序设置 Logto 身份验证',
+  subtitle: '创建一个移动、单页、machine-to-machine 或传统 web 应用程序，并通过 GetCertus 进行身份验证',
+  subtitle_with_app_type: '为你的 {{name}} 应用程序设置 GetCertus 身份验证',
   create_device_flow_description:
     '创建一个使用 OAuth 2.0 设备授权许可的原生应用，适用于输入受限设备或无头应用。',
   create: '创建应用',
@@ -43,7 +43,7 @@ const applications = {
     },
     protected: {
       title: '受保护的应用',
-      subtitle: '受 Logto 保护的应用程序',
+      subtitle: '受 GetCertus 保护的应用程序',
       description: 'N/A',
     },
     saml: {
@@ -72,9 +72,9 @@ const applications = {
   },
   placeholder_title: '选择应用程序类型以继续',
   placeholder_description:
-    'Logto 使用 OIDC 的应用程序实体来帮助识别你的应用程序、管理登录和创建审计日志等任务。',
+    'GetCertus 使用 OIDC 的应用程序实体来帮助识别你的应用程序、管理登录和创建审计日志等任务。',
   third_party_application_placeholder_description:
-    '使用 Logto 作为身份提供者为第三方服务提供 OAuth 授权。\n 包括资源访问的预建用户同意屏幕。<a>了解更多</a>',
+    '使用 GetCertus 作为身份提供者为第三方服务提供 OAuth 授权。\n 包括资源访问的预建用户同意屏幕。<a>了解更多</a>',
   dynamic_app: {
     title: '动态应用',
     subtitle: 'CIMD',
@@ -111,17 +111,17 @@ const applications = {
     client_compatibility: {
       title: '客户端兼容性',
       description:
-        '针对尚未完整支持 OpenID Connect 的 OAuth 客户端，调整 Logto 处理其授权请求的方式。这些设置处于实验阶段，可能会变更或被移除。',
+        '针对尚未完整支持 OpenID Connect 的 OAuth 客户端，调整 GetCertus 处理其授权请求的方式。这些设置处于实验阶段，可能会变更或被移除。',
       add_consent_prompt_for_offline_access: '为离线访问添加同意提示',
       add_consent_prompt_for_offline_access_description:
-        '当 OAuth 客户端请求 `offline_access` 但未携带 `prompt=consent` 时，Logto 会添加同意提示，以便客户端获得刷新令牌。建议在接入 ChatGPT、Codex 等客户端时开启。',
+        '当 OAuth 客户端请求 `offline_access` 但未携带 `prompt=consent` 时，GetCertus 会添加同意提示，以便客户端获得刷新令牌。建议在接入 ChatGPT、Codex 等客户端时开启。',
     },
   },
   guide: {
     third_party: {
       title: '集成第三方应用',
       description:
-        '使用 Logto 作为身份提供者为第三方服务提供 OAuth 授权。包含用于安全资源访问的预建用户同意屏幕。<a>了解更多</a>',
+        '使用 GetCertus 作为身份提供者为第三方服务提供 OAuth 授权。包含用于安全资源访问的预建用户同意屏幕。<a>了解更多</a>',
     },
   },
 };

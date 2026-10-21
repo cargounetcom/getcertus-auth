@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Execute código personalizado em pontos específicos do fluxo de autenticação para estender o comportamento do Logto.',
+    'Execute código personalizado em pontos específicos do fluxo de autenticação para estender o comportamento do GetCertus.',
   status: {
     not_configured: 'Não configurado',
     configured: 'Configurado',
@@ -29,7 +29,7 @@ const actions = {
   },
   result_data: {
     title: 'Resultado da ação',
-    subtitle: 'Retorne um objeto de resultado que o Logto entenda para este tipo de ação.',
+    subtitle: 'Retorne um objeto de resultado que o GetCertus entenda para este tipo de ação.',
   },
   environment_variables: {
     title: 'Definir variáveis de ambiente',
@@ -53,11 +53,11 @@ const actions = {
     on_execution_error: {
       title: 'Em caso de erro no script',
       description:
-        'Escolha como o Logto deve se comportar quando o script falhar em tempo de execução.',
+        'Escolha como o GetCertus deve se comportar quando o script falhar em tempo de execução.',
       block: 'Bloquear o fluxo de autenticação',
       allow: 'Permitir que o fluxo de autenticação continue',
       post_first_factor_description:
-        'Quando este script falha, o Logto sempre rejeita credenciais inválidas para que a verificação de senha não possa ser contornada.',
+        'Quando este script falha, o GetCertus sempre rejeita credenciais inválidas para que a verificação de senha não possa ser contornada.',
     },
   },
   test_context: {
@@ -79,12 +79,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Os scripts são executados com privilégios do servidor',
     description:
-      'No Logto auto-hospedado, este script é executado no mesmo ambiente que o próprio Logto: ele pode ler variáveis de ambiente do servidor e acessar serviços na sua rede interna. Não está em sandbox. Conceda acesso a esta página apenas a pessoas em quem você confiaria o acesso ao servidor. Esta ação é executada somente após a falha na verificação da senha local — retorne `passwordVerified: true` somente depois de verificar de forma independente a senha enviada. Usuários provisionados por esta ação ignoram proteções exclusivas do registro, incluindo blocklist de e-mail, domínio apenas SSO, modo de cadastro desativado e verificações de perfil obrigatório no registro. Gravações de perfil e senha de usuários existentes também ocorrem antes da conclusão da MFA.',
+      'No GetCertus auto-hospedado, este script é executado no mesmo ambiente que o próprio GetCertus: ele pode ler variáveis de ambiente do servidor e acessar serviços na sua rede interna. Não está em sandbox. Conceda acesso a esta página apenas a pessoas em quem você confiaria o acesso ao servidor. Esta ação é executada somente após a falha na verificação da senha local — retorne `passwordVerified: true` somente depois de verificar de forma independente a senha enviada. Usuários provisionados por esta ação ignoram proteções exclusivas do registro, incluindo blocklist de e-mail, domínio apenas SSO, modo de cadastro desativado e verificações de perfil obrigatório no registro. Gravações de perfil e senha de usuários existentes também ocorrem antes da conclusão da MFA.',
   },
   sandbox_warning: {
     title: 'Os scripts são executados com privilégios do servidor',
     description:
-      'No Logto auto-hospedado, este script é executado no mesmo ambiente que o próprio Logto: ele pode ler variáveis de ambiente do servidor e acessar serviços na sua rede interna. Não está em sandbox. Conceda acesso a esta página apenas a pessoas em quem você confiaria o acesso ao servidor.',
+      'No GetCertus auto-hospedado, este script é executado no mesmo ambiente que o próprio GetCertus: ele pode ler variáveis de ambiente do servidor e acessar serviços na sua rede interna. Não está em sandbox. Conceda acesso a esta página apenas a pessoas em quem você confiaria o acesso ao servidor.',
   },
   security_warning: {
     title: 'Aviso de segurança',

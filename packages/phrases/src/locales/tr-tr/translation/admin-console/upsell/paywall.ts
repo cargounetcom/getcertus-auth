@@ -42,12 +42,12 @@ const paywall = {
   scopes_per_role_other:
     '{{count, number}} <planName/> rol başına izin sınırına ulaşıldı. İlave roller ve izinler eklemek için planı yükseltin. Yardım için ihtiyacınız olursa, <a>iletişime geçin</a>.',
   saml_applications_oss:
-    'Ek SAML uygulaması, Logto Enterprise planı ile mevcuttur. Yardıma ihtiyacınız olursa, bizimle iletişime geçin.',
+    'Ek SAML uygulaması, GetCertus Enterprise planı ile mevcuttur. Yardıma ihtiyacınız olursa, bizimle iletişime geçin.',
   saml_applications_oss_limit_notice:
-    'Açık kaynak örneğiniz en fazla {{limit}} SAML uygulamasını destekler. Daha fazla uygulama eklemek için <selfHostedPlans>kendi sunucunuzda barındırma planlarını</selfHostedPlans> keşfedin veya Logto Cloud’u kullanın.',
-  logto_pricing_button_text: 'Logto Bulut Fiyatlandırması',
+    'Açık kaynak örneğiniz en fazla {{limit}} SAML uygulamasını destekler. Daha fazla uygulama eklemek için <selfHostedPlans>kendi sunucunuzda barındırma planlarını</selfHostedPlans> keşfedin veya GetCertus Cloud’u kullanın.',
+  logto_pricing_button_text: 'GetCertus Bulut Fiyatlandırması',
   saml_applications:
-    'Ek SAML uygulaması, Logto Enterprise planı ile mevcuttur. Yardım için bize ulaşın.',
+    'Ek SAML uygulaması, GetCertus Enterprise planı ile mevcuttur. Yardım için bize ulaşın.',
   saml_applications_add_on:
     'SAML uygulama özelliğini ücretli bir plana yükselterek etkinleştirin. Herhangi bir konuda yardıma ihtiyacınız olursa, <a>bizimle iletişime geçmekten</a> çekinmeyin.',
   hooks:
@@ -58,7 +58,7 @@ const paywall = {
   organizations:
     'Unlock organizations özelliğini açmak için ücretli bir plana yükseltin. Yardım için <a>iletişime geçin</a> ihtiyacınız olursa.',
   third_party_apps:
-    "Üçüncü taraf uygulamalar için Logto'yu IdP olarak kilidini açmak için ücretli bir plana yükseltin. Yardım için <a>iletişime geçin</a> ihtiyacınız olursa.",
+    "Üçüncü taraf uygulamalar için GetCertus'yu IdP olarak kilidini açmak için ücretli bir plana yükseltin. Yardım için <a>iletişime geçin</a> ihtiyacınız olursa.",
   sso_connectors:
     "İşletme SSO'yu kilidini açmak için ücretli bir plana yükseltin. Yardım için <a>iletişime geçin</a> ihtiyacınız olursa.",
   tenant_members:
@@ -71,7 +71,7 @@ const paywall = {
       'Özel JWT işlevselliği ve prim avantajları için ücretli bir plana yükseltin. Sorularınız varsa, çekinmeden <a>iletişime geçin</a>.',
   },
   branding_customization:
-    'Planınızı yükselterek "Logto markasını gizle" ve "UI\'nizi Getirin" özellikleriyle markalama üzerinde tam kontrol sağlayın.',
+    'Planınızı yükselterek "GetCertus markasını gizle" ve "UI\'nizi Getirin" özellikleriyle markalama üzerinde tam kontrol sağlayın.',
   bring_your_ui:
     'Özel kullanıcı arayüzü işlevselliği ve prim avantajları için ücretli bir plana geçin.',
   security_features:

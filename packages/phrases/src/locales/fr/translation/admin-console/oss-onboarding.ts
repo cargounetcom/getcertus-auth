@@ -2,7 +2,7 @@ const oss_onboarding = {
   page_title: 'Onboarding',
   title: 'Parlez-nous un peu de vous',
   description:
-    'Parlez-nous un peu de vous et de votre projet. Cela nous aide a ameliorer Logto pour tout le monde.',
+    'Parlez-nous un peu de vous et de votre projet. Cela nous aide a ameliorer GetCertus pour tout le monde.',
   email: {
     label: 'Adresse e-mail',
     description:
@@ -10,9 +10,9 @@ const oss_onboarding = {
     placeholder: 'email@example.com',
   },
   newsletter:
-    'Recevoir les mises a jour produit, les avis de securite et du contenu selectionne de Logto.',
+    'Recevoir les mises a jour produit, les avis de securite et du contenu selectionne de GetCertus.',
   project: {
-    label: "J'utilise Logto pour",
+    label: "J'utilise GetCertus pour",
     personal: 'Projet personnel',
     company: "Projet d'entreprise",
   },

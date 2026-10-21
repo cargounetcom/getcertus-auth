@@ -108,7 +108,7 @@ const jwt_claims = {
   sandbox_warning: {
     title: 'Skrypty działają z uprawnieniami serwera',
     description:
-      'W samodzielnie hostowanym Logto ten skrypt działa w tym samym środowisku co samo Logto: może odczytywać zmienne środowiskowe serwera i osiągać usługi w Twojej sieci wewnętrznej. Nie jest w piaskownicy. Udostępniaj tę stronę tylko osobom, którym zaufałbyś dostęp do serwera.',
+      'W samodzielnie hostowanym GetCertus ten skrypt działa w tym samym środowisku co samo GetCertus: może odczytywać zmienne środowiskowe serwera i osiągać usługi w Twojej sieci wewnętrznej. Nie jest w piaskownicy. Udostępniaj tę stronę tylko osobom, którym zaufałbyś dostęp do serwera.',
   },
   form_error: {
     invalid_json: 'Nieprawidłowy format JSON',

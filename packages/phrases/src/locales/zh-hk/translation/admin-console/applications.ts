@@ -1,8 +1,8 @@
 const applications = {
   page_title: '全部應用',
   title: '全部應用',
-  subtitle: '創建一個移動、單頁、machine-to-machine 或傳統 web 應用程序，並通過 Logto 進行身份驗證',
-  subtitle_with_app_type: '為你的 {{name}} 應用程序設置 Logto 身份驗證',
+  subtitle: '創建一個移動、單頁、machine-to-machine 或傳統 web 應用程序，並通過 GetCertus 進行身份驗證',
+  subtitle_with_app_type: '為你的 {{name}} 應用程序設置 GetCertus 身份驗證',
   create_device_flow_description:
     '建立一個使用 OAuth 2.0 裝置授權許可的原生應用程式，適用於輸入受限裝置或無頭應用程式。',
   create: '創建應用',
@@ -43,7 +43,7 @@ const applications = {
     },
     protected: {
       title: '受保護應用程序',
-      subtitle: '透過 Logto 保護的應用程序',
+      subtitle: '透過 GetCertus 保護的應用程序',
       description: 'N/A',
     },
     saml: {
@@ -72,9 +72,9 @@ const applications = {
   },
   placeholder_title: '選擇應用程式類型以繼續',
   placeholder_description:
-    'Logto 使用 OIDC 的應用程式實體來幫助識別您的應用程式、管理登錄和創建審核日誌等任務。',
+    'GetCertus 使用 OIDC 的應用程式實體來幫助識別您的應用程式、管理登錄和創建審核日誌等任務。',
   third_party_application_placeholder_description:
-    '使用 Logto 作為身份提供者為第三方服務提供 OAuth 授權。 \n 包括一個內建的用戶同意螢幕以訪問資源。<a>了解更多</a>',
+    '使用 GetCertus 作為身份提供者為第三方服務提供 OAuth 授權。 \n 包括一個內建的用戶同意螢幕以訪問資源。<a>了解更多</a>',
   dynamic_app: {
     title: '動態應用',
     subtitle: 'CIMD',
@@ -110,17 +110,17 @@ const applications = {
     client_compatibility: {
       title: '用戶端兼容性',
       description:
-        '針對尚未完整支援 OpenID Connect 的 OAuth 用戶端，調整 Logto 處理其授權請求的方式。這些設定處於實驗階段，可能會變更或被移除。',
+        '針對尚未完整支援 OpenID Connect 的 OAuth 用戶端，調整 GetCertus 處理其授權請求的方式。這些設定處於實驗階段，可能會變更或被移除。',
       add_consent_prompt_for_offline_access: '為離線存取添加同意提示',
       add_consent_prompt_for_offline_access_description:
-        '當 OAuth 用戶端請求 `offline_access` 但未附帶 `prompt=consent` 時，Logto 會添加同意提示，以便用戶端取得刷新令牌。建議在接入 ChatGPT、Codex 等用戶端時開啟。',
+        '當 OAuth 用戶端請求 `offline_access` 但未附帶 `prompt=consent` 時，GetCertus 會添加同意提示，以便用戶端取得刷新令牌。建議在接入 ChatGPT、Codex 等用戶端時開啟。',
     },
   },
   guide: {
     third_party: {
       title: '整合第三方應用程式',
       description:
-        '使用 Logto 作為身份提供者為第三方服務提供 OAuth 授權。包含用於安全資源訪問的預建用戶同意螢幕。<a>了解更多</a>',
+        '使用 GetCertus 作為身份提供者為第三方服務提供 OAuth 授權。包含用於安全資源訪問的預建用戶同意螢幕。<a>了解更多</a>',
     },
   },
 };

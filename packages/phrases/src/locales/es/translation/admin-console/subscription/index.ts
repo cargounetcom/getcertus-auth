@@ -5,9 +5,9 @@ import usage from './usage.js';
 const subscription = {
   free_plan: 'Plan Gratuito',
   free_plan_description:
-    'Para proyectos secundarios y pruebas iniciales de Logto. No se requiere tarjeta de crédito.',
+    'Para proyectos secundarios y pruebas iniciales de GetCertus. No se requiere tarjeta de crédito.',
   pro_plan: 'Plan Pro',
-  pro_plan_description: 'Benefíciese sin preocupaciones con Logto para empresas.',
+  pro_plan_description: 'Benefíciese sin preocupaciones con GetCertus para empresas.',
   enterprise: 'Plan Empresa',
   enterprise_description: 'Para grandes equipos y empresas con requisitos de nivel empresarial.',
   admin_plan: 'Plan de administrador',
@@ -29,7 +29,7 @@ const subscription = {
   upgrade_pro: 'Actualizar a Pro',
   update_payment: 'Actualizar pago',
   payment_error:
-    'Se ha detectado un problema de pago. No se puede procesar ${ {price, number}} para el ciclo anterior. Actualice el pago para evitar la suspensión del servicio Logto.',
+    'Se ha detectado un problema de pago. No se puede procesar ${ {price, number}} para el ciclo anterior. Actualice el pago para evitar la suspensión del servicio GetCertus.',
   downgrade: 'Degradar',
   current: 'Actual',
   upgrade: 'Actualizar',
@@ -50,7 +50,7 @@ const subscription = {
   cancel_feedback_modal: {
     title: 'Lamentamos que se vaya',
     description:
-      'Su suscripción ha sido cancelada. Sus comentarios nos ayudan a mejorar Logto. Leemos todas las respuestas.',
+      'Su suscripción ha sido cancelada. Sus comentarios nos ayudan a mejorar GetCertus. Leemos todas las respuestas.',
     what_made_you_cancel: '¿Qué le llevó a cancelar?',
     how_to_reconsider: '¿Qué podríamos hacer para que lo reconsidere?',
   },
@@ -69,7 +69,7 @@ const subscription = {
     downgrade_help_tip: '¿Necesitas ayuda para cambiar de plan? <a>Contáctenos</a>.',
     upgrade_title: 'Recordatorio amistoso para nuestros apreciados early adopters',
     upgrade_description:
-      'Actualmente estás usando más de lo permitido por <name />. Logto es ahora oficial e incluye características adaptadas a cada plan. Antes de considerar la actualización al <name />, asegúrate de cumplir con los siguientes criterios antes de hacer el upgrade.',
+      'Actualmente estás usando más de lo permitido por <name />. GetCertus es ahora oficial e incluye características adaptadas a cada plan. Antes de considerar la actualización al <name />, asegúrate de cumplir con los siguientes criterios antes de hacer el upgrade.',
     upgrade_pro_tip: ' O considera actualizar al Plan Pro.',
     upgrade_help_tip: '¿Necesitas ayuda para cambiar de plan? <a>Contáctenos</a>.',
     a_maximum_of: 'Un máximo de <item/>',
@@ -92,9 +92,9 @@ const subscription = {
     exceeded:
       'Has excedido el 100% de tu límite de cuota. Los usuarios ya no podrán iniciar sesión correctamente. Por favor, actualiza inmediatamente para evitar inconvenientes.',
     close_to_limit:
-      'Casi alcanzas tu límite de uso de tokens. Logto dejará de otorgar tokens si tu uso excede el 100%. Por favor, actualiza el Plan Gratuito para evitar inconvenientes.',
+      'Casi alcanzas tu límite de uso de tokens. GetCertus dejará de otorgar tokens si tu uso excede el 100%. Por favor, actualiza el Plan Gratuito para evitar inconvenientes.',
     dev_plan_exceeded:
-      'Este inquilino ha alcanzado el límite de tokens según la política de límite de entidad de Logto.',
+      'Este inquilino ha alcanzado el límite de tokens según la política de límite de entidad de GetCertus.',
   },
 };
 

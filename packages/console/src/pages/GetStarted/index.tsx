@@ -126,7 +126,8 @@ function GetStarted() {
     return daysSinceCreation >= convertToProductionThresholdDays;
   }, [isDevTenant, currentTenant]);
 
-  const shouldShowOssCloudUpsell = !isCloud;
+  // GetCertus: no Logto Cloud upsell in the self-hosted console.
+  const shouldShowOssCloudUpsell = false;
   const shouldShowOssCloudBanner =
     shouldShowOssCloudUpsell &&
     isUserPreferencesLoaded &&

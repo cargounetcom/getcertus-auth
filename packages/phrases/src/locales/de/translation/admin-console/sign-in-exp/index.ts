@@ -30,7 +30,7 @@ const sign_in_exp = {
     dark_primary_color: 'Markenfarbe (Dunkler Modus)',
     dark_mode: 'Aktiviere Dunklen Modus',
     dark_mode_description:
-      'Deine App erhält einen automatisch generierten Dunklen Modus, der auf deiner Markenfarbe und dem Logto-Algorithmus basiert. Du kannst diesen nach Belieben anpassen.',
+      'Deine App erhält einen automatisch generierten Dunklen Modus, der auf deiner Markenfarbe und dem GetCertus-Algorithmus basiert. Du kannst diesen nach Belieben anpassen.',
     dark_mode_reset_tip: 'Neuberechnung der Farbe des dunklen Modus basierend auf der Markenfarbe.',
     reset: 'Neuberechnen',
   },
@@ -42,11 +42,11 @@ const sign_in_exp = {
     app_logo_and_favicon: 'App-Logo und Favicon',
     company_logo_and_favicon: 'Firmenlogo und Favicon',
     organization_logo_and_favicon: 'Organisationslogo und Favicon',
-    hide_logto_branding: 'Logto-Branding ausblenden',
+    hide_logto_branding: 'GetCertus-Branding ausblenden',
     hide_logto_branding_description:
-      'Entferne "Powered by Logto". Präsentiere deine Marke exklusiv mit einer klaren, professionellen Anmeldeerfahrung.',
+      'Entferne "Powered by GetCertus". Präsentiere deine Marke exklusiv mit einer klaren, professionellen Anmeldeerfahrung.',
     hide_logto_branding_oss_note:
-      'Diese Funktion ist in <a>Logto Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar.',
+      'Diese Funktion ist in <a>GetCertus Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar.',
   },
   branding_uploads: {
     app_logo: {
@@ -93,10 +93,10 @@ const sign_in_exp = {
     bring_your_ui_title: 'Bringen Sie Ihr UI',
     bring_your_ui_upload_title: 'Benutzerdefinierte UI-Assets hochladen',
     bring_your_ui_description:
-      'Laden Sie ein komprimiertes Paket (.zip) hoch, um die vorgefertigte Benutzeroberfläche von Logto durch Ihren eigenen Code zu ersetzen. <a>Erfahren Sie mehr</a>',
+      'Laden Sie ein komprimiertes Paket (.zip) hoch, um die vorgefertigte Benutzeroberfläche von GetCertus durch Ihren eigenen Code zu ersetzen. <a>Erfahren Sie mehr</a>',
     bring_your_ui_oss_description: 'Passen Sie die Anmeldeoberfläche mit Ihrem eigenen Code an.',
     bring_your_ui_oss_card_description:
-      'Der Upload einer benutzerdefinierten UI ist in <a>Logto Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar. Kein Fork und kein erneutes Deployment erforderlich.',
+      'Der Upload einer benutzerdefinierten UI ist in <a>GetCertus Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar. Kein Fork und kein erneutes Deployment erforderlich.',
     bring_your_ui_oss_try_cloud: 'Cloud ausprobieren',
     preview_with_bring_your_ui_description:
       'Ihre benutzerdefinierten UI-Assets wurden erfolgreich hochgeladen und werden jetzt bereitgestellt. Daher wurde das eingebaute Vorschaufenster deaktiviert.\nUm Ihre personalisierte Anmelde-Benutzeroberfläche zu testen, klicken Sie auf die Schaltfläche "Live-Vorschau", um sie in einem neuen Browser-Tab zu öffnen.',
@@ -114,10 +114,10 @@ const sign_in_exp = {
   },
   account_center: {
     title: 'KONTOZENTRUM',
-    description: 'Passen Sie Ihre Kontozentrums-Workflows mit den Logto-APIs an.',
+    description: 'Passen Sie Ihre Kontozentrums-Workflows mit den GetCertus-APIs an.',
     enable_account_api: 'Kontozentrum und Account-API aktivieren',
     enable_account_api_description:
-      'Aktiviert sowohl die benutzerseitige Account-API als auch das vorgefertigte Kontocenter von Logto. Wenn dies deaktiviert ist, sind beide Funktionen nicht verfügbar.',
+      'Aktiviert sowohl die benutzerseitige Account-API als auch das vorgefertigte Kontocenter von GetCertus. Wenn dies deaktiviert ist, sind beide Funktionen nicht verfügbar.',
     field_options: {
       off: 'Aus',
       edit: 'Bearbeiten',

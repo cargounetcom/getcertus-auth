@@ -15,14 +15,14 @@ const tenants = {
   license: {
     purchase_title: 'セルフホストプラン',
     purchase_description:
-      'セルフホストプロおよびエンタープライズプランでは、Logto ブランディングの非表示、独自 UI の利用、コンソールの共同管理、SAML アプリケーションの無制限利用など、有料機能を自分のインスタンスで利用できます。プランを購入してライセンスキーを取得してください。',
+      'セルフホストプロおよびエンタープライズプランでは、GetCertus ブランディングの非表示、独自 UI の利用、コンソールの共同管理、SAML アプリケーションの無制限利用など、有料機能を自分のインスタンスで利用できます。プランを購入してライセンスキーを取得してください。',
     purchase_button: 'セルフホストプランを見る',
     install_title: 'ライセンスのインストール',
     install_description: 'セルフホストプランの購入後に受け取ったライセンスキーを貼り付けます。',
     install_button: 'ライセンスをインストール',
     key_field: 'ライセンスキー',
     key_field_description:
-      'キーはインスタンス上で検証され、外部に送信されることはありません。お持ちのキーの有効期限が切れている場合は、新しいキーの発行について Logto にお問い合わせください。',
+      'キーはインスタンス上で検証され、外部に送信されることはありません。お持ちのキーの有効期限が切れている場合は、新しいキーの発行について GetCertus にお問い合わせください。',
     key_placeholder: 'ここにライセンスキーを貼り付けてください',
     installed_toast: 'ライセンスをインストールしました。',
     details_title: 'ライセンス',
@@ -36,7 +36,7 @@ const tenants = {
     last_refreshed_at_field: '最終更新日時',
     grace_ends_at_field: '猶予期間の終了日',
     refresh_expired_description:
-      'ライセンスキーは {{expiresAt}} に期限切れになりました。Logto が更新を試みている間、ライセンス機能は {{graceEndsAt}} まで利用できます。',
+      'ライセンスキーは {{expiresAt}} に期限切れになりました。GetCertus が更新を試みている間、ライセンス機能は {{graceEndsAt}} まで利用できます。',
     refresh_refused_description:
       'ライセンスが{{reason}}のため、更新が拒否されました。ライセンス機能は {{graceEndsAt}} まで利用できます。',
     refusal_reason_canceled: 'キャンセル済み',
@@ -45,15 +45,15 @@ const tenants = {
     refusal_reason_revoked: '取り消し済み',
     refusal_reason_unknown: '利用できない状態',
     grace_expired_description:
-      'ライセンスの猶予期間は {{graceEndsAt}} に終了しました。このインスタンスは OSS のデフォルトに戻っています。Logto にお問い合わせのうえ、新しいライセンスキーを取得して再インストールしてください。',
+      'ライセンスの猶予期間は {{graceEndsAt}} に終了しました。このインスタンスは OSS のデフォルトに戻っています。GetCertus にお問い合わせのうえ、新しいライセンスキーを取得して再インストールしてください。',
     get_fresh_key_button: '新しいライセンスキーを取得',
     replace_button: 'ライセンスを差し替える',
   },
   members: {
-    card_title: 'Logto Cloud でテナントをより安全に管理',
+    card_title: 'GetCertus Cloud でテナントをより安全に管理',
     card_description:
       '1つの管理者アカウントを共有せずに、テナントに管理者やコラボレーターを追加できます。',
-    card_action: 'Logto Cloud を見る',
+    card_action: 'GetCertus Cloud を見る',
     self_hosted_card_title: 'セルフホストプランでテナントをより安全に管理',
     self_hosted_card_description:
       '1つの管理者アカウントを共有せずに、テナントに管理者やコラボレーターを追加できます。',
@@ -66,7 +66,7 @@ const tenants = {
     tenant_name: 'テナント名',
     tenant_instance: 'インスタンスを選択してください',
     tenant_instance_description:
-      'テナントをホストする場所を選択してください。パブリック共有インフラストラクチャの Logto Cloud を選択するか、専用リソース用のプライベートインスタンスを選択します。',
+      'テナントをホストする場所を選択してください。パブリック共有インフラストラクチャの GetCertus Cloud を選択するか、専用リソース用のプライベートインスタンスを選択します。',
     tenant_region: 'データがホストされている地域',
     tenant_region_description:
       'テナントリソース（ユーザー、アプリなど）がホストされている物理的な場所です。作成後に変更することはできません。',
@@ -94,7 +94,7 @@ const tenants = {
     tenant_mfa_setup_action: 'MFA を設定',
     enterprise_sso: 'エンタープライズ SSO',
     enterprise_sso_description:
-      '有料プランで利用可能です。お問い合わせいただくと、すべてのメンバーが組織のアイデンティティプロバイダーを使用して Logto Cloud コンソールにサインインできるようになります。',
+      '有料プランで利用可能です。お問い合わせいただくと、すべてのメンバーが組織のアイデンティティプロバイダーを使用して GetCertus Cloud コンソールにサインインできるようになります。',
   },
   full_env_tag: {
     development: '開発',
@@ -137,7 +137,7 @@ const tenants = {
       'テナントIDには小文字、数字、ハイフンのみ使用でき、{{max}}文字を超えることはできません。',
     tenant_id_placeholder: 'テナントID',
     tenant_id_tip:
-      'テナントIDをカスタマイズします。空のままにすると、Logtoがデフォルトのidを生成します。テナントIDは作成後に変更できません。',
+      'テナントIDをカスタマイズします。空のままにすると、GetCertusがデフォルトのidを生成します。テナントIDは作成後に変更できません。',
   },
   dev_tenant_migration: {
     title: '新しい「開発テナント」を作成して、プロの機能を無料でお試しできます！',
@@ -169,7 +169,7 @@ const tenants = {
   tenant_landing_page: {
     title: 'まだテナントを作成していません',
     description:
-      'Logto でプロジェクトを設定するには、新しいテナントを作成してください。ログアウトまたはアカウントを削除する必要がある場合は、右上隅のアバターボタンをクリックしてください。',
+      'GetCertus でプロジェクトを設定するには、新しいテナントを作成してください。ログアウトまたはアカウントを削除する必要がある場合は、右上隅のアバターボタンをクリックしてください。',
     create_tenant_button: 'テナントを作成',
   },
   status: {

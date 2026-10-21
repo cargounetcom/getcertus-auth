@@ -11,7 +11,7 @@ import {
 
 import { adminTenantId, defaultTenantId } from './tenant.js';
 
-export const defaultPrimaryColor = '#6139F6';
+export const defaultPrimaryColor = '#385C47';
 
 export const createDefaultSignInExperience = (
   forTenantId: string,
@@ -25,10 +25,7 @@ export const createDefaultSignInExperience = (
       isDarkModeEnabled: false,
       darkPrimaryColor: generateDarkColor(defaultPrimaryColor),
     },
-    branding: {
-      logoUrl: isCloud ? undefined : 'https://logto.io/logo.svg',
-      darkLogoUrl: isCloud ? undefined : 'https://logto.io/logo-dark.svg',
-    },
+    branding: {},
     hideLogtoBranding: false,
     languageInfo: {
       autoDetect: true,
@@ -91,10 +88,7 @@ export const createAdminTenantSignInExperience = (
       isDarkModeEnabled: true,
     },
     signInMode: SignInMode.Register,
-    branding: {
-      logoUrl: 'https://logto.io/logo.svg',
-      darkLogoUrl: 'https://logto.io/logo-dark.svg',
-    },
+    branding: {},
     passwordPolicy: options.disablePwnedPasswordCheck
       ? {
           ...defaultSignInExperience.passwordPolicy,

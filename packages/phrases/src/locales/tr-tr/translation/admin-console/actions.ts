@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Logto davranışını genişletmek için kimlik doğrulama akışının belirli noktalarında özel kod çalıştırın.',
+    'GetCertus davranışını genişletmek için kimlik doğrulama akışının belirli noktalarında özel kod çalıştırın.',
   status: {
     not_configured: 'Yapılandırılmadı',
     configured: 'Yapılandırıldı',
@@ -29,7 +29,7 @@ const actions = {
   },
   result_data: {
     title: 'Eylem sonucu',
-    subtitle: 'Bu eylem türü için Logto’nun anlayacağı bir sonuç nesnesi döndürün.',
+    subtitle: 'Bu eylem türü için GetCertus’nun anlayacağı bir sonuç nesnesi döndürün.',
   },
   environment_variables: {
     title: 'Ortam değişkenlerini ayarla',
@@ -54,11 +54,11 @@ const actions = {
     on_execution_error: {
       title: 'Betik hatasında',
       description:
-        'Betik çalışma zamanında başarısız olduğunda Logto’nun nasıl davranacağını seçin.',
+        'Betik çalışma zamanında başarısız olduğunda GetCertus’nun nasıl davranacağını seçin.',
       block: 'Kimlik doğrulama akışını engelle',
       allow: 'Kimlik doğrulama akışının devam etmesine izin ver',
       post_first_factor_description:
-        'Bu betik başarısız olduğunda Logto her zaman geçersiz kimlik bilgilerini reddeder; böylece parola doğrulaması atlanamaz.',
+        'Bu betik başarısız olduğunda GetCertus her zaman geçersiz kimlik bilgilerini reddeder; böylece parola doğrulaması atlanamaz.',
     },
   },
   test_context: {
@@ -80,12 +80,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Komut dosyaları sunucu ayrıcalıklarıyla çalışır',
     description:
-      'Kendi barındırılan Logto’da bu komut dosyası, Logto’nun kendisiyle aynı ortamda çalışır: sunucu ortam değişkenlerini okuyabilir ve iç ağınızdaki hizmetlere erişebilir. Sandbox’lanmamıştır. Bu sayfaya yalnızca sunucuya erişim vereceğiniz kişilere erişim verin. Bu eylem yalnızca yerel parola doğrulaması başarısız olduktan sonra çalışır — yalnızca gönderilen parolayı bağımsız olarak doğruladıktan sonra `passwordVerified: true` döndürün. Bu eylem tarafından sağlanan kullanıcılar, e-posta engel listesi, yalnızca SSO alan adı, kayıt devre dışı modu ve kayıt zorunlu profil kontrolleri dahil olmak üzere yalnızca kayda özel korumaları atlar. Mevcut kullanıcıların profil ve parola yazımları da MFA tamamlanmadan önce gerçekleşir.',
+      'Kendi barındırılan GetCertus’da bu komut dosyası, GetCertus’nun kendisiyle aynı ortamda çalışır: sunucu ortam değişkenlerini okuyabilir ve iç ağınızdaki hizmetlere erişebilir. Sandbox’lanmamıştır. Bu sayfaya yalnızca sunucuya erişim vereceğiniz kişilere erişim verin. Bu eylem yalnızca yerel parola doğrulaması başarısız olduktan sonra çalışır — yalnızca gönderilen parolayı bağımsız olarak doğruladıktan sonra `passwordVerified: true` döndürün. Bu eylem tarafından sağlanan kullanıcılar, e-posta engel listesi, yalnızca SSO alan adı, kayıt devre dışı modu ve kayıt zorunlu profil kontrolleri dahil olmak üzere yalnızca kayda özel korumaları atlar. Mevcut kullanıcıların profil ve parola yazımları da MFA tamamlanmadan önce gerçekleşir.',
   },
   sandbox_warning: {
     title: 'Komut dosyaları sunucu ayrıcalıklarıyla çalışır',
     description:
-      'Kendi barındırılan Logto’da bu komut dosyası, Logto’nun kendisiyle aynı ortamda çalışır: sunucu ortam değişkenlerini okuyabilir ve iç ağınızdaki hizmetlere erişebilir. Sandbox’lanmamıştır. Bu sayfaya yalnızca sunucuya erişim vereceğiniz kişilere erişim verin.',
+      'Kendi barındırılan GetCertus’da bu komut dosyası, GetCertus’nun kendisiyle aynı ortamda çalışır: sunucu ortam değişkenlerini okuyabilir ve iç ağınızdaki hizmetlere erişebilir. Sandbox’lanmamıştır. Bu sayfaya yalnızca sunucuya erişim vereceğiniz kişilere erişim verin.',
   },
   security_warning: {
     title: 'Güvenlik uyarısı',

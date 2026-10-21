@@ -2,7 +2,7 @@ const actions = {
   page_title: 'Actions',
   title: 'Actions',
   subtitle:
-    'Ejecuta código personalizado en puntos específicos del flujo de autenticación para ampliar el comportamiento de Logto.',
+    'Ejecuta código personalizado en puntos específicos del flujo de autenticación para ampliar el comportamiento de GetCertus.',
   status: {
     not_configured: 'Sin configurar',
     configured: 'Configurado',
@@ -30,7 +30,7 @@ const actions = {
   },
   result_data: {
     title: 'Resultado de la acción',
-    subtitle: 'Devuelve un objeto de resultado que Logto entienda para este tipo de acción.',
+    subtitle: 'Devuelve un objeto de resultado que GetCertus entienda para este tipo de acción.',
   },
   environment_variables: {
     title: 'Definir variables de entorno',
@@ -55,11 +55,11 @@ const actions = {
     on_execution_error: {
       title: 'Si el script falla',
       description:
-        'Elige cómo debe comportarse Logto cuando el script falle en tiempo de ejecución.',
+        'Elige cómo debe comportarse GetCertus cuando el script falle en tiempo de ejecución.',
       block: 'Bloquear el flujo de autenticación',
       allow: 'Permitir que el flujo de autenticación continúe',
       post_first_factor_description:
-        'Cuando este script falla, Logto siempre rechaza las credenciales no válidas para que no se pueda omitir la verificación de la contraseña.',
+        'Cuando este script falla, GetCertus siempre rechaza las credenciales no válidas para que no se pueda omitir la verificación de la contraseña.',
     },
   },
   test_context: {
@@ -81,12 +81,12 @@ const actions = {
   sandbox_and_security_warning: {
     title: 'Los scripts se ejecutan con privilegios del servidor',
     description:
-      'En Logto autoalojado, este script se ejecuta en el mismo entorno que Logto: puede leer variables de entorno del servidor y alcanzar servicios de tu red interna. No está aislado en un sandbox. Concede acceso a esta página solo a personas a las que confiarías el acceso al servidor. Esta acción solo se ejecuta después de que falle la verificación de la contraseña local: devuelve `passwordVerified: true` únicamente después de verificar de forma independiente la contraseña enviada. Los usuarios aprovisionados por esta acción omiten las protecciones exclusivas del registro, incluida la lista de bloqueo de correo electrónico, el dominio solo SSO, el modo de registro deshabilitado y las comprobaciones de perfil obligatorio del registro. Las escrituras de perfil y contraseña de usuarios existentes también ocurren antes de que se complete la MFA.',
+      'En GetCertus autoalojado, este script se ejecuta en el mismo entorno que GetCertus: puede leer variables de entorno del servidor y alcanzar servicios de tu red interna. No está aislado en un sandbox. Concede acceso a esta página solo a personas a las que confiarías el acceso al servidor. Esta acción solo se ejecuta después de que falle la verificación de la contraseña local: devuelve `passwordVerified: true` únicamente después de verificar de forma independiente la contraseña enviada. Los usuarios aprovisionados por esta acción omiten las protecciones exclusivas del registro, incluida la lista de bloqueo de correo electrónico, el dominio solo SSO, el modo de registro deshabilitado y las comprobaciones de perfil obligatorio del registro. Las escrituras de perfil y contraseña de usuarios existentes también ocurren antes de que se complete la MFA.',
   },
   sandbox_warning: {
     title: 'Los scripts se ejecutan con privilegios del servidor',
     description:
-      'En Logto autoalojado, este script se ejecuta en el mismo entorno que Logto: puede leer variables de entorno del servidor y alcanzar servicios de tu red interna. No está aislado en un sandbox. Concede acceso a esta página solo a personas a las que confiarías el acceso al servidor.',
+      'En GetCertus autoalojado, este script se ejecuta en el mismo entorno que GetCertus: puede leer variables de entorno del servidor y alcanzar servicios de tu red interna. No está aislado en un sandbox. Concede acceso a esta página solo a personas a las que confiarías el acceso al servidor.',
   },
   security_warning: {
     title: 'Advertencia de seguridad',

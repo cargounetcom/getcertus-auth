@@ -15,7 +15,7 @@ const tenants = {
   license: {
     purchase_title: 'SELF-HOSTED PLANLAR',
     purchase_description:
-      'Self-hosted Pro ve Kurumsal planlar, kendi örneğinizde Logto markasını gizleme, kendi arayüzünüzü kullanma, konsolda iş birliği ve sınırsız SAML uygulaması gibi ücretli özellikleri açar. Lisans anahtarınızı almak için bir plan satın alın.',
+      'Self-hosted Pro ve Kurumsal planlar, kendi örneğinizde GetCertus markasını gizleme, kendi arayüzünüzü kullanma, konsolda iş birliği ve sınırsız SAML uygulaması gibi ücretli özellikleri açar. Lisans anahtarınızı almak için bir plan satın alın.',
     purchase_button: 'Self-hosted planlara göz at',
     install_title: 'LİSANS KURULUMU',
     install_description:
@@ -23,7 +23,7 @@ const tenants = {
     install_button: 'Lisansı kur',
     key_field: 'Lisans anahtarı',
     key_field_description:
-      'Anahtar örneğinizde doğrulanır ve oradan hiç çıkmaz. Elinizdeki anahtarın süresi dolduysa yeni bir anahtar almak için Logto ile iletişime geçin.',
+      'Anahtar örneğinizde doğrulanır ve oradan hiç çıkmaz. Elinizdeki anahtarın süresi dolduysa yeni bir anahtar almak için GetCertus ile iletişime geçin.',
     key_placeholder: 'Lisans anahtarınızı buraya yapıştırın',
     installed_toast: 'Lisans başarıyla kuruldu.',
     details_title: 'LİSANS',
@@ -37,7 +37,7 @@ const tenants = {
     last_refreshed_at_field: 'Son yenileme tarihi',
     grace_ends_at_field: 'Ek süre bitiş tarihi',
     refresh_expired_description:
-      'Lisans anahtarının süresi {{expiresAt}} tarihinde doldu. Logto anahtarı yenilemeyi denerken lisanslı özellikler {{graceEndsAt}} tarihine kadar kullanılabilir.',
+      'Lisans anahtarının süresi {{expiresAt}} tarihinde doldu. GetCertus anahtarı yenilemeyi denerken lisanslı özellikler {{graceEndsAt}} tarihine kadar kullanılabilir.',
     refresh_refused_description:
       'Lisans {{reason}} olduğu için lisans yenileme reddedildi. Lisanslı özellikler {{graceEndsAt}} tarihine kadar kullanılabilir.',
     refusal_reason_canceled: 'iptal edildi',
@@ -46,15 +46,15 @@ const tenants = {
     refusal_reason_revoked: 'geri alındı',
     refusal_reason_unknown: 'kullanılamıyor',
     grace_expired_description:
-      'Lisansın ek süresi {{graceEndsAt}} tarihinde sona erdi. Bu örnek OSS varsayılanlarına döndü. Yeni bir lisans anahtarı almak için Logto ile iletişime geçin ve yeniden kurun.',
+      'Lisansın ek süresi {{graceEndsAt}} tarihinde sona erdi. Bu örnek OSS varsayılanlarına döndü. Yeni bir lisans anahtarı almak için GetCertus ile iletişime geçin ve yeniden kurun.',
     get_fresh_key_button: 'Yeni lisans anahtarı al',
     replace_button: 'Lisansı değiştir',
   },
   members: {
-    card_title: 'Kiracıları Logto Cloud ile daha güvenli yönetin',
+    card_title: 'Kiracıları GetCertus Cloud ile daha güvenli yönetin',
     card_description:
       'Tek bir yönetici hesabını paylaşmadan kiracınıza yöneticiler veya iş birlikçileri ekleyin.',
-    card_action: 'Logto Cloud’u keşfedin',
+    card_action: 'GetCertus Cloud’u keşfedin',
     self_hosted_card_title: 'Kiracıları self-hosted planlarla daha güvenli yönetin',
     self_hosted_card_description:
       'Tek bir yönetici hesabını paylaşmadan kiracınıza yöneticiler veya iş birlikçileri ekleyin.',
@@ -67,7 +67,7 @@ const tenants = {
     tenant_name: 'Kiracı Adı',
     tenant_instance: 'Örnek seçin',
     tenant_instance_description:
-      "Kiracınızın nerede barındırılacağını seçin. Genel paylaşımlı altyapı için Logto Cloud'u veya özel kaynaklar için özel bir örneği seçin.",
+      "Kiracınızın nerede barındırılacağını seçin. Genel paylaşımlı altyapı için GetCertus Cloud'u veya özel kaynaklar için özel bir örneği seçin.",
     tenant_region: 'Veriler barındırılan bölge',
     tenant_region_description:
       'Kiracı kaynaklarınızın (kullanıcılar, uygulamalar vb.) barındırıldığı fiziksel konum. Bu, oluşturulduktan sonra değiştirilemez.',
@@ -96,7 +96,7 @@ const tenants = {
     tenant_mfa_setup_action: 'MFA yapılandır',
     enterprise_sso: 'Enterprise SSO',
     enterprise_sso_description:
-      'Ücretli planlarda kullanılabilir. Tüm üyelerin kuruluşunuzun kimlik sağlayıcısını kullanarak Logto Cloud Konsoluna giriş yapabilmesi için Enterprise SSO etkinleştirmek üzere bizimle iletişime geçin.',
+      'Ücretli planlarda kullanılabilir. Tüm üyelerin kuruluşunuzun kimlik sağlayıcısını kullanarak GetCertus Cloud Konsoluna giriş yapabilmesi için Enterprise SSO etkinleştirmek üzere bizimle iletişime geçin.',
   },
   full_env_tag: {
     development: 'Geliştirme',
@@ -141,7 +141,7 @@ const tenants = {
       'Kiracı kimliği yalnızca küçük harfler, sayılar ve kısa çizgiler içerebilir ve {{max}} karakteri aşmamalıdır.',
     tenant_id_placeholder: 'Kiracı kimliğiniz',
     tenant_id_tip:
-      'Kiracı kimliğini özelleştirin. Boş bırakılırsa, Logto varsayılan bir kimlik oluşturur. Kiracı kimliği oluşturulduktan sonra değiştirilemez.',
+      'Kiracı kimliğini özelleştirin. Boş bırakılırsa, GetCertus varsayılan bir kimlik oluşturur. Kiracı kimliği oluşturulduktan sonra değiştirilemez.',
   },
   dev_tenant_migration: {
     title:
@@ -173,7 +173,7 @@ const tenants = {
   tenant_landing_page: {
     title: 'Henüz bir kiracı oluşturmadınız',
     description:
-      'Logto ile projenizi yapılandırmaya başlamak için lütfen yeni bir kiracı oluşturun. Hesabınızdan çıkış yapmanız veya hesabınızı silmeniz gerekiyorsa, sağ üst köşedeki avatar düğmesine tıklayın.',
+      'GetCertus ile projenizi yapılandırmaya başlamak için lütfen yeni bir kiracı oluşturun. Hesabınızdan çıkış yapmanız veya hesabınızı silmeniz gerekiyorsa, sağ üst köşedeki avatar düğmesine tıklayın.',
     create_tenant_button: 'Kiracı oluştur',
   },
   status: {

@@ -42,9 +42,9 @@ const content = {
     subtitle:
       'Localisez l’expérience produit en ajoutant des langues et des traductions. Votre contribution peut être définie comme langue par défaut.',
     add_language: 'Ajouter une langue',
-    logto_provided: 'Fourni par Logto',
+    logto_provided: 'Fourni par GetCertus',
     key: 'Clé',
-    logto_source_values: 'Valeurs sources Logto',
+    logto_source_values: 'Valeurs sources GetCertus',
     custom_values: 'Valeurs personnalisées',
     clear_all_tip: 'Effacer toutes les valeurs',
     unsaved_description:

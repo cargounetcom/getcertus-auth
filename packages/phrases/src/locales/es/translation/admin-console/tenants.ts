@@ -15,14 +15,14 @@ const tenants = {
   license: {
     purchase_title: 'PLANES AUTOALOJADOS',
     purchase_description:
-      'Los planes Pro y Empresa autoalojados desbloquean funciones de pago en tu propia instancia, como ocultar la marca de Logto, usar tu propia interfaz, colaboración en la consola y aplicaciones SAML ilimitadas. Compra un plan para obtener tu clave de licencia.',
+      'Los planes Pro y Empresa autoalojados desbloquean funciones de pago en tu propia instancia, como ocultar la marca de GetCertus, usar tu propia interfaz, colaboración en la consola y aplicaciones SAML ilimitadas. Compra un plan para obtener tu clave de licencia.',
     purchase_button: 'Ver planes autoalojados',
     install_title: 'INSTALAR LICENCIA',
     install_description: 'Pega la clave de licencia que recibiste al comprar un plan autoalojado.',
     install_button: 'Instalar licencia',
     key_field: 'Clave de licencia',
     key_field_description:
-      'La clave se verifica en tu instancia y nunca sale de ella. Contacta con Logto para obtener una clave nueva si la que tienes ha caducado.',
+      'La clave se verifica en tu instancia y nunca sale de ella. Contacta con GetCertus para obtener una clave nueva si la que tienes ha caducado.',
     key_placeholder: 'Pega aquí tu clave de licencia',
     installed_toast: 'Licencia instalada correctamente.',
     details_title: 'LICENCIA',
@@ -36,7 +36,7 @@ const tenants = {
     last_refreshed_at_field: 'Última actualización',
     grace_ends_at_field: 'El periodo de gracia termina el',
     refresh_expired_description:
-      'La clave de licencia caducó el {{expiresAt}}. Las funciones con licencia seguirán disponibles hasta {{graceEndsAt}} mientras Logto intenta actualizarla.',
+      'La clave de licencia caducó el {{expiresAt}}. Las funciones con licencia seguirán disponibles hasta {{graceEndsAt}} mientras GetCertus intenta actualizarla.',
     refresh_refused_description:
       'Se rechazó la actualización porque la licencia está {{reason}}. Las funciones con licencia seguirán disponibles hasta {{graceEndsAt}}.',
     refusal_reason_canceled: 'cancelada',
@@ -45,15 +45,15 @@ const tenants = {
     refusal_reason_revoked: 'revocada',
     refusal_reason_unknown: 'no disponible',
     grace_expired_description:
-      'El periodo de gracia de la licencia terminó el {{graceEndsAt}}. Esta implementación volvió a los valores predeterminados de OSS. Contacta con Logto para obtener una clave de licencia nueva e instálala de nuevo.',
+      'El periodo de gracia de la licencia terminó el {{graceEndsAt}}. Esta implementación volvió a los valores predeterminados de OSS. Contacta con GetCertus para obtener una clave de licencia nueva e instálala de nuevo.',
     get_fresh_key_button: 'Obtener una clave nueva',
     replace_button: 'Reemplazar licencia',
   },
   members: {
-    card_title: 'Administra los inquilinos de forma más segura con Logto Cloud',
+    card_title: 'Administra los inquilinos de forma más segura con GetCertus Cloud',
     card_description:
       'Agrega administradores o colaboradores a tu inquilino sin compartir una sola cuenta de administrador.',
-    card_action: 'Explorar Logto Cloud',
+    card_action: 'Explorar GetCertus Cloud',
     self_hosted_card_title:
       'Administra los inquilinos de forma más segura con los planes autoalojados',
     self_hosted_card_description:
@@ -68,7 +68,7 @@ const tenants = {
     tenant_name: 'Nombre del inquilino',
     tenant_instance: 'Selecciona tu instancia',
     tenant_instance_description:
-      'Selecciona dónde se alojará tu inquilino. Elige Logto Cloud para infraestructura compartida pública o una instancia privada para recursos dedicados.',
+      'Selecciona dónde se alojará tu inquilino. Elige GetCertus Cloud para infraestructura compartida pública o una instancia privada para recursos dedicados.',
     tenant_region: 'Región de alojamiento de datos',
     tenant_region_description:
       'La ubicación física donde se alojan sus recursos de inquilino (usuarios, aplicaciones, etc.). Esto no se puede cambiar después de la creación.',
@@ -97,7 +97,7 @@ const tenants = {
     tenant_mfa_setup_action: 'Configurar MFA',
     enterprise_sso: 'Enterprise SSO',
     enterprise_sso_description:
-      'Disponible en planes de pago. Contáctenos para habilitar Enterprise SSO para que todos los miembros puedan iniciar sesión en Logto Cloud Console usando el proveedor de identidad de su organización.',
+      'Disponible en planes de pago. Contáctenos para habilitar Enterprise SSO para que todos los miembros puedan iniciar sesión en GetCertus Cloud Console usando el proveedor de identidad de su organización.',
   },
   full_env_tag: {
     development: 'Desarrollo',
@@ -141,7 +141,7 @@ const tenants = {
       'El ID del inquilino solo puede contener letras minúsculas, números y guiones, y no debe exceder {{max}} caracteres.',
     tenant_id_placeholder: 'Su ID de inquilino',
     tenant_id_tip:
-      'Personalice el ID del inquilino. Si se deja vacío, Logto generará un ID predeterminado. El ID del inquilino no se puede cambiar después de la creación.',
+      'Personalice el ID del inquilino. Si se deja vacío, GetCertus generará un ID predeterminado. El ID del inquilino no se puede cambiar después de la creación.',
   },
   dev_tenant_migration: {
     title:
@@ -174,7 +174,7 @@ const tenants = {
   tenant_landing_page: {
     title: 'Todavía no has creado un inquilino',
     description:
-      'Para empezar a configurar tu proyecto con Logto, por favor crea un nuevo inquilino. Si necesitas cerrar la sesión o eliminar tu cuenta, simplemente haz clic en el botón de avatar en la esquina superior derecha.',
+      'Para empezar a configurar tu proyecto con GetCertus, por favor crea un nuevo inquilino. Si necesitas cerrar la sesión o eliminar tu cuenta, simplemente haz clic en el botón de avatar en la esquina superior derecha.',
     create_tenant_button: 'Crear inquilino',
   },
   status: {

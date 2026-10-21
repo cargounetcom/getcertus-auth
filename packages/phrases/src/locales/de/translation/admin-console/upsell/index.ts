@@ -11,7 +11,7 @@ const upsell = {
   create_tenant: {
     title: 'Wählen Sie Ihren Tenant-Plan aus',
     description:
-      'Logto bietet wettbewerbsfähige Planoptionen mit innovativer und erschwinglicher Preisgestaltung, die für wachsende Unternehmen entwickelt wurden. <a>Erfahren Sie mehr</a>',
+      'GetCertus bietet wettbewerbsfähige Planoptionen mit innovativer und erschwinglicher Preisgestaltung, die für wachsende Unternehmen entwickelt wurden. <a>Erfahren Sie mehr</a>',
     base_price: 'Grundpreis',
     monthly_price: '{{value, number}}/Monat',
     view_all_features: 'Alle Funktionen anzeigen',
@@ -24,18 +24,18 @@ const upsell = {
   mau_exceeded_modal: {
     title: 'MAU-Limit überschritten. Upgraden Sie Ihren Plan.',
     notification:
-      'Ihr aktueller MAU hat das Limit von <planName/> überschritten. Bitte upgraden Sie umgehend auf den Premium-Plan, um die Aussetzung des Logto-Dienstes zu vermeiden.',
+      'Ihr aktueller MAU hat das Limit von <planName/> überschritten. Bitte upgraden Sie umgehend auf den Premium-Plan, um die Aussetzung des GetCertus-Dienstes zu vermeiden.',
     update_plan: 'Plan aktualisieren',
   },
   token_exceeded_modal: {
     title: 'Token-Nutzung hat das Limit überschritten. Upgrade deinen Plan.',
     notification:
-      'Du hast dein <planName/>-Token-Nutzungslimit überschritten. Benutzer werden nicht in der Lage sein, den Logto-Dienst ordnungsgemäß zu nutzen. Bitte upgrade deinen Plan umgehend auf Premium, um Unannehmlichkeiten zu vermeiden.',
+      'Du hast dein <planName/>-Token-Nutzungslimit überschritten. Benutzer werden nicht in der Lage sein, den GetCertus-Dienst ordnungsgemäß zu nutzen. Bitte upgrade deinen Plan umgehend auf Premium, um Unannehmlichkeiten zu vermeiden.',
   },
   payment_overdue_modal: {
     title: 'Zahlungsrückstand für Rechnung',
     notification:
-      'Hoppla! Die Zahlung für die Rechnung des Mieters <span>{{name}}</span> ist fehlgeschlagen. Bitte zahlen Sie die Rechnung umgehend, um eine Sperrung des Logto-Dienstes zu vermeiden.',
+      'Hoppla! Die Zahlung für die Rechnung des Mieters <span>{{name}}</span> ist fehlgeschlagen. Bitte zahlen Sie die Rechnung umgehend, um eine Sperrung des GetCertus-Dienstes zu vermeiden.',
     unpaid_bills: 'Ausstehende Rechnungen',
     update_payment: 'Zahlung aktualisieren',
   },
@@ -46,7 +46,7 @@ const upsell = {
     tenant_member: 'Mietermitglied',
   },
   charge_notification_for_quota_limit:
-    'Sie haben Ihr {{item}}-Quotenlimit überschritten. Logto wird Gebühren für die Nutzung über Ihr Quotenlimit hinaus hinzufügen. Die Abrechnung beginnt am Tag der Veröffentlichung des neuen Add-On-Preisdesigns. <a>Mehr erfahren</a>',
+    'Sie haben Ihr {{item}}-Quotenlimit überschritten. GetCertus wird Gebühren für die Nutzung über Ihr Quotenlimit hinaus hinzufügen. Die Abrechnung beginnt am Tag der Veröffentlichung des neuen Add-On-Preisdesigns. <a>Mehr erfahren</a>',
   paywall,
   featured_plan_content,
   add_on,

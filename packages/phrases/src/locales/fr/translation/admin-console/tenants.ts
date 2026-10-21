@@ -15,7 +15,7 @@ const tenants = {
   license: {
     purchase_title: 'PLANS AUTO-HÉBERGÉS',
     purchase_description:
-      'Les plans Professionnel et Entreprise auto-hébergés débloquent des fonctionnalités payantes sur votre propre instance : masquer la marque Logto, utiliser votre propre interface, la collaboration dans la console et des applications SAML illimitées. Achetez un plan pour obtenir votre clé de licence.',
+      'Les plans Professionnel et Entreprise auto-hébergés débloquent des fonctionnalités payantes sur votre propre instance : masquer la marque GetCertus, utiliser votre propre interface, la collaboration dans la console et des applications SAML illimitées. Achetez un plan pour obtenir votre clé de licence.',
     purchase_button: 'Voir les plans auto-hébergés',
     install_title: 'INSTALLER LA LICENCE',
     install_description:
@@ -23,7 +23,7 @@ const tenants = {
     install_button: 'Installer la licence',
     key_field: 'Clé de licence',
     key_field_description:
-      'La clé est vérifiée sur votre instance et n’en sort jamais. Contactez Logto pour obtenir une nouvelle clé si la vôtre a expiré.',
+      'La clé est vérifiée sur votre instance et n’en sort jamais. Contactez GetCertus pour obtenir une nouvelle clé si la vôtre a expiré.',
     key_placeholder: 'Collez votre clé de licence ici',
     installed_toast: 'Licence installée avec succès.',
     details_title: 'LICENCE',
@@ -37,7 +37,7 @@ const tenants = {
     last_refreshed_at_field: 'Dernière actualisation le',
     grace_ends_at_field: 'La période de grâce se termine le',
     refresh_expired_description:
-      'La clé de licence a expiré le {{expiresAt}}. Les fonctionnalités sous licence restent disponibles jusqu’au {{graceEndsAt}} pendant que Logto tente de l’actualiser.',
+      'La clé de licence a expiré le {{expiresAt}}. Les fonctionnalités sous licence restent disponibles jusqu’au {{graceEndsAt}} pendant que GetCertus tente de l’actualiser.',
     refresh_refused_description:
       'L’actualisation de la licence a été refusée car la licence est {{reason}}. Les fonctionnalités sous licence restent disponibles jusqu’au {{graceEndsAt}}.',
     refusal_reason_canceled: 'annulée',
@@ -46,15 +46,15 @@ const tenants = {
     refusal_reason_revoked: 'révoquée',
     refusal_reason_unknown: 'indisponible',
     grace_expired_description:
-      'La période de grâce de la licence s’est terminée le {{graceEndsAt}}. Ce déploiement est revenu aux valeurs OSS par défaut. Contactez Logto pour obtenir une nouvelle clé de licence et installez-la à nouveau.',
+      'La période de grâce de la licence s’est terminée le {{graceEndsAt}}. Ce déploiement est revenu aux valeurs OSS par défaut. Contactez GetCertus pour obtenir une nouvelle clé de licence et installez-la à nouveau.',
     get_fresh_key_button: 'Obtenir une nouvelle clé',
     replace_button: 'Remplacer la licence',
   },
   members: {
-    card_title: 'Gérez vos locataires plus sûrement avec Logto Cloud',
+    card_title: 'Gérez vos locataires plus sûrement avec GetCertus Cloud',
     card_description:
       'Ajoutez des administrateurs ou des collaborateurs à votre locataire sans partager un seul compte administrateur.',
-    card_action: 'Découvrir Logto Cloud',
+    card_action: 'Découvrir GetCertus Cloud',
     self_hosted_card_title: 'Gérez vos locataires plus sûrement avec les plans auto-hébergés',
     self_hosted_card_description:
       'Ajoutez des administrateurs ou des collaborateurs à votre locataire sans partager un seul compte administrateur.',
@@ -68,7 +68,7 @@ const tenants = {
     tenant_name: 'Nom du locataire',
     tenant_instance: 'Sélectionnez votre instance',
     tenant_instance_description:
-      'Sélectionnez où votre locataire sera hébergé. Choisissez Logto Cloud pour une infrastructure partagée publique, ou une instance privée pour des ressources dédiées.',
+      'Sélectionnez où votre locataire sera hébergé. Choisissez GetCertus Cloud pour une infrastructure partagée publique, ou une instance privée pour des ressources dédiées.',
     tenant_region: "Région d'hébergement des données",
     tenant_region_description:
       'Le lieu physique où vos ressources de locataire (utilisateurs, applications, etc.) sont hébergées. Cela ne peut pas être changé après la création.',
@@ -97,7 +97,7 @@ const tenants = {
     tenant_mfa_setup_action: 'Configurer la MFA',
     enterprise_sso: 'Enterprise SSO',
     enterprise_sso_description:
-      "Disponible sur les plans payants. Contactez-nous pour activer Enterprise SSO afin que tous les membres puissent se connecter à la console Logto Cloud en utilisant le fournisseur d'identité de votre organisation.",
+      "Disponible sur les plans payants. Contactez-nous pour activer Enterprise SSO afin que tous les membres puissent se connecter à la console GetCertus Cloud en utilisant le fournisseur d'identité de votre organisation.",
   },
   full_env_tag: {
     development: 'Développement',
@@ -142,7 +142,7 @@ const tenants = {
       "L'identifiant du locataire ne peut contenir que des lettres minuscules, des chiffres et des tirets, et ne doit pas dépasser {{max}} caractères.",
     tenant_id_placeholder: 'Votre identifiant de locataire',
     tenant_id_tip:
-      "Personnalisez l'identifiant du locataire. Si laissé vide, Logto générera un identifiant par défaut. L'identifiant du locataire ne peut pas être modifié après la création.",
+      "Personnalisez l'identifiant du locataire. Si laissé vide, GetCertus générera un identifiant par défaut. L'identifiant du locataire ne peut pas être modifié après la création.",
   },
   dev_tenant_migration: {
     title:
@@ -175,7 +175,7 @@ const tenants = {
   tenant_landing_page: {
     title: "Vous n'avez pas encore créé de locataire",
     description:
-      "Pour commencer à configurer votre projet avec Logto, veuillez créer un nouveau locataire. Si vous devez vous déconnecter ou supprimer votre compte, cliquez simplement sur le bouton d'avatar dans le coin supérieur droit.",
+      "Pour commencer à configurer votre projet avec GetCertus, veuillez créer un nouveau locataire. Si vous devez vous déconnecter ou supprimer votre compte, cliquez simplement sur le bouton d'avatar dans le coin supérieur droit.",
     create_tenant_button: 'Créer un locataire',
   },
   status: {

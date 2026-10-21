@@ -28,7 +28,7 @@ const sign_in_exp = {
     dark_primary_color: 'لون العلامة التجارية (الداكن)',
     dark_mode: 'تمكين الوضع الداكن',
     dark_mode_description:
-      'سيحتوي تطبيقك على نمط وضع داكن مولد تلقائيًا بناءً على لون العلامة التجارية الخاصة بك وخوارزمية Logto. يمكنك تخصيصه بحرية.',
+      'سيحتوي تطبيقك على نمط وضع داكن مولد تلقائيًا بناءً على لون العلامة التجارية الخاصة بك وخوارزمية GetCertus. يمكنك تخصيصه بحرية.',
     dark_mode_reset_tip: 'إعادة حساب لون الوضع الداكن بناءً على لون العلامة التجارية.',
     reset: 'إعادة الحساب',
   },
@@ -40,11 +40,11 @@ const sign_in_exp = {
     app_logo_and_favicon: 'شعار التطبيق ورمز الموقع',
     company_logo_and_favicon: 'شعار الشركة ورمز الموقع',
     organization_logo_and_favicon: 'شعار المنظمة ورمز الموقع',
-    hide_logto_branding: 'إخفاء علامة Logto التجارية',
+    hide_logto_branding: 'إخفاء علامة GetCertus التجارية',
     hide_logto_branding_description:
-      'أزل عبارة "مدعوم من Logto". سلّط الضوء على علامتك فقط مع تجربة تسجيل دخول نظيفة واحترافية.',
+      'أزل عبارة "مدعوم من GetCertus". سلّط الضوء على علامتك فقط مع تجربة تسجيل دخول نظيفة واحترافية.',
     hide_logto_branding_oss_note:
-      'هذه الميزة متاحة في <a>Logto Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>.',
+      'هذه الميزة متاحة في <a>GetCertus Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>.',
   },
   branding_uploads: {
     app_logo: {
@@ -91,10 +91,10 @@ const sign_in_exp = {
     bring_your_ui_title: 'اجلب واجهتك الخاصة',
     bring_your_ui_upload_title: 'تحميل أصول واجهة المستخدم المخصصة',
     bring_your_ui_description:
-      'قم بتحميل حزمة مضغوطة (.zip) لاستبدال واجهة المستخدم المُعدة مسبقًا في Logto بالشفرة الخاصة بك. <a>تعلم المزيد</a>',
+      'قم بتحميل حزمة مضغوطة (.zip) لاستبدال واجهة المستخدم المُعدة مسبقًا في GetCertus بالشفرة الخاصة بك. <a>تعلم المزيد</a>',
     bring_your_ui_oss_description: 'خصّص واجهة تسجيل الدخول باستخدام الشيفرة الخاصة بك.',
     bring_your_ui_oss_card_description:
-      'رفع واجهة مستخدم مخصصة متاح في <a>Logto Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>. لا حاجة إلى عمل fork أو إعادة النشر.',
+      'رفع واجهة مستخدم مخصصة متاح في <a>GetCertus Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>. لا حاجة إلى عمل fork أو إعادة النشر.',
     bring_your_ui_oss_try_cloud: 'جرّب Cloud',
     preview_with_bring_your_ui_description:
       'تم تحميل أصول واجهة المستخدم المخصصة الخاصة بك بنجاح ويتم تقديمها الآن. وبالتالي ، تم تعطيل نافذة المعاينة المدمجة.\nلتجربة واجهة تسجيل الدخول المخصصة الخاصة بك ، انقر فوق زر "المعاينة المباشرة" لفتحها في علامة تبويب مستعرض جديدة.',
@@ -112,10 +112,10 @@ const sign_in_exp = {
   },
   account_center: {
     title: 'مركز الحساب',
-    description: 'خصص تدفقات مركز الحساب لديك باستخدام واجهات برمجة تطبيقات Logto.',
+    description: 'خصص تدفقات مركز الحساب لديك باستخدام واجهات برمجة تطبيقات GetCertus.',
     enable_account_api: 'تفعيل مركز الحساب وواجهة Account API',
     enable_account_api_description:
-      'يؤدي هذا إلى تفعيل واجهة Account API الموجهة للمستخدمين النهائيين ومركز الحساب الجاهز من Logto معًا. عند إيقافه، تصبح الميزتان غير متاحتين.',
+      'يؤدي هذا إلى تفعيل واجهة Account API الموجهة للمستخدمين النهائيين ومركز الحساب الجاهز من GetCertus معًا. عند إيقافه، تصبح الميزتان غير متاحتين.',
     field_options: {
       off: 'إيقاف',
       edit: 'تحرير',

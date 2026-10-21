@@ -5,8 +5,8 @@
 <rect width="6.41023" height="1.60256" rx="0.801278" transform="matrix(0.708021 -0.706191 0.708021 0.706191 16.842 16.275)" fill="white"/>
 <defs>
 <linearGradient id="paint0_linear_271_9123" x1="13.6" y1="3.20001" x2="-1.2" y2="19.2" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D361E7"/>
-<stop offset="1" stop-color="#7D5FF4"/>
+<stop stop-color="#86c29f"/>
+<stop offset="1" stop-color="#88cba4"/>
 </linearGradient>
 </defs>
 </svg>
