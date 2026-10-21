@@ -30,7 +30,10 @@ ENV APPLICATIONINSIGHTS_CONNECTION_STRING=${applicationinsights_connection_strin
 ARG logto_oss_survey_endpoint=
 ENV LOGTO_OSS_SURVEY_ENDPOINT=${logto_oss_survey_endpoint}
 
-RUN pnpm -r build
+# GetCertus: more heap for the console build, fewer packages built at once, skip integration tests.
+ENV NODE_OPTIONS=--max-old-space-size=6144
+RUN pnpm -r --workspace-concurrency=2 --filter "!@logto/integration-tests" build
+ENV NODE_OPTIONS=
 
 ### Add official connectors ###
 ARG additional_connector_args
