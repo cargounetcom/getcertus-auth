@@ -56,4 +56,5 @@ COPY --from=builder /etc/logto .
 RUN mkdir -p /etc/logto/packages/cli/alteration-scripts && chmod g+w /etc/logto/packages/cli/alteration-scripts
 EXPOSE 3001
 ENTRYPOINT ["npm", "run"]
-CMD ["start"]
+# GetCertus: seed the database on first start when GETCERTUS_SEED=1 (skipped if it exists).
+CMD ["start:getcertus"]
