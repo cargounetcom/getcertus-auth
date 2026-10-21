@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'Navn',
+  avatar: 'Avatar',
+  givenName: 'Fornavn',
+  familyName: 'Efternavn',
+  middleName: 'Mellemnavn',
+  fullname: 'Fulde navn',
+  nickname: 'Kaldenavn',
+  preferredUsername: 'Foretrukket brugernavn',
+  profile: 'Profil',
+  website: 'Websted',
+  gender: 'Køn',
+  birthdate: 'Fødselsdato',
+  zoneinfo: 'Tidszone',
+  locale: 'Sprog og region',
+  address: {
+    formatted: 'Adresse',
+    streetAddress: 'Gadeadresse',
+    locality: 'By',
+    region: 'Region',
+    postalCode: 'Postnummer',
+    country: 'Land',
+  },
+  gender_options: {
+    female: 'Kvinde',
+    male: 'Mand',
+    prefer_not_to_say: 'Ønsker ikke at oplyse',
+  },
+  checkbox_value: {
+    checked: 'Ja',
+    unchecked: 'Nej',
+  },
+  avatar_upload: {
+    upload: 'Upload',
+    remove: 'Fjern',
+    uploading: 'Uploader...',
+    hint: 'Anbefalet format 1:1, højst {{limit}}.',
+    error_file_type: 'Filtypen skal være {{extensions}}.',
+    error_file_size: 'Filen må ikke være større end {{limit}}.',
+    error_storage_not_configured: 'Dit foto kunne ikke uploades. Prøv igen senere.',
+    error_upload: 'Fotoet kunne ikke uploades. Prøv igen.',
+    error_save: 'Dit foto kunne ikke gemmes. Prøv igen.',
+    crop_title: 'Beskær dit foto',
+    zoom: 'Zoom',
+    error_crop: 'Billedet kunne ikke beskæres. Prøv igen.',
+  },
+};
+
+export default Object.freeze(profile);

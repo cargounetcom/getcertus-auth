@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'Nimi',
+  avatar: 'Avatar',
+  givenName: 'Etunimi',
+  familyName: 'Sukunimi',
+  middleName: 'Toinen nimi',
+  fullname: 'Koko nimi',
+  nickname: 'Lempinimi',
+  preferredUsername: 'Toivottu käyttäjänimi',
+  profile: 'Profiili',
+  website: 'Verkkosivusto',
+  gender: 'Sukupuoli',
+  birthdate: 'Syntymäaika',
+  zoneinfo: 'Aikavyöhyke',
+  locale: 'Kieli ja alue',
+  address: {
+    formatted: 'Osoite',
+    streetAddress: 'Katuosoite',
+    locality: 'Kaupunki',
+    region: 'Maakunta/osavaltio',
+    postalCode: 'Postinumero',
+    country: 'Maa',
+  },
+  gender_options: {
+    female: 'Nainen',
+    male: 'Mies',
+    prefer_not_to_say: 'En halua kertoa',
+  },
+  checkbox_value: {
+    checked: 'Kyllä',
+    unchecked: 'Ei',
+  },
+  avatar_upload: {
+    upload: 'Lataa',
+    remove: 'Poista',
+    uploading: 'Ladataan...',
+    hint: 'Suositeltu kuvasuhde 1:1, enintään {{limit}}.',
+    error_file_type: 'Tiedostotyypin on oltava {{extensions}}.',
+    error_file_size: 'Tiedoston koko saa olla enintään {{limit}}.',
+    error_storage_not_configured: 'Kuvan lataaminen ei onnistu. Yritä myöhemmin uudelleen.',
+    error_upload: 'Kuvan lataus epäonnistui. Yritä uudelleen.',
+    error_save: 'Kuvan tallennus epäonnistui. Yritä uudelleen.',
+    crop_title: 'Rajaa kuvasi',
+    zoom: 'Zoomaa',
+    error_crop: 'Kuvan rajaus epäonnistui. Yritä uudelleen.',
+  },
+};
+
+export default Object.freeze(profile);

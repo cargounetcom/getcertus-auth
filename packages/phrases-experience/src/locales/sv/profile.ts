@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'Namn',
+  avatar: 'Avatar',
+  givenName: 'Förnamn',
+  familyName: 'Efternamn',
+  middleName: 'Mellannamn',
+  fullname: 'Fullständigt namn',
+  nickname: 'Smeknamn',
+  preferredUsername: 'Önskat användarnamn',
+  profile: 'Profil',
+  website: 'Webbplats',
+  gender: 'Kön',
+  birthdate: 'Födelsedatum',
+  zoneinfo: 'Tidszon',
+  locale: 'Språk och region',
+  address: {
+    formatted: 'Adress',
+    streetAddress: 'Gatuadress',
+    locality: 'Ort',
+    region: 'Län/region',
+    postalCode: 'Postnummer',
+    country: 'Land',
+  },
+  gender_options: {
+    female: 'Kvinna',
+    male: 'Man',
+    prefer_not_to_say: 'Vill inte ange',
+  },
+  checkbox_value: {
+    checked: 'Ja',
+    unchecked: 'Nej',
+  },
+  avatar_upload: {
+    upload: 'Ladda upp',
+    remove: 'Ta bort',
+    uploading: 'Laddar upp...',
+    hint: 'Rekommenderat format 1:1, högst {{limit}}.',
+    error_file_type: 'Filtypen måste vara {{extensions}}.',
+    error_file_size: 'Filen får inte vara större än {{limit}}.',
+    error_storage_not_configured: 'Det gick inte att ladda upp ditt foto. Försök igen senare.',
+    error_upload: 'Det gick inte att ladda upp fotot. Försök igen.',
+    error_save: 'Det gick inte att spara ditt foto. Försök igen.',
+    crop_title: 'Beskär ditt foto',
+    zoom: 'Zooma',
+    error_crop: 'Det gick inte att beskära bilden. Försök igen.',
+  },
+};
+
+export default Object.freeze(profile);

@@ -1,0 +1,65 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const error = {
+  general_required: '{{types, list(type: disjunction;)}} vaaditaan',
+  general_invalid: '{{types, list(type: disjunction;)}} on virheellinen',
+  invalid_min_max_input: 'Arvon on oltava välillä {{minValue}}–{{maxValue}}',
+  invalid_min_max_length: 'Arvon pituuden on oltava välillä {{minLength}}–{{maxLength}}',
+  username_required: 'Käyttäjänimi vaaditaan',
+  password_required: 'Salasana vaaditaan',
+  username_exists: 'Käyttäjänimi on jo käytössä',
+  username_should_not_start_with_number: 'Käyttäjänimi ei saa alkaa numerolla',
+  username_invalid_charset: 'Käyttäjänimessä saa olla vain kirjaimia, numeroita tai alaviivoja.',
+  username_too_short: 'Käyttäjänimen on oltava vähintään {{min}} merkkiä pitkä.',
+  username_too_long: 'Käyttäjänimi saa olla enintään {{max}} merkkiä pitkä.',
+  username_uppercase_not_allowed: 'Isot kirjaimet eivät ole sallittuja käyttäjänimissä.',
+  username_lowercase_not_allowed: 'Pienet kirjaimet eivät ole sallittuja käyttäjänimissä.',
+  username_numbers_not_allowed: 'Numerot eivät ole sallittuja käyttäjänimissä.',
+  username_underscore_not_allowed: 'Alaviivat eivät ole sallittuja käyttäjänimissä.',
+  invalid_email: 'Sähköpostiosoite on virheellinen',
+  invalid_phone: 'Puhelinnumero on virheellinen',
+  passwords_do_not_match: 'Salasanat eivät täsmää.',
+  invalid_passcode: 'Vahvistuskoodi on virheellinen.',
+  device_code_required: 'Koodi vaaditaan.',
+  invalid_device_code: 'Laitekoodi on virheellinen.',
+  device_flow_aborted: 'Kirjautumispyyntö keskeytettiin.',
+  invalid_connector_auth: 'Valtuutus on virheellinen',
+  invalid_connector_request: 'Liittimen tiedot ovat virheelliset',
+  unknown: 'Tuntematon virhe.',
+  invalid_session: 'Istuntoa ei löytynyt. Palaa takaisin ja kirjaudu uudelleen.',
+  timeout: 'Pyyntö aikakatkaistiin.',
+  password_rejected: {
+    too_short: 'Vähimmäispituus on {{min}}.',
+    too_long: 'Enimmäispituus on {{max}}.',
+    character_types: 'Vähintään {{min}} merkkityyppiä vaaditaan.',
+    unsupported_characters: 'Löytyi merkki, jota ei tueta.',
+    pwned: 'Vältä yksinkertaisia salasanoja, jotka on helppo arvata.',
+    restricted_found: 'Vältä liiallista käyttöä: {{list, list}}.',
+    restricted: {
+      repetition: 'toistuvat merkit',
+      sequence: 'peräkkäiset merkit',
+      user_info: 'henkilötietosi',
+      words: 'tuotteeseen liittyvät sanat',
+    },
+  },
+  sso_not_enabled: 'Kertakirjautuminen ei ole käytössä tällä sähköpostitilillä.',
+  invalid_link: 'Virheellinen linkki',
+  invalid_link_description:
+    'Kertakäyttöinen tunnisteesi on ehkä vanhentunut tai ei ole enää voimassa.',
+  captcha_verification_failed: 'Captcha-vahvistus epäonnistui.',
+  send_verification_code_failed: 'Vahvistuskoodin lähetys epäonnistui. Yritä myöhemmin uudelleen.',
+  send_verification_code_failed_use_password:
+    'Vahvistuskoodin lähetys epäonnistui. Kirjaudu sen sijaan salasanalla.',
+  terms_acceptance_required: 'Ehtojen hyväksyminen vaaditaan',
+  terms_acceptance_required_description: 'Sinun on hyväksyttävä ehdot jatkaaksesi.',
+  something_went_wrong: 'Jokin meni pieleen',
+  account_suspended: 'Tili jäädytetty',
+  account_suspended_description:
+    'Tämä tili on jäädytetty. Ota yhteyttä ylläpitäjään saadaksesi apua.',
+  access_denied: 'Pääsy estetty',
+  application_access_denied:
+    'Sinulla ei ole oikeutta tähän sovellukseen.\nOta yhteyttä ylläpitäjään saadaksesi apua.',
+  feature_not_enabled:
+    'Sinulla ei ole oikeutta tähän toimintoon. Ota yhteyttä ylläpitäjään saadaksesi apua.',
+};
+
+export default Object.freeze(error);

@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'Naam',
+  avatar: 'Avatar',
+  givenName: 'Voornaam',
+  familyName: 'Achternaam',
+  middleName: 'Tussenvoegsel',
+  fullname: 'Volledige naam',
+  nickname: 'Bijnaam',
+  preferredUsername: 'Voorkeursgebruikersnaam',
+  profile: 'Profiel',
+  website: 'Website',
+  gender: 'Geslacht',
+  birthdate: 'Geboortedatum',
+  zoneinfo: 'Tijdzone',
+  locale: 'Taal en regio',
+  address: {
+    formatted: 'Adres',
+    streetAddress: 'Straat en huisnummer',
+    locality: 'Plaats',
+    region: 'Provincie',
+    postalCode: 'Postcode',
+    country: 'Land',
+  },
+  gender_options: {
+    female: 'Vrouw',
+    male: 'Man',
+    prefer_not_to_say: 'Zeg ik liever niet',
+  },
+  checkbox_value: {
+    checked: 'Ja',
+    unchecked: 'Nee',
+  },
+  avatar_upload: {
+    upload: 'Uploaden',
+    remove: 'Verwijderen',
+    uploading: 'Bezig met uploaden...',
+    hint: 'Aanbevolen verhouding 1:1, maximaal {{limit}}.',
+    error_file_type: 'Bestandstype moet {{extensions}} zijn.',
+    error_file_size: 'Bestand mag niet groter zijn dan {{limit}}.',
+    error_storage_not_configured: 'Je foto kan niet worden geüpload. Probeer het later opnieuw.',
+    error_upload: 'Uploaden van de foto mislukt. Probeer het opnieuw.',
+    error_save: 'Opslaan van je foto mislukt. Probeer het opnieuw.',
+    crop_title: 'Foto bijsnijden',
+    zoom: 'Zoomen',
+    error_crop: 'Bijsnijden van de afbeelding mislukt. Probeer het opnieuw.',
+  },
+};
+
+export default Object.freeze(profile);

@@ -1,0 +1,85 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const mfa = {
+  totp: 'קוד חד־פעמי מאפליקציית אימות',
+  webauthn: 'מפתח גישה',
+  backup_code: 'קוד גיבוי',
+  email_verification_code: 'קוד אימות באימייל',
+  phone_verification_code: 'קוד אימות ב-SMS',
+  link_totp_description: 'לדוגמה Google Authenticator',
+  link_webauthn_description: 'קישור המכשיר או מפתח USB',
+  link_backup_code_description: 'יצירת קוד גיבוי',
+  link_email_verification_code_description: 'קישור כתובת האימייל',
+  link_email_2fa_description: 'קישור כתובת האימייל לאימות דו־שלבי',
+  link_phone_verification_code_description: 'קישור מספר הטלפון',
+  link_phone_2fa_description: 'קישור מספר הטלפון לאימות דו־שלבי',
+  verify_totp_description: 'יש להזין את הקוד החד־פעמי מהאפליקציה',
+  verify_webauthn_description: 'אימות המכשיר או מפתח ה-USB',
+  verify_backup_code_description: 'יש להדביק את קוד הגיבוי ששמרת',
+  verify_email_verification_code_description: 'יש להזין את הקוד שנשלח לאימייל',
+  verify_phone_verification_code_description: 'יש להזין את הקוד שנשלח לטלפון',
+  send_to_email: 'שליחה אל {{identifier}}',
+  send_to_phone: 'שליחה אל {{identifier}}',
+  onboarding: 'הפעלת אימות דו־שלבי',
+  onboarding_description:
+    'הגנה על החשבון באמצעות אימות דו־שלבי. יש לבחור שיטה אחת או יותר: מפתח גישה, אפליקציית אימות (קוד חד־פעמי), קוד אימות ב-SMS או קודי גיבוי.',
+  enable_mfa: 'הפעלת אימות דו־שלבי',
+  add_mfa_factors: 'הוספת אימות דו־שלבי',
+  add_mfa_description: 'אימות דו־שלבי מופעל. יש לבחור שיטת אימות שנייה להתחברות מאובטחת.',
+  add_another_mfa_factor: 'הוספת אימות דו־שלבי נוסף',
+  add_another_mfa_description: 'יש לבחור דרך נוספת לאימות הזהות בעת ההתחברות.',
+  verify_mfa_factors: 'אימות דו־שלבי',
+  verify_mfa_description: 'אימות דו־שלבי מופעל בחשבון זה. יש לבחור את הדרך השנייה לאימות הזהות.',
+  add_authenticator_app: 'הוספת אפליקציית אימות',
+  replace_authenticator_app: 'החלפת אפליקציית אימות',
+  step: 'שלב {{step, number}}: {{content}}',
+  scan_qr_code: 'סריקת קוד QR זה',
+  scan_qr_code_description:
+    'יש לסרוק את קוד ה-QR הבא באפליקציית האימות, כמו Google Authenticator,‏ Duo Mobile או Authy.',
+  qr_code_not_available: 'לא מצליח/ה לסרוק את קוד ה-QR?',
+  copy_and_paste_key: 'העתקה והדבקה של המפתח',
+  copy_and_paste_key_description:
+    'יש להעתיק את המפתח הבא ולהדביק אותו באפליקציית האימות, כמו Google Authenticator,‏ Duo Mobile או Authy.',
+  want_to_scan_qr_code: 'רוצה לסרוק את קוד ה-QR?',
+  enter_one_time_code: 'הזנת הקוד החד־פעמי',
+  enter_one_time_code_link_description:
+    'יש להזין את קוד האימות בן 6 הספרות שנוצר באפליקציית האימות.',
+  enter_one_time_code_description:
+    'אימות דו־שלבי מופעל בחשבון זה. יש להזין את הקוד החד־פעמי המוצג באפליקציית האימות המקושרת.',
+  enter_email_verification_code: 'הזנת קוד האימות מהאימייל',
+  enter_email_verification_code_description:
+    'אימות דו־שלבי מופעל בחשבון זה. יש להזין את קוד האימות שנשלח אל {{identifier}}.',
+  enter_phone_verification_code: 'הזנת קוד האימות מה-SMS',
+  enter_phone_verification_code_description:
+    'אימות דו־שלבי מופעל בחשבון זה. יש להזין את קוד האימות שנשלח ב-SMS אל {{identifier}}.',
+  link_another_mfa_factor: 'מעבר לשיטה אחרת',
+  save_backup_code: 'שמירת קודי הגיבוי',
+  save_backup_code_description:
+    'אם האימות הדו־שלבי לא מצליח בדרכים אחרות, אפשר להשתמש באחד מקודי הגיבוי האלה כדי לגשת לחשבון. כל קוד ניתן לשימוש פעם אחת בלבד.',
+  backup_code_hint: 'יש להעתיק אותם ולשמור במקום בטוח.',
+  new_backup_codes_generated:
+    'קודי גיבוי חדשים החליפו את הקודים הישנים. יש לשמור אותם במקום בטוח בהקדם.',
+  enter_a_backup_code: 'הזנת קוד גיבוי',
+  enter_backup_code_description: 'יש להזין את קוד הגיבוי ששמרת כשהאימות הדו־שלבי הופעל.',
+  create_a_passkey: 'יצירת מפתח גישה',
+  create_passkey_description:
+    'רישום מפתח גישה באמצעות ביומטריה של המכשיר, מפתחות אבטחה (למשל YubiKey) או שיטות זמינות אחרות.',
+  try_another_verification_method: 'ניסיון בשיטת אימות אחרת',
+  verify_via_passkey: 'אימות באמצעות מפתח גישה',
+  verify_via_passkey_description:
+    'אימות עם מפתח גישה באמצעות הסיסמה או הביומטריה של המכשיר, סריקת קוד QR או מפתח אבטחה USB כמו YubiKey.',
+  trust_this_device_title: 'לסמוך על מכשיר זה',
+  trust_this_device_description: 'אפשר לדלג על אימות MFA במכשיר זה בהתחברויות הבאות.',
+  trust_this_device_one: 'לסמוך על מכשיר זה למשך יום {{count}}',
+  trust_this_device_two: 'לסמוך על מכשיר זה למשך {{count}} ימים',
+  trust_this_device_few: 'לסמוך על מכשיר זה למשך {{count}} ימים',
+  trust_this_device_many: 'לסמוך על מכשיר זה למשך {{count}} ימים',
+  trust_this_device_other: 'לסמוך על מכשיר זה למשך {{count}} ימים',
+  secret_key_copied: 'המפתח הסודי הועתק.',
+  backup_code_copied: 'קוד הגיבוי הועתק.',
+  webauthn_not_ready: 'WebAuthn עדיין לא מוכן. יש לנסות שוב מאוחר יותר.',
+  webauthn_not_supported: 'WebAuthn אינו נתמך בדפדפן זה.',
+  webauthn_failed_to_create: 'היצירה נכשלה. יש לנסות שוב.',
+  webauthn_failed_to_verify: 'האימות נכשל. יש לנסות שוב.',
+};
+
+export default Object.freeze(mfa);

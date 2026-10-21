@@ -1,3 +1,4 @@
+/* eslint-disable max-lines -- Locale catalog mirrors the complete Account Center phrase schema. */
 const account_center = {
   home: {
     title: 'صفحه یافت نشد',
@@ -90,8 +91,14 @@ const account_center = {
     email_verification_code: 'کد تأیید ایمیل',
     phone_verification_code: 'کد تأیید تلفن',
     passkeys_count_one: '{{count}} کلید عبور',
+    passkeys_count_two: '{{count}} کلید عبور',
+    passkeys_count_few: '{{count}} کلید عبور',
+    passkeys_count_many: '{{count}} کلید عبور',
     passkeys_count_other: '{{count}} کلید عبور',
     backup_codes_count_one: '{{count}} کد باقی‌مانده',
+    backup_codes_count_two: '{{count}} کد باقی‌مانده',
+    backup_codes_count_few: '{{count}} کد باقی‌مانده',
+    backup_codes_count_many: '{{count}} کد باقی‌مانده',
     backup_codes_count_other: '{{count}} کد باقی‌مانده',
     view: 'مشاهده',
     manage: 'مدیریت',
@@ -299,3 +306,4 @@ const account_center = {
 };
 
 export default Object.freeze(account_center);
+/* eslint-enable max-lines */

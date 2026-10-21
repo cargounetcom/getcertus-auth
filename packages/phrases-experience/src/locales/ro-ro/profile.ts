@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'Nume',
+  avatar: 'Avatar',
+  givenName: 'Prenume',
+  familyName: 'Nume de familie',
+  middleName: 'Al doilea prenume',
+  fullname: 'Nume complet',
+  nickname: 'Poreclă',
+  preferredUsername: 'Nume de utilizator preferat',
+  profile: 'Profil',
+  website: 'Site web',
+  gender: 'Gen',
+  birthdate: 'Data nașterii',
+  zoneinfo: 'Fus orar',
+  locale: 'Limbă și regiune',
+  address: {
+    formatted: 'Adresă',
+    streetAddress: 'Stradă și număr',
+    locality: 'Localitate',
+    region: 'Județ',
+    postalCode: 'Cod poștal',
+    country: 'Țară',
+  },
+  gender_options: {
+    female: 'Feminin',
+    male: 'Masculin',
+    prefer_not_to_say: 'Prefer să nu spun',
+  },
+  checkbox_value: {
+    checked: 'Da',
+    unchecked: 'Nu',
+  },
+  avatar_upload: {
+    upload: 'Încarcă',
+    remove: 'Elimină',
+    uploading: 'Se încarcă...',
+    hint: 'Format recomandat 1:1, maximum {{limit}}.',
+    error_file_type: 'Tipul fișierului trebuie să fie {{extensions}}.',
+    error_file_size: 'Fișierul nu poate depăși {{limit}}.',
+    error_storage_not_configured: 'Fotografia nu poate fi încărcată. Încearcă din nou mai târziu.',
+    error_upload: 'Încărcarea fotografiei a eșuat. Încearcă din nou.',
+    error_save: 'Salvarea fotografiei a eșuat. Încearcă din nou.',
+    crop_title: 'Decupează fotografia',
+    zoom: 'Zoom',
+    error_crop: 'Decuparea imaginii a eșuat. Încearcă din nou.',
+  },
+};
+
+export default Object.freeze(profile);

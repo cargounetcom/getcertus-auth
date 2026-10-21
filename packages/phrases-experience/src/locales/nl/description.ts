@@ -1,0 +1,151 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const description = {
+  email: 'e-mail',
+  phone_number: 'telefoonnummer',
+  username: 'gebruikersnaam',
+  reminder: 'Herinnering',
+  not_found: '404 Niet gevonden',
+  agree_with_terms: 'Ik heb gelezen en ga akkoord met de ',
+  agree_with_terms_modal: 'Ga akkoord met de <link></link> om door te gaan.',
+  terms_of_use: 'Gebruiksvoorwaarden',
+  sign_in: 'Inloggen',
+  privacy_policy: 'Privacybeleid',
+  create_account: 'Account aanmaken',
+  switch_account: 'Account wisselen',
+  or: 'of',
+  and: 'en',
+  enter_passcode: 'De verificatiecode is verzonden naar je {{address}} {{target}}',
+  passcode_sent: 'De verificatiecode is opnieuw verzonden',
+  resend_after_seconds:
+    'Nog niet ontvangen? Opnieuw verzenden over <span>{{seconds}}</span> seconden',
+  resend_passcode: 'Nog niet ontvangen? <a>Verificatiecode opnieuw verzenden</a>',
+  create_account_id_exists: 'Er bestaat al een account met {{value}}. Ga verder met inloggen.',
+  link_account_id_exists: 'Het account met {{type}} {{value}} bestaat al. Wil je het koppelen?',
+  sign_in_id_does_not_exist: 'Geen account gevonden voor {{value}}. Een nieuw account aanmaken?',
+  sign_in_id_does_not_exist_alert: 'Het account met {{type}} {{value}} bestaat niet.',
+  create_account_id_exists_alert:
+    'Het account met {{type}} {{value}} is gekoppeld aan een ander account. Probeer een ander {{type}}.',
+  social_identity_exist:
+    'Het {{type}} {{value}} is gekoppeld aan een ander account. Probeer een ander {{type}}.',
+  bind_account_title: 'Account koppelen of aanmaken',
+  social_create_account: 'Je kunt een nieuw account aanmaken.',
+  social_link_email: 'Je kunt een ander e-mailadres koppelen',
+  social_link_phone: 'Je kunt een ander telefoonnummer koppelen',
+  social_link_email_or_phone: 'Je kunt een ander e-mailadres of telefoonnummer koppelen',
+  social_bind_with_existing:
+    'We hebben een bijbehorend geregistreerd account gevonden. Je kunt het direct koppelen.',
+  skip_social_linking: 'Koppelen aan bestaand account overslaan?',
+  reset_password: 'Wachtwoord opnieuw instellen',
+  reset_password_description:
+    'Voer het {{types, list(type: disjunction;)}} van je account in, dan sturen we je een verificatiecode om je wachtwoord opnieuw in te stellen.',
+  reset_password_magic_link_description:
+    'Voer het e-mailadres van je account in om verder te gaan met het opnieuw instellen van je wachtwoord.',
+  new_password: 'Nieuw wachtwoord',
+  set_password: 'Wachtwoord instellen',
+  password_changed: 'Wachtwoord gewijzigd',
+  no_account: 'Nog geen account? ',
+  have_account: 'Heb je al een account?',
+  enter_password: 'Voer wachtwoord in',
+  enter_password_for: 'Log in met het wachtwoord voor {{method}} {{value}}',
+  enter_username: 'Gebruikersnaam instellen',
+  enter_username_description:
+    'Met een gebruikersnaam kun je ook inloggen. Een gebruikersnaam mag alleen letters, cijfers en underscores bevatten.',
+  enter_username_policy_description: 'Met een gebruikersnaam kun je ook inloggen. {{requirements}}',
+  link_email: 'E-mailadres koppelen',
+  link_phone: 'Telefoonnummer koppelen',
+  link_email_or_phone: 'E-mailadres of telefoonnummer koppelen',
+  link_email_description: 'Koppel voor extra beveiliging je e-mailadres aan het account.',
+  link_phone_description: 'Koppel voor extra beveiliging je telefoonnummer aan het account.',
+  link_email_or_phone_description:
+    'Koppel voor extra beveiliging je e-mailadres of telefoonnummer aan het account.',
+  continue_with_more_information: 'Vul voor extra beveiliging de onderstaande accountgegevens aan.',
+  create_your_account: 'Maak je account aan',
+  sign_in_to_your_account: 'Log in op je account',
+  device_activation: 'Apparaat activeren',
+  device_activation_description:
+    'Voer de code in die op je apparaat wordt getoond. Controleer of deze overeenkomt en ga dan verder met inloggen op dit apparaat.',
+  device_activation_error_description: 'Voer de code in die op je apparaat wordt weergegeven.',
+  device_activation_success: 'Je apparaat is nu verbonden!',
+  device_activation_success_description: 'Ga terug naar je apparaat om verder te gaan.',
+  no_region_code_found: 'Geen landcode gevonden',
+  verify_email: 'Verifieer je e-mailadres',
+  verify_phone: 'Verifieer je telefoonnummer',
+  password_requirements: 'Wachtwoord {{items, list}}.',
+  password_requirement: {
+    length_one: 'moet minimaal {{count}} teken bevatten',
+    length_two: 'moet minimaal {{count}} tekens bevatten',
+    length_few: 'moet minimaal {{count}} tekens bevatten',
+    length_many: 'moet minimaal {{count}} tekens bevatten',
+    length_other: 'moet minimaal {{count}} tekens bevatten',
+    character_types_one:
+      'moet minimaal {{count}} soort bevatten van hoofdletters, kleine letters, cijfers en symbolen',
+    character_types_two:
+      'moet minimaal {{count}} soorten bevatten van hoofdletters, kleine letters, cijfers en symbolen',
+    character_types_few:
+      'moet minimaal {{count}} soorten bevatten van hoofdletters, kleine letters, cijfers en symbolen',
+    character_types_many:
+      'moet minimaal {{count}} soorten bevatten van hoofdletters, kleine letters, cijfers en symbolen',
+    character_types_other:
+      'moet minimaal {{count}} soorten bevatten van hoofdletters, kleine letters, cijfers en symbolen',
+  },
+  username_requirements: 'Gebruikersnaam {{items, list}}.',
+  username_requirement: {
+    length: 'moet {{min}} tot {{max}} tekens lang zijn',
+    characters: 'mag alleen {{characters, list}} bevatten',
+  },
+  username_character: {
+    uppercase: 'hoofdletters',
+    lowercase: 'kleine letters',
+    number: 'cijfers',
+    underscore: 'underscores',
+  },
+  use: 'Gebruik',
+  single_sign_on_email_form: 'Voer je zakelijke e-mailadres in',
+  single_sign_on_connectors_list:
+    'Je organisatie heeft single sign-on ingeschakeld voor het e-mailaccount {{email}}. Je kunt inloggen via de volgende SSO-providers.',
+  single_sign_on_enabled: 'Single sign-on is ingeschakeld voor dit account',
+  authorize_title: '{{name}} autoriseren',
+  unregistered_client_notice:
+    'Deze app, inclusief naam en logo, wordt zelf opgegeven door <hostname>{{host}}</hostname>. Controleer de hostnaam voordat je verdergaat.',
+  request_permission: '{{name}} vraagt toegang tot:',
+  grant_organization_access: 'Geef de organisatie toegang:',
+  authorize_personal_data_usage: 'Sta het gebruik van je persoonsgegevens toe:',
+  authorize_organization_access: 'Sta toegang tot de specifieke organisatie toe:',
+  user_scopes: 'Persoonlijke gebruikersgegevens',
+  organization_scopes: 'Toegang tot organisatie',
+  authorize_agreement: 'Door toegang te verlenen ga je akkoord met de <link></link> van {{name}}.',
+  authorize_agreement_with_redirect:
+    'Door toegang te verlenen ga je akkoord met de <link></link> van {{name}} en word je doorgestuurd naar {{uri}}.',
+  not_you: 'Ben jij dit niet?',
+  user_id: 'Gebruikers-ID: {{id}}',
+  redirect_to: 'Je wordt doorgestuurd naar {{name}}.',
+  auto_agreement: 'Door verder te gaan, ga je akkoord met de <link></link>.',
+  identifier_sign_in_description: 'Voer je {{types, list(type: disjunction;)}} in om in te loggen.',
+  all_sign_in_options: 'Alle inlogopties',
+  identifier_register_description:
+    'Voer je {{types, list(type: disjunction;)}} in om een nieuw account aan te maken.',
+  all_account_creation_options: 'Alle opties om een account aan te maken',
+  back_to_sign_in: 'Terug naar inloggen',
+  password_expired:
+    'Je wachtwoord is verlopen en moet opnieuw worden ingesteld voordat je kunt inloggen.',
+  password_expiration_reset: 'Wachtwoord opnieuw instellen',
+  support_email: 'Support-e-mail: <link></link>',
+  support_website: 'Supportwebsite: <link></link>',
+  switch_account_title: 'Je bent nu ingelogd als {{account}}',
+  switch_account_description:
+    'Om verder te gaan, word je uitgelogd uit het huidige account en automatisch overgeschakeld naar het nieuwe account.',
+  about_yourself: 'Vertel iets over jezelf',
+  verify_identity: 'Verifieer je identiteit',
+  choose_verification_method: 'Kies hoe je wilt inloggen',
+  verification_method: {
+    passkey: 'Passkey',
+    passkey_description: 'Verifieer met je apparaat of USB-sleutel',
+    password: 'Wachtwoord',
+    password_description: 'Voer je wachtwoord in',
+    email_verification_code: 'Verificatiecode per e-mail',
+    phone_verification_code: 'Verificatiecode per telefoon',
+    verification_code_description: 'Verzenden naar {{target}}',
+  },
+};
+
+export default Object.freeze(description);

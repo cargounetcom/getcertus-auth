@@ -1,0 +1,65 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const error = {
+  general_required: '{{types, list(type: disjunction;)}} krävs',
+  general_invalid: '{{types, list(type: disjunction;)}} är ogiltigt',
+  invalid_min_max_input: 'Värdet ska vara mellan {{minValue}} och {{maxValue}}',
+  invalid_min_max_length: 'Längden på värdet ska vara mellan {{minLength}} och {{maxLength}}',
+  username_required: 'Användarnamn krävs',
+  password_required: 'Lösenord krävs',
+  username_exists: 'Användarnamnet finns redan',
+  username_should_not_start_with_number: 'Användarnamnet får inte börja med en siffra',
+  username_invalid_charset:
+    'Användarnamnet får bara innehålla bokstäver, siffror eller understreck.',
+  username_too_short: 'Användarnamnet måste vara minst {{min}} tecken långt.',
+  username_too_long: 'Användarnamnet får vara högst {{max}} tecken långt.',
+  username_uppercase_not_allowed: 'Versaler är inte tillåtna i användarnamn.',
+  username_lowercase_not_allowed: 'Gemener är inte tillåtna i användarnamn.',
+  username_numbers_not_allowed: 'Siffror är inte tillåtna i användarnamn.',
+  username_underscore_not_allowed: 'Understreck är inte tillåtna i användarnamn.',
+  invalid_email: 'E-postadressen är ogiltig',
+  invalid_phone: 'Telefonnumret är ogiltigt',
+  passwords_do_not_match: 'Lösenorden matchar inte.',
+  invalid_passcode: 'Verifieringskoden är ogiltig.',
+  device_code_required: 'Kod krävs.',
+  invalid_device_code: 'Enhetskoden är ogiltig.',
+  device_flow_aborted: 'Inloggningsbegäran avbröts.',
+  invalid_connector_auth: 'Auktoriseringen är ogiltig',
+  invalid_connector_request: 'Kopplingens data är ogiltiga',
+  unknown: 'Okänt fel.',
+  invalid_session: 'Sessionen hittades inte. Gå tillbaka och logga in igen.',
+  timeout: 'Tidsgränsen för begäran överskreds.',
+  password_rejected: {
+    too_short: 'Minsta längd är {{min}}.',
+    too_long: 'Största längd är {{max}}.',
+    character_types: 'Minst {{min}} typer av tecken krävs.',
+    unsupported_characters: 'Tecken som inte stöds hittades.',
+    pwned: 'Undvik enkla lösenord som är lätta att gissa.',
+    restricted_found: 'Undvik att överanvända {{list, list}}.',
+    restricted: {
+      repetition: 'upprepade tecken',
+      sequence: 'tecken i följd',
+      user_info: 'dina personuppgifter',
+      words: 'ord kopplade till produkten',
+    },
+  },
+  sso_not_enabled: 'Enkel inloggning är inte aktiverad för det här e-postkontot.',
+  invalid_link: 'Ogiltig länk',
+  invalid_link_description: 'Din engångstoken kan ha gått ut eller är inte längre giltig.',
+  captcha_verification_failed: 'Captcha-verifieringen misslyckades.',
+  send_verification_code_failed: 'Det gick inte att skicka verifieringskoden. Försök igen senare.',
+  send_verification_code_failed_use_password:
+    'Det gick inte att skicka verifieringskoden. Logga in med ditt lösenord i stället.',
+  terms_acceptance_required: 'Godkännande av villkor krävs',
+  terms_acceptance_required_description: 'Du måste godkänna villkoren för att fortsätta.',
+  something_went_wrong: 'Något gick fel',
+  account_suspended: 'Kontot är avstängt',
+  account_suspended_description:
+    'Det här kontot har stängts av. Kontakta administratören för hjälp.',
+  access_denied: 'Åtkomst nekad',
+  application_access_denied:
+    'Du har inte behörighet till den här applikationen.\nKontakta din administratör för hjälp.',
+  feature_not_enabled:
+    'Du har inte behörighet till den här funktionen. Kontakta din administratör för hjälp.',
+};
+
+export default Object.freeze(error);

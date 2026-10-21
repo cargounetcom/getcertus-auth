@@ -1,3 +1,4 @@
+/* eslint-disable max-lines -- Locale catalog mirrors the complete Account Center phrase schema. */
 const account_center = {
   home: {
     title: 'ページが見つかりません',
@@ -90,8 +91,14 @@ const account_center = {
     email_verification_code: 'メール認証コード',
     phone_verification_code: '電話認証コード',
     passkeys_count_one: '{{count}} 個のパスキー',
+    passkeys_count_two: '{{count}} 個のパスキー',
+    passkeys_count_few: '{{count}} 個のパスキー',
+    passkeys_count_many: '{{count}} 個のパスキー',
     passkeys_count_other: '{{count}} 個のパスキー',
     backup_codes_count_one: '{{count}} 個のコード',
+    backup_codes_count_two: '{{count}} 個のコード',
+    backup_codes_count_few: '{{count}} 個のコード',
+    backup_codes_count_many: '{{count}} 個のコード',
     backup_codes_count_other: '{{count}} 個のコード',
     view: '表示',
     manage: '管理',
@@ -298,3 +305,4 @@ const account_center = {
 };
 
 export default Object.freeze(account_center);
+/* eslint-enable max-lines */

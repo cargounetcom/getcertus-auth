@@ -1,0 +1,50 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): sign-in experience phrases. */
+const profile = {
+  name: 'שם',
+  avatar: 'תמונת פרופיל',
+  givenName: 'שם פרטי',
+  familyName: 'שם משפחה',
+  middleName: 'שם אמצעי',
+  fullname: 'שם מלא',
+  nickname: 'כינוי',
+  preferredUsername: 'שם משתמש מועדף',
+  profile: 'פרופיל',
+  website: 'אתר אינטרנט',
+  gender: 'מגדר',
+  birthdate: 'תאריך לידה',
+  zoneinfo: 'אזור זמן',
+  locale: 'שפה ואזור',
+  address: {
+    formatted: 'כתובת',
+    streetAddress: 'רחוב ומספר',
+    locality: 'עיר',
+    region: 'מחוז',
+    postalCode: 'מיקוד',
+    country: 'מדינה',
+  },
+  gender_options: {
+    female: 'נקבה',
+    male: 'זכר',
+    prefer_not_to_say: 'מעדיף/ה לא לומר',
+  },
+  checkbox_value: {
+    checked: 'כן',
+    unchecked: 'לא',
+  },
+  avatar_upload: {
+    upload: 'העלאה',
+    remove: 'הסרה',
+    uploading: 'מעלה...',
+    hint: 'יחס מומלץ 1:1, עד {{limit}}.',
+    error_file_type: 'סוג הקובץ חייב להיות {{extensions}}.',
+    error_file_size: 'גודל הקובץ לא יכול לעלות על {{limit}}.',
+    error_storage_not_configured: 'לא ניתן להעלות את התמונה. יש לנסות שוב מאוחר יותר.',
+    error_upload: 'העלאת התמונה נכשלה. יש לנסות שוב.',
+    error_save: 'שמירת התמונה נכשלה. יש לנסות שוב.',
+    crop_title: 'חיתוך התמונה',
+    zoom: 'זום',
+    error_crop: 'חיתוך התמונה נכשל. יש לנסות שוב.',
+  },
+};
+
+export default Object.freeze(profile);
