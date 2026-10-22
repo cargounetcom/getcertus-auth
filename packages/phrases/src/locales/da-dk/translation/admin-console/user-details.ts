@@ -1,0 +1,203 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): admin console phrases. */
+const user_details = {
+  page_title: 'Brugerdetaljer',
+  back_to_users: 'Tilbage til brugeradministration',
+  created_title: 'Brugeren er oprettet',
+  created_guide: 'Her er oplysningerne, der hjælper brugeren med at logge ind.',
+  created_email: 'E-mailadresse:',
+  created_phone: 'Telefonnummer:',
+  created_username: 'Brugernavn:',
+  created_password: 'Adgangskode:',
+  menu_delete: 'Slet',
+  delete_description: 'Handlingen kan ikke fortrydes. Brugeren slettes permanent.',
+  deleted: 'Brugeren er slettet',
+  reset_password: {
+    reset_title: 'Er du sikker på, at du vil nulstille adgangskoden?',
+    generate_title: 'Er du sikker på, at du vil generere en adgangskode?',
+    content: 'Handlingen kan ikke fortrydes. Brugerens loginoplysninger opdateres.',
+    reset_complete: 'Adgangskoden er nulstillet',
+    generate_complete: 'Adgangskoden er genereret',
+    new_password: 'Ny adgangskode:',
+    password: 'Adgangskode:',
+  },
+  expire_password: {
+    button: 'Lad udløbe',
+    title: 'Er du sikker på, at du vil lade denne adgangskode udløbe?',
+    content:
+      'Brugeren skal nulstille sin adgangskode ved næste login. Handlingen kan ikke fortrydes.',
+    success: 'Brugerens adgangskode er markeret som udløbet.',
+    not_enabled_tooltip: 'Politikken for udløb af adgangskode er ikke aktiveret.',
+  },
+  tab_settings: 'Indstillinger',
+  tab_roles: 'Roller',
+  tab_logs: 'Brugerlogs',
+  tab_organizations: 'Organisationer',
+  authentication: 'Godkendelse',
+  authentication_description:
+    'Hver bruger har en profil med alle brugeroplysninger: grunddata, sociale identiteter og brugerdefinerede data.',
+  user_profile: 'Brugerdata',
+  field_email: 'E-mailadresse',
+  field_phone: 'Telefonnummer',
+  field_username: 'Brugernavn',
+  field_password: 'Adgangskode',
+  field_name: 'Navn',
+  field_avatar: 'URL til avatarbillede',
+  field_avatar_placeholder: 'https://your.cdn.domain/avatar.png',
+  field_custom_data: 'Brugerdefinerede data',
+  field_custom_data_tip:
+    'Yderligere brugeroplysninger, der ikke findes blandt de foruddefinerede egenskaber, f.eks. brugerens foretrukne farve og sprog.',
+  field_profile: 'Profil',
+  field_profile_tip:
+    'Yderligere OpenID Connect-standardclaims, der ikke er med i brugerens egenskaber. Ukendte egenskaber fjernes. Se <a>referencen for profilegenskaber</a> for mere information.',
+  field_connectors: 'Sociale forbindelser',
+  field_sso_connectors: 'Virksomhedsforbindelser',
+  custom_data_invalid: 'Brugerdefinerede data skal være et gyldigt JSON-objekt',
+  profile_invalid: 'Profilen skal være et gyldigt JSON-objekt',
+  password_already_set: 'Adgangskode er allerede angivet',
+  no_password_set: 'Ingen adgangskode angivet',
+  connectors: {
+    connectors: 'Connectorer',
+    user_id: 'Bruger-ID',
+    remove: 'Fjern',
+    connected: 'Brugeren er forbundet via flere sociale connectorer.',
+    not_connected: 'Brugeren er ikke forbundet til nogen social connector',
+    deletion_confirmation:
+      'Du fjerner den eksisterende identitet <name/>. Er du sikker på, at du vil fortsætte?',
+  },
+  sso_connectors: {
+    connectors: 'Connectorer',
+    enterprise_id: 'Virksomheds-ID',
+    connected:
+      'Brugeren er forbundet til flere virksomheders identitetsudbydere til single sign-on.',
+    not_connected:
+      'Brugeren er ikke forbundet til nogen virksomheds identitetsudbyder til single sign-on.',
+  },
+  mfa: {
+    field_name: 'Multifaktorgodkendelse',
+    field_description: 'Brugeren har aktiveret faktorer til totrinsbekræftelse.',
+    name_column: 'Multifaktor',
+    field_description_empty: 'Brugeren har ikke aktiveret faktorer til totrinsbekræftelse.',
+    deletion_confirmation:
+      'Du fjerner den eksisterende <name/> til totrinsbekræftelse. Er du sikker på, at du vil fortsætte?',
+  },
+  passkey: {
+    field_name: 'Passkeys',
+    field_description_empty: 'Brugeren har ikke aktiveret login med passkey.',
+    deletion_confirmation:
+      'Du fjerner den eksisterende <name/> til login med passkey. Er du sikker på, at du vil fortsætte?',
+  },
+  suspended: 'Suspenderet',
+  suspend_user: 'Suspendér bruger',
+  suspend_user_reminder:
+    'Er du sikker på, at du vil suspendere brugeren? Brugeren kan så ikke logge ind i din app og kan ikke få et nyt adgangstoken, når det nuværende udløber. Desuden mislykkes alle API-anmodninger fra brugeren.',
+  suspend_action: 'Suspendér',
+  user_suspended: 'Brugeren er suspenderet.',
+  reactivate_user: 'Genaktivér bruger',
+  reactivate_user_reminder:
+    'Er du sikker på, at du vil genaktivere brugeren? Så tillades loginforsøg for brugeren igen.',
+  reactivate_action: 'Genaktivér',
+  user_reactivated: 'Brugeren er genaktiveret.',
+  roles: {
+    name_column: 'Brugerrolle',
+    description_column: 'Beskrivelse',
+    assign_button: 'Tildel roller',
+    delete_description:
+      'Rollen fjernes fra brugeren. Selve rollen findes stadig, men er ikke længere knyttet til brugeren.',
+    deleted: '{{name}} er fjernet fra brugeren.',
+    assign_title: 'Tildel roller til {{name}}',
+    assign_subtitle: 'Find passende brugerroller ved at søge på navn, beskrivelse eller rolle-ID.',
+    assign_role_field: 'Tildel roller',
+    role_search_placeholder: 'Søg på rollenavn',
+    added_text: '{{value, number}} tilføjet',
+    assigned_user_count: '{{value, number}} brugere',
+    confirm_assign: 'Tildel roller',
+    role_assigned: 'Rollerne er tildelt',
+    search: 'Søg på rollenavn, beskrivelse eller ID',
+    empty: 'Ingen tilgængelige roller',
+  },
+  warning_no_sign_in_identifier:
+    'Brugeren skal have mindst én loginidentifikator (brugernavn, e-mail, telefonnummer eller social konto) for at kunne logge ind. Er du sikker på, at du vil fortsætte?',
+  personal_access_tokens: {
+    title: 'Personligt adgangstoken',
+    title_other: 'Personlige adgangstokens',
+    title_short: 'token',
+    empty: 'Brugeren har ingen personlige adgangstokens.',
+    create: 'Opret nyt token',
+    tip: 'Personlige adgangstokens (PAT) giver brugere en sikker måde at få adgangstokens på uden at bruge deres loginoplysninger og interaktivt login. Nyttigt til CI/CD, scripts eller applikationer, der skal have programmatisk adgang til ressourcer.',
+    value: 'Værdi',
+    created_at: 'Oprettet',
+    expires_at: 'Udløber',
+    never: 'Aldrig',
+    create_new_token: 'Opret nyt token',
+    delete_confirmation:
+      'Handlingen kan ikke fortrydes. Er du sikker på, at du vil slette dette token?',
+    expired: 'Udløbet',
+    expired_tooltip: 'Dette token udløb den {{date}}.',
+    create_modal: {
+      title: 'Opret personligt adgangstoken',
+      expiration: 'Udløb',
+      expiration_description: 'Tokenet udløber {{date}}.',
+      expiration_description_never:
+        'Tokenet udløber aldrig. Vi anbefaler en udløbsdato for bedre sikkerhed.',
+      days: '{{count}} dag',
+      days_other: '{{count}} dage',
+      created: 'Tokenet {{name}} er oprettet.',
+    },
+    edit_modal: {
+      title: 'Redigér personligt adgangstoken',
+      edited: 'Tokenet {{name}} er redigeret.',
+    },
+  },
+  sessions: {
+    title: 'Sessioner',
+    description:
+      "Administrér sessioner, som GetCertus' autorisationsserver vedligeholder. Hvis du tilbagekalder en GetCertus-session her, gives der ikke længere automatisk samtykke ved fremtidige autorisationsanmodninger.",
+    field_name: 'Sessioner',
+    multiple_signed_in: 'Brugeren er logget ind på flere enheder eller browsere.',
+    not_found:
+      'Ingen aktive GetCertus-sessioner fundet. Brugeren er i øjeblikket ikke logget ind på nogen enhed.',
+    name_column: 'Navn',
+    session_id_column: 'Sessions-ID',
+    location_column: 'Placering',
+    browser_on_os: '{{browser}} på {{os}}',
+    user: 'Bruger',
+    applications: 'Applikationer',
+    signed_in_at: 'Senest logget ind',
+    ip: 'IP',
+    browser_name: 'Browser',
+    os_name: 'Operativsystem',
+    device_model: 'Enhedsmodel',
+    revoke_session: 'Tilbagekald session',
+    revoke_session_confirmation: 'Hvis du fjerner denne session, skal brugerne godkende sig igen.',
+  },
+  third_party_apps: {
+    title: 'Tredjepartsapps',
+    description:
+      'Brug GetCertus som identitetsudbyder til at autorisere tredjepartsapps. Se og administrér de apps, som brugeren har givet adgang.',
+    field_name: 'Autoriserede tredjepartsapps',
+    multiple_authorized: 'Brugeren har autoriseret flere tredjepartsapps og -tjenester.',
+    not_authorized: 'Brugeren har endnu ikke autoriseret nogen tredjepartsapps eller -tjenester.',
+    name_column: 'Navn',
+    app_id_column: 'App-ID',
+    access_created_at_column: 'Adgang oprettet',
+    revoke_access_title: 'Tilbagekald adgang?',
+    revoke_access_description:
+      'Appens adgang til brugerens konto tilbagekaldes på alle enheder. Brugeren skal autorisere igen for at genoprette adgangen. Tidligere udstedte adgangstokens kan forblive gyldige, indtil de udløber.',
+  },
+  connections: {
+    title: 'Forbindelse',
+    description:
+      'Brugeren tilknytter tredjepartskonti til social login, Enterprise SSO eller adgang til ressourcer.',
+    token_status_column: 'Tokenstatus',
+    token_status: {
+      active: 'Aktiv',
+      expired: 'Udløbet',
+      inactive: 'Inaktiv',
+      not_applicable: 'Ikke relevant',
+      available: 'Tilgængelig',
+      not_available: 'Ikke tilgængelig',
+    },
+  },
+};
+
+export default Object.freeze(user_details);
