@@ -45,7 +45,7 @@ const sign_in_exp = {
     hide_logto_branding_description:
       'Remova "Powered by GetCertus". Destaque apenas a sua marca com uma experiência de início de sessão limpa e profissional.',
     hide_logto_branding_oss_note:
-      'Esta funcionalidade está disponível no <a>GetCertus Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>.',
+      'Para ocultar a assinatura é necessário o <a>suplemento de marca</a> do GetCertus.',
   },
   branding_uploads: {
     app_logo: {
@@ -96,8 +96,8 @@ const sign_in_exp = {
     bring_your_ui_oss_description:
       'Personalize a interface de início de sessão com o seu próprio código.',
     bring_your_ui_oss_card_description:
-      'O carregamento de uma interface personalizada está disponível no <a>GetCertus Cloud</a> ou nos <selfHosted>planos self-hosted</selfHosted>. Não é necessário fazer fork nem voltar a implementar.',
-    bring_your_ui_oss_try_cloud: 'Experimentar Cloud',
+      'O carregamento de uma interface própria ainda não faz parte dos planos GetCertus. <a>Ver planos e suplementos</a>.',
+    bring_your_ui_oss_try_cloud: 'Ver planos',
     preview_with_bring_your_ui_description:
       'Os seus recursos de UI personalizados foram carregados com êxito e agora estão sendo servidos. Consequentemente, a janela de visualização incorporada foi desativada.\nPara testar o seu UI de início de sessão personalizado, clique no botão "Visualização ao vivo" para abri-lo num novo separador do navegador.',
     csp_description:

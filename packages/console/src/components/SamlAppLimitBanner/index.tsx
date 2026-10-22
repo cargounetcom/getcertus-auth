@@ -38,7 +38,7 @@ function SamlAppLimitBanner({ variant, limit, className }: Props) {
       <div className={styles.content}>
         <Trans
           components={{
-            selfHostedPlans: <TextLink to={content.secondaryHref} />,
+            selfHostedPlans: <TextLink href={content.secondaryHref} targetBlank="noopener" />,
           }}
         >
           {description}
@@ -52,7 +52,7 @@ function SamlAppLimitBanner({ variant, limit, className }: Props) {
             size={variant === 'footer' ? 'large' : 'medium'}
             type="primary"
             title={
-              <DangerousRaw>{t(content.actionKey, { productName: 'Logto Cloud' })}</DangerousRaw>
+              <DangerousRaw>{t(content.actionKey, { productName: 'GetCertus' })}</DangerousRaw>
             }
             href={content.href}
             targetBlank="noopener"

@@ -44,8 +44,8 @@ const paywall = {
   saml_applications_oss:
     'Ek SAML uygulaması, GetCertus Enterprise planı ile mevcuttur. Yardıma ihtiyacınız olursa, bizimle iletişime geçin.',
   saml_applications_oss_limit_notice:
-    'Açık kaynak örneğiniz en fazla {{limit}} SAML uygulamasını destekler. Daha fazla uygulama eklemek için <selfHostedPlans>kendi sunucunuzda barındırma planlarını</selfHostedPlans> keşfedin veya GetCertus Cloud’u kullanın.',
-  logto_pricing_button_text: 'GetCertus Bulut Fiyatlandırması',
+    'Örneğiniz en fazla {{limit}} SAML uygulamasını destekler. Daha fazlası için <selfHostedPlans>GetCertus planlarına</selfHostedPlans> bakın.',
+  logto_pricing_button_text: 'GetCertus fiyatları',
   saml_applications:
     'Ek SAML uygulaması, GetCertus Enterprise planı ile mevcuttur. Yardım için bize ulaşın.',
   saml_applications_add_on:

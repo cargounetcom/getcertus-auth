@@ -1,24 +1,24 @@
-export const discordLink = 'https://discord.gg/UEPaF3j5e6';
-export const githubOrgLink = 'https://github.com/logto-io';
-export const githubLink = 'https://github.com/logto-io/logto';
-export const githubIssuesLink = 'https://github.com/logto-io/logto/issues';
-export const githubReleasesLink = 'https://github.com/logto-io/logto/releases';
-export const contactEmail = 'contact@logto.io';
+/*
+ * GetCertus modification (MPL-2.0, see GETCERTUS.md): company links point to GetCertus.
+ * Documentation links below still use the Logto documentation, which describes the same software.
+ */
+export const discordLink = 'https://discord.com/invite/P9EtGjtQy';
+export const githubOrgLink = 'https://github.com/cargounetcom';
+export const githubLink = 'https://github.com/cargounetcom/getcertus-auth';
+export const githubIssuesLink = 'https://github.com/cargounetcom/getcertus-auth/issues';
+export const githubReleasesLink =
+  'https://github.com/cargounetcom/getcertus-auth/commits/getcertus/brand';
+export const contactEmail = 'support@getcertus.app';
 export const contactEmailLink = `mailto:${contactEmail}`;
-export const reservationLink = 'https://cal.com/logto/30min';
-export const officialWebsiteLink = 'https://logto.io';
-export const trustAndSecurityLink = `${officialWebsiteLink}/trust-and-security`;
-export const pricingLink = `${officialWebsiteLink}/pricing`;
-export const selfHostedPlansLink = `${officialWebsiteLink}/self-hosted-plans`;
-export const logtoCloudConsoleLink = 'https://cloud.logto.io';
-export const officialWebsiteContactPageLink = `${officialWebsiteLink}/contact`;
-export const buildOfficialWebsiteContactPageUrl = (source: string) => {
-  const url = new URL(officialWebsiteContactPageLink);
-
-  url.searchParams.set('src', source);
-
-  return url.toString();
-};
+export const reservationLink = contactEmailLink;
+export const officialWebsiteLink = 'https://www.getcertus.app';
+export const trustAndSecurityLink = `${officialWebsiteLink}/legal/privacy/`;
+export const pricingLink = `${officialWebsiteLink}/#plans`;
+export const selfHostedPlansLink = pricingLink;
+/** Customer portal of hosted GetCertus (plans, add-ons, instance). */
+export const logtoCloudConsoleLink = 'https://id.getcertus.app';
+export const officialWebsiteContactPageLink = contactEmailLink;
+export const buildOfficialWebsiteContactPageUrl = (_source: string) => contactEmailLink;
 export const entityPolicyLink = 'https://docs.logto.io/logto-cloud/system-limit';
 export const logtoOssFeatureSupportLink =
   'https://docs.logto.io/logto-oss#feature-supported-by-logto-oss';
@@ -99,7 +99,7 @@ export const customDomain = '/logto-cloud/custom-domain#use-custom-domain';
 export const customDomainFeatureLink = '/logto-cloud/custom-domain';
 export const retrieveTokenStorage = '/secret-vault/federated-token-set#token-retrieval';
 
-export const addOnPricingExplanationLink = 'https://docs.logto.io/logto-cloud/billing-and-pricing';
-export const logtoCloudConsoleUrl = 'https://cloud.logto.io';
+export const addOnPricingExplanationLink = pricingLink;
+export const logtoCloudConsoleUrl = logtoCloudConsoleLink;
 
 export const dateFnsDocumentationLink = 'https://date-fns.org/v2.30.0/docs/format';

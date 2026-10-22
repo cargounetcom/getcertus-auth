@@ -1,23 +1,22 @@
 import {
   buildOfficialWebsiteContactPageUrl,
+  contactEmailLink,
+  discordLink,
   logtoCloudConsoleUrl,
   selfHostedPlansLink,
 } from './external-links';
 
-describe('external links', () => {
-  it('uses the cloud console URL for OSS members upsell entry', () => {
-    expect(logtoCloudConsoleUrl).toBe('https://cloud.logto.io');
+describe('external links (GetCertus)', () => {
+  it('sends upsell and plan links to GetCertus', () => {
+    expect(logtoCloudConsoleUrl).toBe('https://id.getcertus.app');
+    expect(selfHostedPlansLink).toBe('https://www.getcertus.app/#plans');
   });
 
-  it('points self-hosted plans upsell at the public landing page', () => {
-    expect(selfHostedPlansLink).toBe('https://logto.io/self-hosted-plans');
-  });
-
-  it('attributes official website contact links', () => {
-    const url = new URL(buildOfficialWebsiteContactPageUrl('private-cloud'));
-
-    expect(url.origin).toBe('https://logto.io');
-    expect(url.pathname).toBe('/contact');
-    expect(url.searchParams.get('src')).toBe('private-cloud');
+  it('uses the GetCertus support address and community', () => {
+    expect(contactEmailLink).toBe('mailto:support@getcertus.app');
+    expect(buildOfficialWebsiteContactPageUrl('private-cloud')).toBe(
+      'mailto:support@getcertus.app'
+    );
+    expect(discordLink).toBe('https://discord.com/invite/P9EtGjtQy');
   });
 });

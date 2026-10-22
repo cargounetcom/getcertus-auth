@@ -30,9 +30,7 @@ function OssTenantSettings() {
         <TabNavItem href={`/tenant-settings/${TenantSettingsTabs.Members}`}>
           <DynamicT forKey="tenants.tabs.members" />
         </TabNavItem>
-        <TabNavItem href={`/tenant-settings/${TenantSettingsTabs.License}`}>
-          <DynamicT forKey="tenants.tabs.license" />
-        </TabNavItem>
+        {/* GetCertus: no License tab — GetCertus does not use the Logto self-hosted license. */}
       </TabNav>
       <Outlet />
     </div>

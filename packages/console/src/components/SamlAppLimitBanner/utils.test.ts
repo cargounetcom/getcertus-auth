@@ -15,14 +15,14 @@ describe('getSamlAppLimitBannerContent', () => {
       actionKey: TFuncKey<'translation', 'admin_console'>;
     } = content;
     const cloudUrl = new URL(content.href);
-    const selfHostedUrl = new URL(content.secondaryHref, 'https://example.com');
+    const selfHostedUrl = new URL(content.secondaryHref);
 
     expect(descriptionKey).toBe('upsell.paywall.saml_applications_oss_limit_notice');
     expect(actionKey).toBe('upsell.try_with_product_name');
     expect(content.secondaryActionKey).toBe('upsell.explore_self_hosted_plans');
-    expect(cloudUrl.origin).toBe('https://cloud.logto.io');
-    expect(cloudUrl.searchParams.get('utm_campaign')).toBe('cloud_upsell');
-    expect(selfHostedUrl.pathname).toBe('/console/tenant-settings/license');
+    expect(cloudUrl.origin).toBe('https://www.getcertus.app');
+    expect(cloudUrl.searchParams.get('utm_campaign')).toBe('plan_upsell');
+    expect(selfHostedUrl.hash).toBe('#plans');
     expect(selfHostedUrl.searchParams.get('utm_content')).toBe(
       ossUpsellEntries.samlAppApplicationsLimitNotice
     );

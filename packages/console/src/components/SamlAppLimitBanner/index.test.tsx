@@ -32,16 +32,15 @@ describe('SamlAppLimitBanner', () => {
         <SamlAppLimitBanner variant={variant} limit={7} />
       </MemoryRouter>
     );
-    const plansLink = screen.getByRole('link', { name: 'self-hosted plans' });
+    const plansLink = screen.getByRole('link', { name: 'GetCertus plans' });
+    const plansUrl = `https://www.getcertus.app/?utm_source=getcertus_console&utm_medium=console&utm_campaign=plan_upsell&utm_content=${entry}#plans`;
 
     expect(plansLink.parentElement?.textContent).toContain('7 SAML applications');
     expect(plansLink.parentElement?.textContent).not.toContain('<selfHostedPlans>');
-    expect(plansLink.getAttribute('href')).toBe(
-      `/console/tenant-settings/license?utm_content=${entry}`
-    );
-    expect(plansLink.getAttribute('target')).toBeNull();
-    expect(screen.getByRole('link', { name: 'Try Logto Cloud now' }).getAttribute('href')).toBe(
-      `https://cloud.logto.io/?utm_source=logto_oss&utm_medium=console&utm_campaign=cloud_upsell&utm_content=${entry}`
+    expect(plansLink.getAttribute('href')).toBe(plansUrl);
+    expect(plansLink.getAttribute('target')).toBe('_blank');
+    expect(screen.getByRole('link', { name: 'Try GetCertus now' }).getAttribute('href')).toBe(
+      plansUrl
     );
 
     rerender(
@@ -49,12 +48,8 @@ describe('SamlAppLimitBanner', () => {
         <SamlAppLimitBanner variant={variant} limit={11} />
       </MemoryRouter>
     );
-    const licenseLink = screen.getByRole('link', { name: 'self-hosted plans' });
+    const licenseLink = screen.getByRole('link', { name: 'GetCertus plans' });
 
     expect(licenseLink.parentElement?.textContent).toContain('11 SAML applications');
-    expect(licenseLink.getAttribute('href')).toBe(
-      `/console/tenant-settings/license?utm_content=${entry}`
-    );
-    expect(licenseLink.getAttribute('target')).toBeNull();
   });
 });

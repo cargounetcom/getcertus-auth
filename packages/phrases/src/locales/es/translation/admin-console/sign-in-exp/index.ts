@@ -47,7 +47,7 @@ const sign_in_exp = {
     hide_logto_branding_description:
       'Elimina "Powered by GetCertus". Destaca tu marca en exclusiva con una experiencia de inicio de sesión limpia y profesional.',
     hide_logto_branding_oss_note:
-      'Esta función está disponible en <a>GetCertus Cloud</a> o en los <selfHosted>planes autoalojados</selfHosted>.',
+      'Para ocultar la firma se necesita el <a>complemento de marca</a> de GetCertus.',
   },
   branding_uploads: {
     app_logo: {
@@ -98,8 +98,8 @@ const sign_in_exp = {
     bring_your_ui_oss_description:
       'Personaliza la interfaz de inicio de sesión con tu propio código.',
     bring_your_ui_oss_card_description:
-      'La carga de una interfaz personalizada está disponible en <a>GetCertus Cloud</a> o en los <selfHosted>planes autoalojados</selfHosted>. No necesitas hacer un fork ni volver a desplegar.',
-    bring_your_ui_oss_try_cloud: 'Probar Cloud',
+      'La carga de una interfaz propia aún no forma parte de los planes de GetCertus. <a>Ver planes y complementos</a>.',
+    bring_your_ui_oss_try_cloud: 'Ver planes',
     preview_with_bring_your_ui_description:
       'Tus activos de la interfaz de usuario personalizada se han subido con éxito y ahora se están sirviendo. En consecuencia, la ventana de vista previa incorporada se ha deshabilitado.\nPara probar tu interfaz de inicio de sesión personalizada, haz clic en el botón "Vista previa en vivo" para abrirla en una nueva pestaña del navegador.',
     csp_description:

@@ -44,8 +44,8 @@ const paywall = {
   saml_applications_oss:
     '추가 SAML 앱은 GetCertus 엔터프라이즈 플랜에서 사용할 수 있습니다. 도움이 필요하면 문의하세요.',
   saml_applications_oss_limit_notice:
-    '오픈 소스 인스턴스는 최대 {{limit}}개의 SAML 애플리케이션을 지원합니다. 더 많은 애플리케이션을 추가하려면 <selfHostedPlans>셀프 호스팅 플랜</selfHostedPlans>을 살펴보거나 GetCertus Cloud를 사용하세요.',
-  logto_pricing_button_text: 'GetCertus 클라우드 가격',
+    '인스턴스는 SAML 애플리케이션을 최대 {{limit}}개까지 지원합니다. 더 필요하면 <selfHostedPlans>GetCertus 플랜</selfHostedPlans>을 확인하세요.',
+  logto_pricing_button_text: 'GetCertus 가격',
   saml_applications:
     '추가 SAML 앱은 GetCertus 엔터프라이즈 플랜에서 사용할 수 있습니다. 도움이 필요하면 <a>문의하세요</a>.',
   saml_applications_add_on:

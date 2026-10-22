@@ -42,8 +42,7 @@ const sign_in_exp = {
     hide_logto_branding: '隐藏 GetCertus 品牌',
     hide_logto_branding_description:
       '移除“Powered by GetCertus”。以干净、专业的登录体验专属呈现你的品牌。',
-    hide_logto_branding_oss_note:
-      '此功能可在 <a>GetCertus Cloud</a> 或<selfHosted>自托管套餐</selfHosted>中使用。',
+    hide_logto_branding_oss_note: '隐藏签名需要 GetCertus <a>品牌附加组件</a>。',
   },
   branding_uploads: {
     app_logo: {
@@ -93,8 +92,8 @@ const sign_in_exp = {
       '上传一个压缩包 (.zip) 以使用你自己的代码替换 GetCertus 预构建的 UI。<a>了解更多</a>',
     bring_your_ui_oss_description: '用你的代码自定义登录 UI。',
     bring_your_ui_oss_card_description:
-      '自定义 UI 上传功能可在 <a>GetCertus Cloud</a> 或<selfHosted>自托管套餐</selfHosted>中使用。无需 fork 和重新部署。',
-    bring_your_ui_oss_try_cloud: '试用 Cloud',
+      '自定义 UI 上传尚未包含在 GetCertus 套餐中。<a>查看套餐和附加组件</a>。',
+    bring_your_ui_oss_try_cloud: '查看套餐',
     preview_with_bring_your_ui_description:
       '你自定义的 UI 资源已经成功上传，现在正在提供服务。因此，内置预览窗口已被禁用。\n要测试你个性化的登录 UI，请单击“实时预览”按钮在新的浏览器标签中打开它。',
     csp_description: '为你的自定义登录 UI 允许额外的源表达式。这些值仅在提供自定义 UI 资源时生效。',

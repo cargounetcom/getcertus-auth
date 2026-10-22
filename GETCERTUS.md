@@ -19,6 +19,7 @@ not affiliated with or endorsed by Logto or Silverhand.
 | Colours | Console and sign-in palette from GetCertus pine (`#385C47`), accent clay (`#AB5A3C`) |
 | Sign-in signature | "Secured by GetCertus" instead of "Powered by Logto" (`LogtoSignature`) |
 | Default sign-in experience | GetCertus colour; no logo hosted on logto.io |
+| Console links | Support, Discord, GitHub, website and pricing links go to GetCertus; plan and feature notices point to the GetCertus plans page; no Logto Cloud upsell and no Logto License tab (`console/src/consts/external-links.ts`, `utils/oss-upsell.ts`) |
 | Languages | Russian and Ukrainian removed; sign-in pages added in Danish, Dutch, Finnish, Greek, Hebrew (right-to-left), Irish, Romanian and Swedish (`packages/phrases-experience/src/locales`) |
 
 Code identifiers, package names (`@logto/*`), database schema and APIs are unchanged, so upstream
@@ -40,6 +41,5 @@ and `libraries/subscription.ts`. The admin tenant is never limited.
 
 ## Not changed yet
 
-- Links to Logto documentation (`docs.logto.io`) in the console.
-- Logto Cloud upsell banners in the self-hosted console.
+- Documentation links in the console still open the Logto documentation (`docs.logto.io`), which describes the same software, until GetCertus has its own docs site.
 - The admin console itself is still in the original Logto languages; only the sign-in pages have the eight new ones.

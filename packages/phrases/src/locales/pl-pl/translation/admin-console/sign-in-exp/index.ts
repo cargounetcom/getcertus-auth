@@ -45,8 +45,7 @@ const sign_in_exp = {
     hide_logto_branding: 'Ukryj branding GetCertus',
     hide_logto_branding_description:
       'Usuń napis "Powered by GetCertus". Zaprezentuj wyłącznie swoją markę w czystym i profesjonalnym procesie logowania.',
-    hide_logto_branding_oss_note:
-      'Ta funkcja jest dostępna w <a>GetCertus Cloud</a> lub w <selfHosted>planach self-hosted</selfHosted>.',
+    hide_logto_branding_oss_note: 'Ukrycie podpisu wymaga <a>dodatku Branding</a> GetCertus.',
   },
   branding_uploads: {
     app_logo: {
@@ -96,8 +95,8 @@ const sign_in_exp = {
       'Prześlij skompresowany pakiet (.zip), aby zastąpić predefiniowany interfejs użytkownika GetCertus swoim własnym kodem. <a>Dowiedz się więcej</a>',
     bring_your_ui_oss_description: 'Dostosuj interfejs logowania za pomocą własnego kodu.',
     bring_your_ui_oss_card_description:
-      'Przesyłanie własnego interfejsu jest dostępne w <a>GetCertus Cloud</a> lub w <selfHosted>planach self-hosted</selfHosted>. Nie musisz robić forka ani ponownie wdrażać.',
-    bring_your_ui_oss_try_cloud: 'Wypróbuj Cloud',
+      'Przesyłanie własnego interfejsu nie jest jeszcze częścią planów GetCertus. <a>Zobacz plany i dodatki</a>.',
+    bring_your_ui_oss_try_cloud: 'Zobacz plany',
     preview_with_bring_your_ui_description:
       'Twoje niestandardowe zasoby interfejsu użytkownika zostały pomyślnie przesłane i są teraz dostępne. W rezultacie wbudowane okno podglądu zostało wyłączone.\nAby przetestować swoje spersonalizowane UI logowania, kliknij przycisk "Podgląd na żywo", aby otworzyć go w nowej karcie przeglądarki.',
     csp_description:

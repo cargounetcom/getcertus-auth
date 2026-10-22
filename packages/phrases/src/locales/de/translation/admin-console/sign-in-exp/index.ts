@@ -46,7 +46,7 @@ const sign_in_exp = {
     hide_logto_branding_description:
       'Entferne "Powered by GetCertus". Präsentiere deine Marke exklusiv mit einer klaren, professionellen Anmeldeerfahrung.',
     hide_logto_branding_oss_note:
-      'Diese Funktion ist in <a>GetCertus Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar.',
+      'Zum Ausblenden der Signatur ist das GetCertus-<a>Branding-Add-on</a> nötig.',
   },
   branding_uploads: {
     app_logo: {
@@ -96,8 +96,8 @@ const sign_in_exp = {
       'Laden Sie ein komprimiertes Paket (.zip) hoch, um die vorgefertigte Benutzeroberfläche von GetCertus durch Ihren eigenen Code zu ersetzen. <a>Erfahren Sie mehr</a>',
     bring_your_ui_oss_description: 'Passen Sie die Anmeldeoberfläche mit Ihrem eigenen Code an.',
     bring_your_ui_oss_card_description:
-      'Der Upload einer benutzerdefinierten UI ist in <a>GetCertus Cloud</a> oder in <selfHosted>Self-Hosted-Plänen</selfHosted> verfügbar. Kein Fork und kein erneutes Deployment erforderlich.',
-    bring_your_ui_oss_try_cloud: 'Cloud ausprobieren',
+      'Das Hochladen einer eigenen Oberfläche ist noch nicht in den GetCertus-Tarifen enthalten. <a>Tarife und Add-ons ansehen</a>.',
+    bring_your_ui_oss_try_cloud: 'Tarife ansehen',
     preview_with_bring_your_ui_description:
       'Ihre benutzerdefinierten UI-Assets wurden erfolgreich hochgeladen und werden jetzt bereitgestellt. Daher wurde das eingebaute Vorschaufenster deaktiviert.\nUm Ihre personalisierte Anmelde-Benutzeroberfläche zu testen, klicken Sie auf die Schaltfläche "Live-Vorschau", um sie in einem neuen Browser-Tab zu öffnen.',
     csp_description:

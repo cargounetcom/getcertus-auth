@@ -46,7 +46,7 @@ const sign_in_exp = {
     hide_logto_branding_description:
       '「Powered by GetCertus」を削除します。クリーンでプロフェッショナルなサインイン体験で自社ブランドだけを際立たせましょう。',
     hide_logto_branding_oss_note:
-      'この機能は <a>GetCertus Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。',
+      '署名を非表示にするには GetCertus の<a>ブランディング アドオン</a>が必要です。',
   },
   branding_uploads: {
     app_logo: {
@@ -96,8 +96,8 @@ const sign_in_exp = {
       '圧縮パッケージ (.zip) をアップロードして、GetCertus のビルトイン UI を独自のコードで置き換えます。<a>詳しくはこちら</a>',
     bring_your_ui_oss_description: '独自のコードでサインイン UI をカスタマイズします。',
     bring_your_ui_oss_card_description:
-      'カスタム UI のアップロードは <a>GetCertus Cloud</a> または<selfHosted>セルフホストプラン</selfHosted>で利用できます。フォークや再デプロイは不要です。',
-    bring_your_ui_oss_try_cloud: 'Cloud を試す',
+      'カスタム UI のアップロードは、まだ GetCertus のプランに含まれていません。<a>プランとアドオンを見る</a>。',
+    bring_your_ui_oss_try_cloud: 'プランを見る',
     preview_with_bring_your_ui_description:
       'カスタム UI のアセットは正常にアップロードされ、現在提供されています。したがって、組み込みのプレビューウィンドウは無効になりました。\nパーソナライズされたサインイン UI をテストするには、「ライブプレビュー」ボタンをクリックして新しいブラウザタブで開きます。',
     csp_description:

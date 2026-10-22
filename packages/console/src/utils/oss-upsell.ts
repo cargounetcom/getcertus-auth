@@ -1,8 +1,9 @@
-import { ossConsolePath } from '@logto/schemas';
-import { joinPath } from '@silverhand/essentials';
-
-import { logtoCloudConsoleLink } from '@/consts/external-links';
-import { TenantSettingsTabs } from '@/consts/page-tabs';
+/*
+ * GetCertus modification (MPL-2.0, see GETCERTUS.md): every upsell entry leads to the GetCertus
+ * plans page (plans and add-ons such as custom domains or branding) instead of Logto Cloud or the
+ * Logto self-hosted license page.
+ */
+import { pricingLink } from '@/consts/external-links';
 
 type OpenOssUpsellOptions = {
   readonly entry: OssUpsellEntry;
@@ -24,13 +25,14 @@ export const ossUpsellEntries = Object.freeze({
 type OssUpsellEntry = (typeof ossUpsellEntries)[keyof typeof ossUpsellEntries];
 
 const utmParameters = Object.freeze({
-  source: 'logto_oss',
+  source: 'getcertus_console',
   medium: 'console',
-  campaign: 'cloud_upsell',
+  campaign: 'plan_upsell',
 });
 
-export const buildCloudUpsellUrl = (entry: OssUpsellEntry) => {
-  const url = new URL('/', logtoCloudConsoleLink);
+/** The GetCertus plans page, tagged with the console entry that linked to it. */
+const buildPlansUrl = (entry: OssUpsellEntry) => {
+  const url = new URL(pricingLink);
 
   url.searchParams.set('utm_source', utmParameters.source);
   url.searchParams.set('utm_medium', utmParameters.medium);
@@ -40,15 +42,8 @@ export const buildCloudUpsellUrl = (entry: OssUpsellEntry) => {
   return url.toString();
 };
 
-/**
- * Builds the License page path, including the OSS console segment since the router has no
- * basename. Each upsell entry keeps its attribution in `utm_content`.
- */
-export const buildSelfHostedPlansUrl = (entry: OssUpsellEntry) => {
-  const searchParams = new URLSearchParams({ utm_content: entry });
-
-  return `${joinPath(ossConsolePath, 'tenant-settings', TenantSettingsTabs.License)}?${searchParams.toString()}`;
-};
+export const buildCloudUpsellUrl = buildPlansUrl;
+export const buildSelfHostedPlansUrl = buildPlansUrl;
 
 const openUpsellUrl = (targetUrl: string, target: '_blank' | '_self') => {
   if (typeof window === 'undefined') {
@@ -68,6 +63,5 @@ const openUpsellUrl = (targetUrl: string, target: '_blank' | '_self') => {
 export const openCloudUpsell = ({ entry, target = '_blank' }: OpenOssUpsellOptions) =>
   openUpsellUrl(buildCloudUpsellUrl(entry), target);
 
-/** Opens the License page in the same tab by default. */
-export const openSelfHostedPlansUpsell = ({ entry, target = '_self' }: OpenOssUpsellOptions) =>
+export const openSelfHostedPlansUpsell = ({ entry, target = '_blank' }: OpenOssUpsellOptions) =>
   openUpsellUrl(buildSelfHostedPlansUrl(entry), target);

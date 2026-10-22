@@ -43,8 +43,7 @@ const sign_in_exp = {
     hide_logto_branding: 'إخفاء علامة GetCertus التجارية',
     hide_logto_branding_description:
       'أزل عبارة "مدعوم من GetCertus". سلّط الضوء على علامتك فقط مع تجربة تسجيل دخول نظيفة واحترافية.',
-    hide_logto_branding_oss_note:
-      'هذه الميزة متاحة في <a>GetCertus Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>.',
+    hide_logto_branding_oss_note: 'يتطلب إخفاء التوقيع <a>إضافة العلامة التجارية</a> من GetCertus.',
   },
   branding_uploads: {
     app_logo: {
@@ -94,8 +93,8 @@ const sign_in_exp = {
       'قم بتحميل حزمة مضغوطة (.zip) لاستبدال واجهة المستخدم المُعدة مسبقًا في GetCertus بالشفرة الخاصة بك. <a>تعلم المزيد</a>',
     bring_your_ui_oss_description: 'خصّص واجهة تسجيل الدخول باستخدام الشيفرة الخاصة بك.',
     bring_your_ui_oss_card_description:
-      'رفع واجهة مستخدم مخصصة متاح في <a>GetCertus Cloud</a> أو ضمن <selfHosted>خطط الاستضافة الذاتية</selfHosted>. لا حاجة إلى عمل fork أو إعادة النشر.',
-    bring_your_ui_oss_try_cloud: 'جرّب Cloud',
+      'رفع واجهة مخصصة ليس ضمن خطط GetCertus بعد. <a>اطلع على الخطط والإضافات</a>.',
+    bring_your_ui_oss_try_cloud: 'عرض الخطط',
     preview_with_bring_your_ui_description:
       'تم تحميل أصول واجهة المستخدم المخصصة الخاصة بك بنجاح ويتم تقديمها الآن. وبالتالي ، تم تعطيل نافذة المعاينة المدمجة.\nلتجربة واجهة تسجيل الدخول المخصصة الخاصة بك ، انقر فوق زر "المعاينة المباشرة" لفتحها في علامة تبويب مستعرض جديدة.',
     csp_description:

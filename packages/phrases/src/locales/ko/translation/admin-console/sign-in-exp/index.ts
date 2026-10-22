@@ -42,8 +42,7 @@ const sign_in_exp = {
     hide_logto_branding: 'GetCertus 브랜딩 숨기기',
     hide_logto_branding_description:
       '"Powered by GetCertus" 문구를 제거하고 깔끔하고 전문적인 로그인 경험에서 브랜드만 돋보이게 하세요.',
-    hide_logto_branding_oss_note:
-      '이 기능은 <a>GetCertus Cloud</a> 또는 <selfHosted>셀프 호스팅 플랜</selfHosted>에서 사용할 수 있습니다.',
+    hide_logto_branding_oss_note: '서명을 숨기려면 GetCertus <a>브랜딩 애드온</a>이 필요합니다.',
   },
   branding_uploads: {
     app_logo: {
@@ -93,8 +92,8 @@ const sign_in_exp = {
       'GetCertus 가미리 제공하는 UI 를 나만의 코드로 대체하기 위해 압축 패키지 (.zip)를 업로드하세요. <a>더 알아보기</a>',
     bring_your_ui_oss_description: '자신의 코드로 로그인 UI를 맞춤 설정하세요.',
     bring_your_ui_oss_card_description:
-      '사용자 지정 UI 업로드는 <a>GetCertus Cloud</a> 또는 <selfHosted>셀프 호스팅 플랜</selfHosted>에서 사용할 수 있습니다. 포크하거나 다시 배포할 필요가 없습니다.',
-    bring_your_ui_oss_try_cloud: 'Cloud 사용해 보기',
+      '사용자 지정 UI 업로드는 아직 GetCertus 플랜에 포함되어 있지 않습니다. <a>플랜과 애드온 보기</a>.',
+    bring_your_ui_oss_try_cloud: '플랜 보기',
     preview_with_bring_your_ui_description:
       '커스텀 UI 자산이 성공적으로 업로드되어 현재 제공되고 있습니다. 따라서 기본 제공 미리보기 창이 비활성화되었습니다.\n개인화된 로그인 UI 를 테스트하려면 "실시간 미리보기" 버튼을 클릭하여 새 브라우저 탭에서 엽니다.',
     csp_description:

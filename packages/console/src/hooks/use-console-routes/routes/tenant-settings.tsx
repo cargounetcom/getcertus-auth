@@ -12,7 +12,6 @@ import NotFound from '@/pages/NotFound';
 
 const TenantSettings = safeLazy(async () => import('@/pages/TenantSettings'));
 const OssTenantSettings = safeLazy(async () => import('@/pages/OssTenantSettings'));
-const OssTenantLicense = safeLazy(async () => import('@/pages/OssTenantSettings/License'));
 const OssTenantBasicSettings = safeLazy(async () => import('@/pages/OssTenantSettings/Settings'));
 const TenantBasicSettings = safeLazy(
   async () => import('@/pages/TenantSettings/TenantBasicSettings')
@@ -116,10 +115,7 @@ const useOssTenantSettings = (): RouteObject => {
             ...condArray(canRemoveMember && [{ path: 'invitations', element: <Invitations /> }]),
           ],
         },
-        {
-          path: TenantSettingsTabs.License,
-          element: <OssTenantLicense />,
-        },
+        // GetCertus: the Logto self-hosted License page is not offered.
       ],
     };
   }, [canRemoveMember]);

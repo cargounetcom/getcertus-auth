@@ -59,7 +59,11 @@ function OssBringYourUiCard() {
                   />
                 ),
                 selfHosted: (
-                  <TextLink to={cardContent.selfHostedHref} className={styles.highlight} />
+                  <TextLink
+                    href={cardContent.selfHostedHref}
+                    targetBlank="noopener"
+                    className={styles.highlight}
+                  />
                 ),
               }}
             />

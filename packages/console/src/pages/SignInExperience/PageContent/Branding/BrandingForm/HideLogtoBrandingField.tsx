@@ -73,7 +73,13 @@ function HideLogtoBrandingField({ variant, isEnabled }: Props) {
                 className={styles.highlight}
               />
             ),
-            selfHosted: <TextLink to={ossNote.selfHostedHref} className={styles.highlight} />,
+            selfHosted: (
+              <TextLink
+                href={ossNote.selfHostedHref}
+                targetBlank="noopener"
+                className={styles.highlight}
+              />
+            ),
           }}
         />
       </div>

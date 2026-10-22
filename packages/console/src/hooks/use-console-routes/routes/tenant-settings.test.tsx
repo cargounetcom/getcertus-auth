@@ -49,7 +49,8 @@ function InvitationsPage() {
 }
 
 describe('self-hosted tenant settings routes', () => {
-  it('makes License available without dev features', async () => {
+  // GetCertus: the Logto self-hosted License page is not offered.
+  it('does not offer the License page', async () => {
     mockAccess(false, false);
     render(
       <MemoryRouter initialEntries={['/tenant-settings/license']}>
@@ -58,7 +59,7 @@ describe('self-hosted tenant settings routes', () => {
         </Suspense>
       </MemoryRouter>
     );
-    expect(await screen.findByText('License')).not.toBeNull();
+    expect(screen.queryByText('License')).toBeNull();
   });
 
   it('keeps invitations accessible when the collaboration entitlement lapses', async () => {

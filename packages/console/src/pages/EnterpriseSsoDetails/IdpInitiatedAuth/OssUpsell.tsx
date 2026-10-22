@@ -35,7 +35,7 @@ function OssUpsell() {
             type="primary"
             title={
               <DangerousRaw>
-                {t('upsell.try_with_product_name', { productName: 'Logto Cloud' })}
+                {t('upsell.try_with_product_name', { productName: 'GetCertus' })}
               </DangerousRaw>
             }
             href={cloudUpsellUrl}

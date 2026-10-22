@@ -70,7 +70,7 @@ function EmailConnectorUpsellBanner() {
         <Button
           className={styles.upsellButton}
           type="primary"
-          title={<DangerousRaw>{t(copyKeys.action, { productName: 'Logto Cloud' })}</DangerousRaw>}
+          title={<DangerousRaw>{t(copyKeys.action, { productName: 'GetCertus' })}</DangerousRaw>}
           trailingIcon={<ExternalLink />}
           onClick={() => {
             window.open(cloudUpsellUrl, '_blank', 'noopener,noreferrer');

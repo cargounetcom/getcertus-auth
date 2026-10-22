@@ -44,8 +44,7 @@ const sign_in_exp = {
     hide_logto_branding: 'ซ่อนแบรนด์ GetCertus',
     hide_logto_branding_description:
       'ลบ "Powered by GetCertus" เพื่อให้แบรนด์ของคุณโดดเด่นด้วยประสบการณ์ลงชื่อเข้าใช้ที่สะอาดและเป็นมืออาชีพ',
-    hide_logto_branding_oss_note:
-      'ฟีเจอร์นี้พร้อมใช้งานใน <a>GetCertus Cloud</a> หรือ<selfHosted>แผน self-hosted</selfHosted>',
+    hide_logto_branding_oss_note: 'การซ่อนลายเซ็นต้องใช้<a>ส่วนเสริมแบรนด์</a>ของ GetCertus',
   },
   branding_uploads: {
     app_logo: {
@@ -95,8 +94,8 @@ const sign_in_exp = {
       'อัปโหลดไฟล์บีบอัด (.zip) เพื่อแทนที่ UI สำเร็จรูปของ GetCertus ด้วยโค้ดของคุณเอง <a>เรียนรู้เพิ่มเติม</a>',
     bring_your_ui_oss_description: 'ปรับแต่ง UI สำหรับการลงชื่อเข้าใช้ด้วยโค้ดของคุณเอง',
     bring_your_ui_oss_card_description:
-      'การอัปโหลด UI แบบกำหนดเองพร้อมใช้งานใน <a>GetCertus Cloud</a> หรือ<selfHosted>แผน self-hosted</selfHosted> โดยไม่ต้อง fork หรือปรับใช้ใหม่',
-    bring_your_ui_oss_try_cloud: 'ลองใช้ Cloud',
+      'การอัปโหลด UI ที่กำหนดเองยังไม่รวมอยู่ในแพ็กเกจของ GetCertus <a>ดูแพ็กเกจและส่วนเสริม</a>',
+    bring_your_ui_oss_try_cloud: 'ดูแพ็กเกจ',
     preview_with_bring_your_ui_description:
       'ไฟล์ UI ที่คุณกำหนดเองถูกอัปโหลดเรียบร้อยแล้วและกำลังใช้งานอยู่ ดังนั้นหน้าต่างตัวอย่างแบบฝังจึงถูกปิดใช้งาน\nหากต้องการทดสอบหน้าเข้าสู่ระบบแบบกำหนดเอง ให้คลิกปุ่ม "แสดงตัวอย่างสด" เพื่อเปิดในแท็บใหม่',
     csp_description:

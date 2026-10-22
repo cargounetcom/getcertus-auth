@@ -44,8 +44,8 @@ const paywall = {
   saml_applications_oss:
     'La aplicación SAML adicional está disponible con el plan GetCertus Enterprise. Contáctanos si necesitas asistencia.',
   saml_applications_oss_limit_notice:
-    'Tu instancia de código abierto admite hasta {{limit}} aplicaciones SAML. Para añadir más aplicaciones, explora los <selfHostedPlans>planes autoalojados</selfHostedPlans> o usa GetCertus Cloud.',
-  logto_pricing_button_text: 'Precios de GetCertus Cloud',
+    'Tu instancia admite hasta {{limit}} aplicaciones SAML. Para más, consulta los <selfHostedPlans>planes de GetCertus</selfHostedPlans>.',
+  logto_pricing_button_text: 'Precios de GetCertus',
   saml_applications:
     'La aplicación SAML adicional está disponible con el plan GetCertus Enterprise. Contáctanos si necesitas asistencia.',
   saml_applications_add_on:

@@ -42,9 +42,10 @@ const paywall = {
     '已达到 <planName/> 的{{count, number}}个角色每个权限限制。升级计划以添加额外的角色和权限。如需任何帮助，请 <a>联系我们</a>。',
   saml_applications_oss: '额外的 SAML 应用可用于 GetCertus Enterprise 计划。如需帮助，请联系我们。',
   saml_applications_oss_limit_notice:
-    '你的开源实例最多支持 {{limit}} 个 SAML 应用。如需添加更多应用，请了解<selfHostedPlans>自托管计划</selfHostedPlans>或使用 GetCertus Cloud。',
-  logto_pricing_button_text: 'GetCertus 云定价',
-  saml_applications: '额外的 SAML 应用可在 GetCertus Enterprise 计划中使用。如果需要帮助，请联系我们。',
+    '你的实例最多支持 {{limit}} 个 SAML 应用。如需更多，请查看 <selfHostedPlans>GetCertus 套餐</selfHostedPlans>。',
+  logto_pricing_button_text: 'GetCertus 价格',
+  saml_applications:
+    '额外的 SAML 应用可在 GetCertus Enterprise 计划中使用。如果需要帮助，请联系我们。',
   saml_applications_add_on:
     '通过升级到付费计划解锁 SAML 应用功能。如需任何帮助，请随时 <a>联系我们</a>。',
   hooks:
