@@ -424,6 +424,193 @@ const sign_in_exp = {
         manual: 'Éiligh aontú le ticbhosca ag clárú agus ag síniú isteach araon',
       },
     },
+    languages: {
+      title: 'TEANGACHA',
+      enable_auto_detect: 'Cumasaigh uathbhrath',
+      description:
+        'Braitheann do bhogearraí socrú teanga an úsáideora agus athraíonn siad go dtí an teanga áitiúil. Is féidir leat teangacha nua a chur leis tríd an gcomhéadan a aistriú ón mBéarla.',
+      manage_language: 'Bainistigh teangacha',
+      default_language: 'Teanga réamhshocraithe',
+      default_language_description_auto:
+        'Úsáidfear an teanga réamhshocraithe nuair nach bhfuil teanga bhraite an úsáideora sa leabharlann teangacha reatha.',
+      default_language_description_fixed:
+        'Nuair atá an t-uathbhrath múchta, is í an teanga réamhshocraithe an t-aon teanga a thaispeánfaidh do bhogearraí. Cuir an t-uathbhrath ar siúl le haghaidh tuilleadh teangacha.',
+    },
+    support: {
+      title: 'TACAÍOCHT',
+      subtitle:
+        "Taispeáin do chainéil tacaíochta ar leathanaigh earráide le cabhair thapa a thabhairt d'úsáideoirí.",
+      support_email: 'Ríomhphost tacaíochta',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Suíomh gréasáin tacaíochta',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Bainistigh teangacha',
+      subtitle:
+        'Logánaigh eispéireas an táirge trí theangacha agus aistriúcháin a chur leis. Is féidir do chuid oibre a shocrú mar an teanga réamhshocraithe.',
+      add_language: 'Cuir teanga leis',
+      logto_provided: 'Ó GetCertus',
+      key: 'Eochair',
+      logto_source_values: 'Luachanna foinse GetCertus',
+      custom_values: 'Luachanna saincheaptha',
+      clear_all_tip: 'Glan gach luach',
+      unsaved_description: 'Ní shábhálfar athruithe má fhágann tú an leathanach seo gan sábháil.',
+      deletion_tip: 'Scrios an teanga',
+      deletion_title: 'An mian leat an teanga a cuireadh leis a scriosadh?',
+      deletion_description:
+        "Tar éis í a scriosadh, ní bheidh d'úsáideoirí in ann an teanga sin a úsáid a thuilleadh.",
+      default_language_deletion_title: 'Ní féidir an teanga réamhshocraithe a scriosadh.',
+      default_language_deletion_description:
+        'Tá {{language}} socraithe mar do theanga réamhshocraithe agus ní féidir í a scriosadh. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Níl aon nascóir SMS socraithe fós. Go dtí go mbeidh an chumraíocht críochnaithe, ní bheidh úsáideoirí in ann síniú isteach leis an modh seo. <a>{{link}}</a> in "Nascóirí"',
+    no_connector_email:
+      'Níl aon nascóir ríomhphoist socraithe fós. Go dtí go mbeidh an chumraíocht críochnaithe, ní bheidh úsáideoirí in ann síniú isteach leis an modh seo. <a>{{link}}</a> in "Nascóirí"',
+    no_connector_social:
+      'Níl aon nascóir sóisialta socraithe agat fós. Cuir nascóirí leis ar dtús chun modhanna síniú isteach sóisialta a úsáid. <a>{{link}}</a> in "Nascóirí".',
+    no_connector_email_account_center:
+      'Níl aon nascóir ríomhphoist socraithe fós. Socraigh é in <a>"Nascóirí ríomhphoist agus SMS"</a>.',
+    no_connector_sms_account_center:
+      'Níl aon nascóir SMS socraithe fós. Socraigh é in <a>"Nascóirí ríomhphoist agus SMS"</a>.',
+    no_connector_social_account_center:
+      'Níl aon nascóir sóisialta socraithe fós. Socraigh é in <a>"Nascóirí sóisialta"</a>.',
+    no_mfa_factor: 'Níl aon fhachtóir MFA socraithe fós. Socraigh é in <a>{{link}}</a>.',
+    setup_link: 'Socraigh',
+  },
+  save_alert: {
+    description:
+      "Tá tú ag cur nósanna imeachta nua síniú isteach agus clárúcháin i bhfeidhm. D'fhéadfadh tionchar a bheith ag an socrú nua ar gach úsáideoir. An bhfuil tú cinnte gur mian leat an t-athrú a chur i bhfeidhm?",
+    before: 'Roimh',
+    after: 'Tar éis',
+    sign_up: 'Clárú',
+    sign_in: 'Síniú isteach',
+    social: 'Sóisialta',
+    forgot_password_migration_notice:
+      "D'uasghrádaíomar fíorú an phasfhocail dearmadta chun tacú le modhanna saincheaptha. Roimhe seo, bhí sé seo socraithe go huathoibríoch ag do nascóirí ríomhphoist agus SMS. Cliceáil <strong>Deimhnigh</strong> chun an t-uasghrádú a chríochnú.",
+  },
+  preview: {
+    title: 'Réamhamharc ar an síniú isteach',
+    live_preview: 'Réamhamharc beo',
+    live_preview_tip: 'Sábháil chun réamhamharc a fháil ar na hathruithe',
+    native: 'Dúchasach',
+    desktop_web: 'Gréasán deisce',
+    mobile_web: 'Gréasán soghluaiste',
+    desktop: 'Deasc',
+    mobile: 'Soghluaiste',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Cuir réimse próifíle leis',
+      title: {
+        field_label: 'Lipéad an réimse',
+        type: 'Cineál',
+        user_data_key: 'Eochair sonraí úsáideora',
+      },
+      placeholder: {
+        title: 'Bailigh próifíl an úsáideora',
+        description:
+          'Saincheap réimsí chun tuilleadh faisnéise próifíle a bhailiú le linn an chlárúcháin.',
+      },
+    },
+    type: {
+      Text: 'Téacs',
+      Number: 'Uimhir',
+      Date: 'Dáta',
+      Checkbox: 'Ticbhosca (Boole)',
+      Select: 'Roghchlár anuas (rogha amháin)',
+      Url: 'URL',
+      Regex: 'Slonn rialta',
+      Address: 'Seoladh (comhdhéanta)',
+      Fullname: 'Ainm iomlán (comhdhéanta)',
+    },
+    modal: {
+      title: 'Cuir réimse próifíle leis',
+      subtitle:
+        'Saincheap réimsí chun tuilleadh faisnéise próifíle a bhailiú le linn an chlárúcháin.',
+      built_in_properties: 'Bunsonraí úsáideora',
+      custom_properties: 'Sonraí úsáideora saincheaptha',
+      custom_data_field_name: 'Eochair sonraí úsáideora',
+      custom_data_field_input_placeholder:
+        'Cuir isteach eochair sonraí úsáideora, m.sh. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Sonraí saincheaptha',
+        description:
+          "Airíonna úsáideora breise ar féidir leat a shainiú chun riachtanais uathúla d'fheidhmchláir a shásamh.",
+      },
+      type_required: 'Roghnaigh cineál airí',
+      create_button: 'Cruthaigh réimse próifíle',
+      avatar: {
+        description:
+          "Lig d'úsáideoirí a bpictiúr próifíle a uaslódáil le linn an chlárúcháin. Stóráiltear URL na híomhá mar abhatár an úsáideora.",
+        storage_not_configured:
+          'Teastaíonn soláthraí stórála cumraithe chun abhatáir a uaslódáil. Cumraigh stóráil sula gcuireann tú an réimse seo leis.',
+      },
+    },
+    details: {
+      page_title: 'Sonraí an réimse próifíle',
+      back_to_sie: 'Ar ais chuig an eispéireas síniú isteach',
+      enter_field_name: 'Cuir isteach ainm an réimse próifíle',
+      delete_description:
+        'Ní féidir an gníomh seo a chealú. An bhfuil tú cinnte gur mian leat an réimse próifíle seo a scriosadh?',
+      field_deleted: 'Scriosadh an réimse próifíle {{name}}.',
+      key: 'Eochair sonraí úsáideora',
+      field_name: 'Ainm an réimse',
+      field_type: 'Cineál an réimse',
+      settings: 'Socruithe',
+      settings_description:
+        'Saincheap réimsí chun tuilleadh faisnéise próifíle a bhailiú le linn an chlárúcháin.',
+      address_format: 'Formáid seolta',
+      single_line_address: 'Seoladh aonlíne',
+      multi_line_address: 'Seoladh illíne (m.sh. sráid, cathair, contae, Éirchód, tír)',
+      components: 'Comhpháirteanna',
+      components_tip: 'Roghnaigh na comhpháirteanna a dhéanann suas an réimse comhdhéanta.',
+      label: 'Lipéad an réimse',
+      label_placeholder: 'Lipéad',
+      label_tip:
+        'An bhfuil logánú uait? Cuir teangacha leis in <a>Eispéireas síniú isteach > Ábhar</a>',
+      label_tooltip:
+        'Lipéad snámhach a léiríonn cad chuige an réimse. Taispeántar é taobh istigh den réimse agus bogann sé os a chionn nuair a bhíonn fócas ar an réimse nó luach ann.',
+      placeholder: 'Ionadchoinneálaí an réimse',
+      placeholder_placeholder: 'Ionadchoinneálaí',
+      placeholder_tooltip:
+        'Sampla nó leid formáide a thaispeántar taobh istigh den réimse. De ghnáth taispeántar é tar éis don lipéad bogadh suas agus ba cheart dó a bheith gearr (m.sh. LL/MM/BBBB).',
+      description: 'Cur síos ar an réimse',
+      description_placeholder: 'Cur síos',
+      description_tooltip:
+        'Téacs tacaíochta faoin réimse téacs. Úsáid é le haghaidh treoracha níos faide nó nótaí inrochtaineachta.',
+      options: 'Roghanna',
+      options_tip:
+        'Cuir isteach gach rogha ar líne nua. Úsáid luach:lipéad (m.sh. red:Dearg). Is féidir leat luach amháin a chur isteach freisin; gan lipéad, taispeántar an luach mar lipéad.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Slonn rialta',
+      regex_tip: 'Sainmhínigh slonn rialta chun an t-ionchur a bhailíochtú.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Formáid dáta',
+      date_format_us: 'MM/dd/yyyy (m.sh. Stáit Aontaithe)',
+      date_format_uk: 'dd/MM/yyyy (m.sh. an RA agus an Eoraip)',
+      date_format_iso: 'yyyy-MM-dd (caighdeán idirnáisiúnta)',
+      custom_date_format: 'Formáid dáta shaincheaptha',
+      custom_date_format_placeholder:
+        'Cuir isteach an fhormáid dáta shaincheaptha, m.sh. "MM-dd-yyyy"',
+      custom_date_format_tip:
+        'Féach doiciméid <a>date-fns</a> le haghaidh comharthaí formáidithe bailí.',
+      input_length: 'Fad an ionchuir',
+      value_range: 'Raon luachanna',
+      min: 'Íosmhéid',
+      max: 'Uasmhéid',
+      default_value: 'Luach réamhshocraithe',
+      checkbox_checked: 'Ticeáilte (True)',
+      checkbox_unchecked: 'Gan ticeáil (False)',
+      required: 'Riachtanach',
+      required_description:
+        "Nuair a bhíonn sé cumasaithe, ní mór d'úsáideoirí an réimse seo a líonadh. Murach sin, is roghnach é.",
+      avatar_upload_description:
+        'Uaslódálann úsáideoirí deiridh a n-abhatár le linn an chlárúcháin. Is é URL na híomhá uaslódáilte an luach a stóráiltear.',
+    },
   },
 };
 

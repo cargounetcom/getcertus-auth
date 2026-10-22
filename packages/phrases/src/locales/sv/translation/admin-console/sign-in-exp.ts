@@ -418,6 +418,189 @@ const sign_in_exp = {
         manual: 'Kräv godkännande med kryssruta vid både registrering och inloggning',
       },
     },
+    languages: {
+      title: 'SPRÅK',
+      enable_auto_detect: 'Aktivera automatisk identifiering',
+      description:
+        'Programvaran identifierar användarens språkinställning och växlar till det lokala språket. Du kan lägga till nya språk genom att översätta gränssnittet från engelska.',
+      manage_language: 'Hantera språk',
+      default_language: 'Standardspråk',
+      default_language_description_auto:
+        'Standardspråket används när användarens identifierade språk inte finns i det aktuella språkbiblioteket.',
+      default_language_description_fixed:
+        'När automatisk identifiering är av är standardspråket det enda språk som programvaran visar. Aktivera automatisk identifiering för fler språk.',
+    },
+    support: {
+      title: 'SUPPORT',
+      subtitle: 'Visa dina supportkanaler på felsidor så att användare snabbt får hjälp.',
+      support_email: 'Support-e-post',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Supportwebbplats',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Hantera språk',
+      subtitle:
+        'Lokalisera produktupplevelsen genom att lägga till språk och översättningar. Ditt bidrag kan anges som standardspråk.',
+      add_language: 'Lägg till språk',
+      logto_provided: 'Från GetCertus',
+      key: 'Nyckel',
+      logto_source_values: 'GetCertus källvärden',
+      custom_values: 'Anpassade värden',
+      clear_all_tip: 'Rensa alla värden',
+      unsaved_description: 'Ändringarna sparas inte om du lämnar sidan utan att spara.',
+      deletion_tip: 'Ta bort språket',
+      deletion_title: 'Vill du ta bort det tillagda språket?',
+      deletion_description: 'Efter borttagningen kan användarna inte längre använda det språket.',
+      default_language_deletion_title: 'Standardspråket kan inte tas bort.',
+      default_language_deletion_description:
+        '{{language}} är ditt standardspråk och kan inte tas bort. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Ingen sms-koppling har konfigurerats ännu. Tills konfigurationen är klar kan användare inte logga in med den här metoden. <a>{{link}}</a> under "Kopplingar"',
+    no_connector_email:
+      'Ingen e-postkoppling har konfigurerats ännu. Tills konfigurationen är klar kan användare inte logga in med den här metoden. <a>{{link}}</a> under "Kopplingar"',
+    no_connector_social:
+      'Du har inte konfigurerat någon social koppling ännu. Lägg först till kopplingar för att använda sociala inloggningsmetoder. <a>{{link}}</a> under "Kopplingar".',
+    no_connector_email_account_center:
+      'Ingen e-postkoppling har konfigurerats ännu. Konfigurera under <a>"E-post- och sms-kopplingar"</a>.',
+    no_connector_sms_account_center:
+      'Ingen sms-koppling har konfigurerats ännu. Konfigurera under <a>"E-post- och sms-kopplingar"</a>.',
+    no_connector_social_account_center:
+      'Ingen social koppling har konfigurerats ännu. Konfigurera under <a>"Sociala kopplingar"</a>.',
+    no_mfa_factor: 'Ingen MFA-faktor har konfigurerats ännu. Konfigurera under <a>{{link}}</a>.',
+    setup_link: 'Konfigurera',
+  },
+  save_alert: {
+    description:
+      'Du inför nya rutiner för inloggning och registrering. Alla dina användare kan påverkas av den nya konfigurationen. Vill du verkligen genomföra ändringen?',
+    before: 'Före',
+    after: 'Efter',
+    sign_up: 'Registrering',
+    sign_in: 'Inloggning',
+    social: 'Socialt',
+    forgot_password_migration_notice:
+      'Vi har uppgraderat verifieringen för glömt lösenord så att den stöder anpassade metoder. Tidigare bestämdes detta automatiskt av dina e-post- och sms-kopplingar. Klicka på <strong>Bekräfta</strong> för att slutföra uppgraderingen.',
+  },
+  preview: {
+    title: 'Förhandsvisning av inloggning',
+    live_preview: 'Live-förhandsvisning',
+    live_preview_tip: 'Spara för att förhandsgranska ändringar',
+    native: 'Native',
+    desktop_web: 'Webb för dator',
+    mobile_web: 'Mobilwebb',
+    desktop: 'Dator',
+    mobile: 'Mobil',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Lägg till profilfält',
+      title: {
+        field_label: 'Fältetikett',
+        type: 'Typ',
+        user_data_key: 'Nyckel för användardata',
+      },
+      placeholder: {
+        title: 'Samla in användarprofil',
+        description:
+          'Anpassa fält för att samla in mer profilinformation om användare vid registrering.',
+      },
+    },
+    type: {
+      Text: 'Text',
+      Number: 'Nummer',
+      Date: 'Datum',
+      Checkbox: 'Kryssruta (boolesk)',
+      Select: 'Rullgardinsmeny (ett val)',
+      Url: 'URL',
+      Regex: 'Reguljärt uttryck',
+      Address: 'Adress (sammansatt)',
+      Fullname: 'Fullständigt namn (sammansatt)',
+    },
+    modal: {
+      title: 'Lägg till profilfält',
+      subtitle:
+        'Anpassa fält för att samla in mer profilinformation om användare vid registrering.',
+      built_in_properties: 'Grundläggande användardata',
+      custom_properties: 'Anpassade användardata',
+      custom_data_field_name: 'Nyckel för användardata',
+      custom_data_field_input_placeholder:
+        'Ange nyckeln för användardata, t.ex. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Anpassade data',
+        description:
+          'Ytterligare användaregenskaper som du kan definiera för din applikations unika krav.',
+      },
+      type_required: 'Välj en egenskapstyp',
+      create_button: 'Skapa profilfält',
+      avatar: {
+        description:
+          'Låt användare ladda upp sin profilbild vid registreringen. URL:en till den uppladdade bilden sparas som användarens avatar.',
+        storage_not_configured:
+          'Uppladdning av avatar kräver en konfigurerad lagringsleverantör. Konfigurera lagring innan du lägger till fältet.',
+      },
+    },
+    details: {
+      page_title: 'Detaljer för profilfält',
+      back_to_sie: 'Tillbaka till inloggningsupplevelsen',
+      enter_field_name: 'Ange profilfältets namn',
+      delete_description:
+        'Åtgärden kan inte ångras. Vill du verkligen ta bort det här profilfältet?',
+      field_deleted: 'Profilfältet {{name}} har tagits bort.',
+      key: 'Nyckel för användardata',
+      field_name: 'Fältnamn',
+      field_type: 'Fälttyp',
+      settings: 'Inställningar',
+      settings_description:
+        'Anpassa fält för att samla in mer profilinformation om användare vid registrering.',
+      address_format: 'Adressformat',
+      single_line_address: 'Adress på en rad',
+      multi_line_address: 'Adress på flera rader (t.ex. gata, ort, län, postnummer, land)',
+      components: 'Komponenter',
+      components_tip: 'Välj komponenterna som utgör det sammansatta fältet.',
+      label: 'Fältetikett',
+      label_placeholder: 'Etikett',
+      label_tip:
+        'Behöver du lokalisering? Lägg till språk under <a>Inloggningsupplevelse > Innehåll</a>',
+      label_tooltip:
+        'Flytande etikett som visar vad fältet är till för. Den visas inne i fältet och flyttas ovanför när fältet har fokus eller ett värde.',
+      placeholder: 'Platshållare för fältet',
+      placeholder_placeholder: 'Platshållare',
+      placeholder_tooltip:
+        'Exempel eller formattips som visas inne i fältet. Visas vanligtvis efter att etiketten flyttats upp och bör vara kort (t.ex. ÅÅÅÅ-MM-DD).',
+      description: 'Fältbeskrivning',
+      description_placeholder: 'Beskrivning',
+      description_tooltip:
+        'Stödtext som visas under textfältet. Använd den för längre instruktioner eller tillgänglighetsanteckningar.',
+      options: 'Alternativ',
+      options_tip:
+        'Ange varje alternativ på en ny rad. Använd värde:etikett (t.ex. red:Röd). Du kan också bara ange ett värde; utan etikett visas värdet som etikett.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Reguljärt uttryck',
+      regex_tip: 'Definiera ett reguljärt uttryck för att validera indata.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Datumformat',
+      date_format_us: 'MM/dd/yyyy (t.ex. USA)',
+      date_format_uk: 'dd/MM/yyyy (t.ex. Storbritannien och Europa)',
+      date_format_iso: 'yyyy-MM-dd (internationell standard)',
+      custom_date_format: 'Anpassat datumformat',
+      custom_date_format_placeholder: 'Ange det anpassade datumformatet, t.ex. "MM-dd-yyyy"',
+      custom_date_format_tip: 'Se dokumentationen för <a>date-fns</a> för giltiga formatkoder.',
+      input_length: 'Indatalängd',
+      value_range: 'Värdeintervall',
+      min: 'Minsta',
+      max: 'Högsta',
+      default_value: 'Standardvärde',
+      checkbox_checked: 'Markerad (sant)',
+      checkbox_unchecked: 'Avmarkerad (falskt)',
+      required: 'Obligatoriskt',
+      required_description:
+        'När det är aktiverat måste användarna fylla i fältet. Annars är det valfritt.',
+      avatar_upload_description:
+        'Slutanvändare laddar upp sin avatar vid registreringen. Det sparade värdet är URL:en till den uppladdade bilden.',
+    },
   },
 };
 

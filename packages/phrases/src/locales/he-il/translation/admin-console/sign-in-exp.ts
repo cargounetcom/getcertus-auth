@@ -404,6 +404,181 @@ const sign_in_exp = {
         manual: 'חובת סימון הסכמה גם בהרשמה וגם בהתחברות',
       },
     },
+    languages: {
+      title: 'שפות',
+      enable_auto_detect: 'הפעלת זיהוי אוטומטי',
+      description:
+        'התוכנה מזהה את הגדרת השפה של המשתמש ועוברת לשפה המקומית. אפשר להוסיף שפות חדשות על ידי תרגום הממשק מאנגלית.',
+      manage_language: 'ניהול שפות',
+      default_language: 'שפת ברירת מחדל',
+      default_language_description_auto:
+        'שפת ברירת המחדל משמשת כשהשפה שזוהתה אצל המשתמש לא נמצאת בספריית השפות הנוכחית.',
+      default_language_description_fixed:
+        'כשהזיהוי האוטומטי כבוי, שפת ברירת המחדל היא השפה היחידה שהתוכנה מציגה. הפעילו זיהוי אוטומטי כדי לתמוך בשפות נוספות.',
+    },
+    support: {
+      title: 'תמיכה',
+      subtitle: 'הציגו את ערוצי התמיכה בדפי שגיאה כדי שמשתמשים יקבלו עזרה מהר.',
+      support_email: 'אימייל תמיכה',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'אתר תמיכה',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'ניהול שפות',
+      subtitle:
+        'התאימו את חוויית המוצר לשפות שונות על ידי הוספת שפות ותרגומים. התרומה שלכם יכולה להיות מוגדרת כשפת ברירת המחדל.',
+      add_language: 'הוספת שפה',
+      logto_provided: 'מסופק על ידי GetCertus',
+      key: 'מפתח',
+      logto_source_values: 'ערכי המקור של GetCertus',
+      custom_values: 'ערכים מותאמים',
+      clear_all_tip: 'ניקוי כל הערכים',
+      unsaved_description: 'השינויים לא יישמרו אם תעזבו את הדף בלי לשמור.',
+      deletion_tip: 'מחיקת השפה',
+      deletion_title: 'למחוק את השפה שנוספה?',
+      deletion_description: 'לאחר המחיקה, המשתמשים לא יוכלו עוד להשתמש בשפה זו.',
+      default_language_deletion_title: 'לא ניתן למחוק את שפת ברירת המחדל.',
+      default_language_deletion_description:
+        '{{language}} מוגדרת כשפת ברירת המחדל ולא ניתן למחוק אותה. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'עדיין לא הוגדר מחבר SMS. עד להשלמת ההגדרה, משתמשים לא יוכלו להתחבר בשיטה זו. <a>{{link}}</a> ב"מחברים"',
+    no_connector_email:
+      'עדיין לא הוגדר מחבר אימייל. עד להשלמת ההגדרה, משתמשים לא יוכלו להתחבר בשיטה זו. <a>{{link}}</a> ב"מחברים"',
+    no_connector_social:
+      'עדיין לא הגדרתם מחבר חברתי. הוסיפו קודם מחברים כדי להשתמש בשיטות התחברות חברתיות. <a>{{link}}</a> ב"מחברים".',
+    no_connector_email_account_center:
+      'עדיין לא הוגדר מחבר אימייל. הגדירו אותו ב<a>"מחברי אימייל ו-SMS"</a>.',
+    no_connector_sms_account_center:
+      'עדיין לא הוגדר מחבר SMS. הגדירו אותו ב<a>"מחברי אימייל ו-SMS"</a>.',
+    no_connector_social_account_center:
+      'עדיין לא הוגדר מחבר חברתי. הגדירו אותו ב<a>"מחברים חברתיים"</a>.',
+    no_mfa_factor: 'עדיין לא הוגדר גורם MFA. הגדירו אותו ב<a>{{link}}</a>.',
+    setup_link: 'הגדרה',
+  },
+  save_alert: {
+    description:
+      'אתם מיישמים נהלי התחברות והרשמה חדשים. כל המשתמשים שלכם עלולים להיות מושפעים מההגדרה החדשה. האם אתם בטוחים שברצונכם לבצע את השינוי?',
+    before: 'לפני',
+    after: 'אחרי',
+    sign_up: 'הרשמה',
+    sign_in: 'התחברות',
+    social: 'חברתי',
+    forgot_password_migration_notice:
+      'שדרגנו את האימות של שכחתי סיסמה כך שיתמוך בשיטות מותאמות. בעבר זה נקבע אוטומטית לפי מחברי האימייל וה-SMS שלכם. לחצו על <strong>אישור</strong> כדי להשלים את השדרוג.',
+  },
+  preview: {
+    title: 'תצוגה מקדימה של ההתחברות',
+    live_preview: 'תצוגה מקדימה חיה',
+    live_preview_tip: 'שמרו כדי לראות את השינויים',
+    native: 'נייטיב',
+    desktop_web: 'ווב במחשב',
+    mobile_web: 'ווב בנייד',
+    desktop: 'מחשב',
+    mobile: 'נייד',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'הוספת שדה פרופיל',
+      title: {
+        field_label: 'תווית השדה',
+        type: 'סוג',
+        user_data_key: 'מפתח נתוני משתמש',
+      },
+      placeholder: {
+        title: 'איסוף פרופיל משתמש',
+        description: 'התאימו שדות כדי לאסוף יותר פרטי פרופיל בזמן ההרשמה.',
+      },
+    },
+    type: {
+      Text: 'טקסט',
+      Number: 'מספר',
+      Date: 'תאריך',
+      Checkbox: 'תיבת סימון (בוליאני)',
+      Select: 'רשימה נפתחת (בחירה אחת)',
+      Url: 'URL',
+      Regex: 'ביטוי רגולרי',
+      Address: 'כתובת (מורכב)',
+      Fullname: 'שם מלא (מורכב)',
+    },
+    modal: {
+      title: 'הוספת שדה פרופיל',
+      subtitle: 'התאימו שדות כדי לאסוף יותר פרטי פרופיל בזמן ההרשמה.',
+      built_in_properties: 'נתוני משתמש בסיסיים',
+      custom_properties: 'נתוני משתמש מותאמים',
+      custom_data_field_name: 'מפתח נתוני משתמש',
+      custom_data_field_input_placeholder: 'הזינו את מפתח נתוני המשתמש, למשל `myFavoriteFieldName`',
+      custom_field: {
+        title: 'נתונים מותאמים',
+        description: 'מאפייני משתמש נוספים שאפשר להגדיר לפי הצרכים הייחודיים של האפליקציה.',
+      },
+      type_required: 'בחרו סוג מאפיין',
+      create_button: 'יצירת שדה פרופיל',
+      avatar: {
+        description:
+          'אפשרו למשתמשים להעלות תמונת פרופיל בזמן ההרשמה. כתובת התמונה שהועלתה נשמרת כתמונת הפרופיל של המשתמש.',
+        storage_not_configured:
+          'העלאת תמונת פרופיל מחייבת ספק אחסון מוגדר. הגדירו אחסון לפני הוספת השדה.',
+      },
+    },
+    details: {
+      page_title: 'פרטי שדה פרופיל',
+      back_to_sie: 'חזרה לחוויית ההתחברות',
+      enter_field_name: 'הזינו את שם שדה הפרופיל',
+      delete_description: 'לא ניתן לבטל פעולה זו. האם אתם בטוחים שברצונכם למחוק את שדה הפרופיל?',
+      field_deleted: 'שדה הפרופיל {{name}} נמחק בהצלחה.',
+      key: 'מפתח נתוני משתמש',
+      field_name: 'שם השדה',
+      field_type: 'סוג השדה',
+      settings: 'הגדרות',
+      settings_description: 'התאימו שדות כדי לאסוף יותר פרטי פרופיל בזמן ההרשמה.',
+      address_format: 'פורמט כתובת',
+      single_line_address: 'כתובת בשורה אחת',
+      multi_line_address: 'כתובת בכמה שורות (למשל רחוב, עיר, מחוז, מיקוד, מדינה)',
+      components: 'רכיבים',
+      components_tip: 'בחרו את הרכיבים שמרכיבים את השדה המורכב.',
+      label: 'תווית השדה',
+      label_placeholder: 'תווית',
+      label_tip: 'צריכים תרגום? הוסיפו שפות ב<a>חוויית התחברות > תוכן</a>',
+      label_tooltip:
+        'תווית צפה שמציינת למה השדה משמש. היא מופיעה בתוך השדה ועולה מעליו כשהשדה בפוקוס או מכיל ערך.',
+      placeholder: 'טקסט ממלא מקום',
+      placeholder_placeholder: 'טקסט ממלא מקום',
+      placeholder_tooltip:
+        'דוגמה או רמז לפורמט שמוצג בתוך השדה. בדרך כלל מופיע אחרי שהתווית עולה וצריך להיות קצר (למשל DD/MM/YYYY).',
+      description: 'תיאור השדה',
+      description_placeholder: 'תיאור',
+      description_tooltip:
+        'טקסט עזר שמוצג מתחת לשדה הטקסט. השתמשו בו להוראות ארוכות יותר או להערות נגישות.',
+      options: 'אפשרויות',
+      options_tip:
+        'הזינו כל אפשרות בשורה חדשה. השתמשו בפורמט ערך:תווית (למשל red:אדום). אפשר להזין גם ערך בלבד; ללא תווית, הערך מוצג כתווית.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'ביטוי רגולרי',
+      regex_tip: 'הגדירו ביטוי רגולרי לאימות הקלט.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'פורמט תאריך',
+      date_format_us: 'MM/dd/yyyy (למשל ארה״ב)',
+      date_format_uk: 'dd/MM/yyyy (למשל בריטניה ואירופה)',
+      date_format_iso: 'yyyy-MM-dd (תקן בינלאומי)',
+      custom_date_format: 'פורמט תאריך מותאם',
+      custom_date_format_placeholder: 'הזינו פורמט תאריך מותאם, למשל "MM-dd-yyyy"',
+      custom_date_format_tip: 'ראו את התיעוד של <a>date-fns</a> לסימני עיצוב תקינים.',
+      input_length: 'אורך קלט',
+      value_range: 'טווח ערכים',
+      min: 'מינימום',
+      max: 'מקסימום',
+      default_value: 'ערך ברירת מחדל',
+      checkbox_checked: 'מסומן (True)',
+      checkbox_unchecked: 'לא מסומן (False)',
+      required: 'חובה',
+      required_description: 'כשמופעל, המשתמשים חייבים למלא את השדה. אחרת השדה אופציונלי.',
+      avatar_upload_description:
+        'משתמשי הקצה מעלים תמונת פרופיל בזמן ההרשמה. הערך שנשמר הוא כתובת התמונה שהועלתה.',
+    },
   },
 };
 

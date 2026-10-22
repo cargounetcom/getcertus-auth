@@ -416,6 +416,188 @@ const sign_in_exp = {
         manual: 'Kræv accept via afkrydsningsfelt ved både registrering og login',
       },
     },
+    languages: {
+      title: 'SPROG',
+      enable_auto_detect: 'Aktivér automatisk registrering',
+      description:
+        'Din software registrerer brugerens sprogindstilling og skifter til det lokale sprog. Du kan tilføje nye sprog ved at oversætte brugerfladen fra engelsk.',
+      manage_language: 'Administrér sprog',
+      default_language: 'Standardsprog',
+      default_language_description_auto:
+        'Standardsproget bruges, når brugerens registrerede sprog ikke findes i det aktuelle sprogbibliotek.',
+      default_language_description_fixed:
+        'Når automatisk registrering er slået fra, er standardsproget det eneste sprog, din software viser. Slå automatisk registrering til for flere sprog.',
+    },
+    support: {
+      title: 'SUPPORT',
+      subtitle: 'Vis dine supportkanaler på fejlsider, så brugere hurtigt får hjælp.',
+      support_email: 'Support-e-mail',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Supportwebsted',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Administrér sprog',
+      subtitle:
+        'Lokalisér produktoplevelsen ved at tilføje sprog og oversættelser. Dit bidrag kan angives som standardsprog.',
+      add_language: 'Tilføj sprog',
+      logto_provided: 'Leveret af GetCertus',
+      key: 'Nøgle',
+      logto_source_values: "GetCertus' kildeværdier",
+      custom_values: 'Brugerdefinerede værdier',
+      clear_all_tip: 'Ryd alle værdier',
+      unsaved_description: 'Ændringer gemmes ikke, hvis du forlader siden uden at gemme.',
+      deletion_tip: 'Slet sproget',
+      deletion_title: 'Vil du slette det tilføjede sprog?',
+      deletion_description: 'Efter sletning kan dine brugere ikke længere bruge det sprog.',
+      default_language_deletion_title: 'Standardsproget kan ikke slettes.',
+      default_language_deletion_description:
+        '{{language}} er angivet som dit standardsprog og kan ikke slettes. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Der er endnu ikke opsat en sms-connector. Indtil konfigurationen er færdig, kan brugere ikke logge ind med denne metode. <a>{{link}}</a> under "Connectorer"',
+    no_connector_email:
+      'Der er endnu ikke opsat en e-mail-connector. Indtil konfigurationen er færdig, kan brugere ikke logge ind med denne metode. <a>{{link}}</a> under "Connectorer"',
+    no_connector_social:
+      'Du har endnu ikke opsat nogen social connector. Tilføj først connectorer for at bruge sociale loginmetoder. <a>{{link}}</a> under "Connectorer".',
+    no_connector_email_account_center:
+      'Der er endnu ikke opsat en e-mail-connector. Opsæt den under <a>"E-mail- og sms-connectorer"</a>.',
+    no_connector_sms_account_center:
+      'Der er endnu ikke opsat en sms-connector. Opsæt den under <a>"E-mail- og sms-connectorer"</a>.',
+    no_connector_social_account_center:
+      'Der er endnu ikke opsat en social connector. Opsæt den under <a>"Sociale connectorer"</a>.',
+    no_mfa_factor: 'Der er endnu ikke opsat en MFA-faktor. Opsæt den under <a>{{link}}</a>.',
+    setup_link: 'Opsæt',
+  },
+  save_alert: {
+    description:
+      'Du indfører nye procedurer for login og tilmelding. Alle dine brugere kan blive påvirket af den nye opsætning. Er du sikker på, at du vil gennemføre ændringen?',
+    before: 'Før',
+    after: 'Efter',
+    sign_up: 'Tilmelding',
+    sign_in: 'Login',
+    social: 'Socialt',
+    forgot_password_migration_notice:
+      'Vi har opgraderet bekræftelsen ved glemt adgangskode, så den understøtter brugerdefinerede metoder. Tidligere blev dette bestemt automatisk af dine e-mail- og sms-connectorer. Klik på <strong>Bekræft</strong> for at fuldføre opgraderingen.',
+  },
+  preview: {
+    title: 'Forhåndsvisning af login',
+    live_preview: 'Live-forhåndsvisning',
+    live_preview_tip: 'Gem for at se ændringerne',
+    native: 'Native',
+    desktop_web: 'Web på computer',
+    mobile_web: 'Mobilweb',
+    desktop: 'Computer',
+    mobile: 'Mobil',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Tilføj profilfelt',
+      title: {
+        field_label: 'Feltetiket',
+        type: 'Type',
+        user_data_key: 'Nøgle til brugerdata',
+      },
+      placeholder: {
+        title: 'Indsaml brugerprofil',
+        description:
+          'Tilpas felter for at indsamle flere profiloplysninger om brugere ved tilmelding.',
+      },
+    },
+    type: {
+      Text: 'Tekst',
+      Number: 'Tal',
+      Date: 'Dato',
+      Checkbox: 'Afkrydsningsfelt (boolesk)',
+      Select: 'Rullemenu (ét valg)',
+      Url: 'URL',
+      Regex: 'Regulært udtryk',
+      Address: 'Adresse (sammensat)',
+      Fullname: 'Fulde navn (sammensat)',
+    },
+    modal: {
+      title: 'Tilføj profilfelt',
+      subtitle: 'Tilpas felter for at indsamle flere profiloplysninger om brugere ved tilmelding.',
+      built_in_properties: 'Grundlæggende brugerdata',
+      custom_properties: 'Brugerdefinerede brugerdata',
+      custom_data_field_name: 'Nøgle til brugerdata',
+      custom_data_field_input_placeholder:
+        'Indtast nøglen til brugerdata, f.eks. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Brugerdefinerede data',
+        description:
+          'Yderligere brugeregenskaber, du kan definere til din applikations særlige krav.',
+      },
+      type_required: 'Vælg en egenskabstype',
+      create_button: 'Opret profilfelt',
+      avatar: {
+        description:
+          "Lad brugere uploade deres profilbillede ved tilmelding. URL'en til det uploadede billede gemmes som brugerens avatar.",
+        storage_not_configured:
+          'Upload af avatar kræver en konfigureret lagerudbyder. Konfigurér lager, før du tilføjer feltet.',
+      },
+    },
+    details: {
+      page_title: 'Detaljer for profilfelt',
+      back_to_sie: 'Tilbage til loginoplevelsen',
+      enter_field_name: 'Indtast profilfeltets navn',
+      delete_description:
+        'Handlingen kan ikke fortrydes. Er du sikker på, at du vil slette dette profilfelt?',
+      field_deleted: 'Profilfeltet {{name}} er slettet.',
+      key: 'Nøgle til brugerdata',
+      field_name: 'Feltnavn',
+      field_type: 'Felttype',
+      settings: 'Indstillinger',
+      settings_description:
+        'Tilpas felter for at indsamle flere profiloplysninger om brugere ved tilmelding.',
+      address_format: 'Adresseformat',
+      single_line_address: 'Adresse på én linje',
+      multi_line_address: 'Adresse på flere linjer (f.eks. gade, by, region, postnummer, land)',
+      components: 'Komponenter',
+      components_tip: 'Vælg de komponenter, som det sammensatte felt består af.',
+      label: 'Feltetiket',
+      label_placeholder: 'Etiket',
+      label_tip: 'Brug for lokalisering? Tilføj sprog under <a>Loginoplevelse > Indhold</a>',
+      label_tooltip:
+        'Flydende etiket, der viser, hvad feltet bruges til. Den vises inde i feltet og flytter op over feltet, når det har fokus eller en værdi.',
+      placeholder: 'Pladsholder for feltet',
+      placeholder_placeholder: 'Pladsholder',
+      placeholder_tooltip:
+        'Eksempel eller formattip vist inde i feltet. Vises typisk, efter etiketten er flyttet op, og bør være kort (f.eks. DD-MM-ÅÅÅÅ).',
+      description: 'Feltbeskrivelse',
+      description_placeholder: 'Beskrivelse',
+      description_tooltip:
+        'Hjælpetekst under tekstfeltet. Brug den til længere instruktioner eller tilgængelighedsnoter.',
+      options: 'Valgmuligheder',
+      options_tip:
+        'Indtast hver valgmulighed på en ny linje. Brug værdi:etiket (f.eks. red:Rød). Du kan også kun indtaste en værdi; uden etiket vises værdien som etiket.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Regulært udtryk',
+      regex_tip: 'Definér et regulært udtryk til at validere input.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Datoformat',
+      date_format_us: 'MM/dd/yyyy (f.eks. USA)',
+      date_format_uk: 'dd/MM/yyyy (f.eks. Storbritannien og Europa)',
+      date_format_iso: 'yyyy-MM-dd (international standard)',
+      custom_date_format: 'Brugerdefineret datoformat',
+      custom_date_format_placeholder:
+        'Indtast det brugerdefinerede datoformat, f.eks. "MM-dd-yyyy"',
+      custom_date_format_tip: 'Se dokumentationen for <a>date-fns</a> for gyldige formatkoder.',
+      input_length: 'Inputlængde',
+      value_range: 'Værdiinterval',
+      min: 'Minimum',
+      max: 'Maksimum',
+      default_value: 'Standardværdi',
+      checkbox_checked: 'Markeret (sand)',
+      checkbox_unchecked: 'Ikke markeret (falsk)',
+      required: 'Påkrævet',
+      required_description:
+        'Når det er aktiveret, skal brugerne udfylde feltet. Ellers er det valgfrit.',
+      avatar_upload_description:
+        "Slutbrugere uploader deres avatar ved tilmelding. Den gemte værdi er URL'en til det uploadede billede.",
+    },
   },
 };
 

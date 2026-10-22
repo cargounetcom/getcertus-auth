@@ -416,6 +416,189 @@ const sign_in_exp = {
         manual: 'Vaadi hyväksyntä valintaruudulla sekä rekisteröityessä että kirjautuessa',
       },
     },
+    languages: {
+      title: 'KIELET',
+      enable_auto_detect: 'Ota automaattinen tunnistus käyttöön',
+      description:
+        'Ohjelmisto tunnistaa käyttäjän kieliasetuksen ja vaihtaa paikalliseen kieleen. Voit lisätä uusia kieliä kääntämällä käyttöliittymän englannista.',
+      manage_language: 'Hallitse kieliä',
+      default_language: 'Oletuskieli',
+      default_language_description_auto:
+        'Oletuskieltä käytetään, kun käyttäjän tunnistettua kieltä ei ole nykyisessä kielikirjastossa.',
+      default_language_description_fixed:
+        'Kun automaattinen tunnistus on pois päältä, oletuskieli on ainoa kieli, jota ohjelmisto näyttää. Ota automaattinen tunnistus käyttöön saadaksesi lisää kieliä.',
+    },
+    support: {
+      title: 'TUKI',
+      subtitle: 'Näytä tukikanavasi virhesivuilla, jotta käyttäjät saavat nopeasti apua.',
+      support_email: 'Tuen sähköposti',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Tukisivusto',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Hallitse kieliä',
+      subtitle:
+        'Lokalisoi tuotekokemus lisäämällä kieliä ja käännöksiä. Panoksesi voidaan asettaa oletuskieleksi.',
+      add_language: 'Lisää kieli',
+      logto_provided: 'GetCertuksen tarjoama',
+      key: 'Avain',
+      logto_source_values: 'GetCertuksen lähdearvot',
+      custom_values: 'Mukautetut arvot',
+      clear_all_tip: 'Tyhjennä kaikki arvot',
+      unsaved_description: 'Muutoksia ei tallenneta, jos poistut sivulta tallentamatta.',
+      deletion_tip: 'Poista kieli',
+      deletion_title: 'Haluatko poistaa lisätyn kielen?',
+      deletion_description: 'Poiston jälkeen käyttäjät eivät voi enää käyttää kyseistä kieltä.',
+      default_language_deletion_title: 'Oletuskieltä ei voi poistaa.',
+      default_language_deletion_description:
+        '{{language}} on oletuskielesi, eikä sitä voi poistaa. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Tekstiviestiliitintä ei ole vielä määritetty. Käyttäjät eivät voi kirjautua tällä tavalla ennen kuin määritys on valmis. <a>{{link}}</a> kohdassa "Liittimet"',
+    no_connector_email:
+      'Sähköpostiliitintä ei ole vielä määritetty. Käyttäjät eivät voi kirjautua tällä tavalla ennen kuin määritys on valmis. <a>{{link}}</a> kohdassa "Liittimet"',
+    no_connector_social:
+      'Et ole vielä määrittänyt yhtään sosiaalista liitintä. Lisää liittimet ensin, jotta voit käyttää sosiaalisia kirjautumistapoja. <a>{{link}}</a> kohdassa "Liittimet".',
+    no_connector_email_account_center:
+      'Sähköpostiliitintä ei ole vielä määritetty. Määritä se kohdassa <a>"Sähköposti- ja tekstiviestiliittimet"</a>.',
+    no_connector_sms_account_center:
+      'Tekstiviestiliitintä ei ole vielä määritetty. Määritä se kohdassa <a>"Sähköposti- ja tekstiviestiliittimet"</a>.',
+    no_connector_social_account_center:
+      'Sosiaalista liitintä ei ole vielä määritetty. Määritä se kohdassa <a>"Sosiaaliset liittimet"</a>.',
+    no_mfa_factor: 'MFA-tekijää ei ole vielä määritetty. Määritä se kohdassa <a>{{link}}</a>.',
+    setup_link: 'Määritä',
+  },
+  save_alert: {
+    description:
+      'Olet ottamassa käyttöön uusia kirjautumis- ja rekisteröitymiskäytäntöjä. Uusi määritys voi vaikuttaa kaikkiin käyttäjiisi. Haluatko varmasti tehdä muutoksen?',
+    before: 'Ennen',
+    after: 'Jälkeen',
+    sign_up: 'Rekisteröityminen',
+    sign_in: 'Kirjautuminen',
+    social: 'Sosiaalinen',
+    forgot_password_migration_notice:
+      'Olemme päivittäneet unohtuneen salasanan vahvistuksen tukemaan mukautettuja tapoja. Aiemmin tämä määräytyi automaattisesti sähköposti- ja tekstiviestiliittimiesi mukaan. Viimeistele päivitys napsauttamalla <strong>Vahvista</strong>.',
+  },
+  preview: {
+    title: 'Kirjautumisen esikatselu',
+    live_preview: 'Live-esikatselu',
+    live_preview_tip: 'Tallenna esikatsellaksesi muutokset',
+    native: 'Natiivi',
+    desktop_web: 'Työpöytäverkko',
+    mobile_web: 'Mobiiliverkko',
+    desktop: 'Työpöytä',
+    mobile: 'Mobiili',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Lisää profiilikenttä',
+      title: {
+        field_label: 'Kentän nimike',
+        type: 'Tyyppi',
+        user_data_key: 'Käyttäjätietojen avain',
+      },
+      placeholder: {
+        title: 'Käyttäjäprofiilin keruu',
+        description:
+          'Mukauta kenttiä kerätäksesi rekisteröitymisessä enemmän käyttäjien profiilitietoja.',
+      },
+    },
+    type: {
+      Text: 'Teksti',
+      Number: 'Numero',
+      Date: 'Päivämäärä',
+      Checkbox: 'Valintaruutu (totuusarvo)',
+      Select: 'Pudotusvalikko (yksi valinta)',
+      Url: 'URL',
+      Regex: 'Säännöllinen lauseke',
+      Address: 'Osoite (yhdistelmä)',
+      Fullname: 'Koko nimi (yhdistelmä)',
+    },
+    modal: {
+      title: 'Lisää profiilikenttä',
+      subtitle:
+        'Mukauta kenttiä kerätäksesi rekisteröitymisessä enemmän käyttäjien profiilitietoja.',
+      built_in_properties: 'Käyttäjän perustiedot',
+      custom_properties: 'Mukautetut käyttäjätiedot',
+      custom_data_field_name: 'Käyttäjätietojen avain',
+      custom_data_field_input_placeholder:
+        'Anna käyttäjätietojen avain, esim. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Mukautetut tiedot',
+        description: 'Lisäominaisuudet, jotka voit määrittää sovelluksesi erityistarpeisiin.',
+      },
+      type_required: 'Valitse ominaisuuden tyyppi',
+      create_button: 'Luo profiilikenttä',
+      avatar: {
+        description:
+          'Anna käyttäjien ladata profiilikuvansa rekisteröitymisen yhteydessä. Ladatun kuvan URL tallennetaan käyttäjän avatariksi.',
+        storage_not_configured:
+          'Avatarin lataus edellyttää määritettyä tallennuspalvelua. Määritä tallennus ennen kentän lisäämistä.',
+      },
+    },
+    details: {
+      page_title: 'Profiilikentän tiedot',
+      back_to_sie: 'Takaisin kirjautumiskokemukseen',
+      enter_field_name: 'Anna profiilikentän nimi',
+      delete_description:
+        'Toimintoa ei voi kumota. Haluatko varmasti poistaa tämän profiilikentän?',
+      field_deleted: 'Profiilikenttä {{name}} on poistettu.',
+      key: 'Käyttäjätietojen avain',
+      field_name: 'Kentän nimi',
+      field_type: 'Kentän tyyppi',
+      settings: 'Asetukset',
+      settings_description:
+        'Mukauta kenttiä kerätäksesi rekisteröitymisessä enemmän käyttäjien profiilitietoja.',
+      address_format: 'Osoitemuoto',
+      single_line_address: 'Yksirivinen osoite',
+      multi_line_address: 'Monirivinen osoite (esim. katu, kaupunki, maakunta, postinumero, maa)',
+      components: 'Osat',
+      components_tip: 'Valitse osat, joista yhdistelmäkenttä muodostuu.',
+      label: 'Kentän nimike',
+      label_placeholder: 'Nimike',
+      label_tip:
+        'Tarvitsetko lokalisointia? Lisää kieliä kohdassa <a>Kirjautumiskokemus > Sisältö</a>',
+      label_tooltip:
+        'Kelluva nimike, joka kertoo kentän tarkoituksen. Se näkyy kentän sisällä ja siirtyy kentän yläpuolelle, kun kenttä on aktiivinen tai siinä on arvo.',
+      placeholder: 'Kentän paikkamerkki',
+      placeholder_placeholder: 'Paikkamerkki',
+      placeholder_tooltip:
+        'Kentän sisällä näkyvä esimerkki tai muotovihje. Näkyy yleensä nimikkeen siirryttyä ylös, ja sen tulee olla lyhyt (esim. PP.KK.VVVV).',
+      description: 'Kentän kuvaus',
+      description_placeholder: 'Kuvaus',
+      description_tooltip:
+        'Tekstikentän alla näkyvä ohjeteksti. Käytä sitä pidempiin ohjeisiin tai saavutettavuushuomioihin.',
+      options: 'Vaihtoehdot',
+      options_tip:
+        'Anna jokainen vaihtoehto omalle rivilleen. Käytä muotoa arvo:nimike (esim. red:Punainen). Voit myös antaa pelkän arvon; ilman nimikettä arvo näytetään nimikkeenä.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Säännöllinen lauseke',
+      regex_tip: 'Määritä säännöllinen lauseke syötteen tarkistamiseen.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Päivämäärämuoto',
+      date_format_us: 'MM/dd/yyyy (esim. Yhdysvallat)',
+      date_format_uk: 'dd/MM/yyyy (esim. Iso-Britannia ja Eurooppa)',
+      date_format_iso: 'yyyy-MM-dd (kansainvälinen standardi)',
+      custom_date_format: 'Mukautettu päivämäärämuoto',
+      custom_date_format_placeholder: 'Anna mukautettu päivämäärämuoto, esim. "MM-dd-yyyy"',
+      custom_date_format_tip:
+        'Katso kelvolliset muotoilutunnukset <a>date-fns</a>-dokumentaatiosta.',
+      input_length: 'Syötteen pituus',
+      value_range: 'Arvoalue',
+      min: 'Vähintään',
+      max: 'Enintään',
+      default_value: 'Oletusarvo',
+      checkbox_checked: 'Valittu (tosi)',
+      checkbox_unchecked: 'Ei valittu (epätosi)',
+      required: 'Pakollinen',
+      required_description:
+        'Kun tämä on käytössä, käyttäjien on täytettävä kenttä. Muuten kenttä on valinnainen.',
+      avatar_upload_description:
+        'Loppukäyttäjät lataavat avatarinsa rekisteröityessään. Tallennettu arvo on ladatun kuvan URL.',
+    },
   },
 };
 

@@ -415,6 +415,190 @@ const sign_in_exp = {
         manual: 'Akkoord via selectievakje bij registratie en inloggen',
       },
     },
+    languages: {
+      title: 'TALEN',
+      enable_auto_detect: 'Automatisch detecteren inschakelen',
+      description:
+        'Je software detecteert de taalinstelling van de gebruiker en schakelt over naar de lokale taal. Je kunt nieuwe talen toevoegen door de UI vanuit het Engels te vertalen.',
+      manage_language: 'Taal beheren',
+      default_language: 'Standaardtaal',
+      default_language_description_auto:
+        'De standaardtaal wordt gebruikt als de gedetecteerde taal van de gebruiker niet in de huidige talenbibliotheek staat.',
+      default_language_description_fixed:
+        'Als automatisch detecteren uit staat, is de standaardtaal de enige taal die je software toont. Schakel automatisch detecteren in voor meer talen.',
+    },
+    support: {
+      title: 'ONDERSTEUNING',
+      subtitle: "Toon je ondersteuningskanalen op foutpagina's zodat gebruikers snel hulp krijgen.",
+      support_email: 'Ondersteunings-e-mail',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Ondersteuningswebsite',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Taal beheren',
+      subtitle:
+        'Lokaliseer de productervaring door talen en vertalingen toe te voegen. Jouw bijdrage kan als standaardtaal worden ingesteld.',
+      add_language: 'Taal toevoegen',
+      logto_provided: 'Geleverd door GetCertus',
+      key: 'Sleutel',
+      logto_source_values: 'Bronwaarden van GetCertus',
+      custom_values: 'Aangepaste waarden',
+      clear_all_tip: 'Alle waarden wissen',
+      unsaved_description:
+        'Wijzigingen worden niet opgeslagen als je deze pagina verlaat zonder op te slaan.',
+      deletion_tip: 'Taal verwijderen',
+      deletion_title: 'Wil je de toegevoegde taal verwijderen?',
+      deletion_description: 'Na verwijdering kunnen je gebruikers niet meer in die taal browsen.',
+      default_language_deletion_title: 'De standaardtaal kan niet worden verwijderd.',
+      default_language_deletion_description:
+        '{{language}} is ingesteld als je standaardtaal en kan niet worden verwijderd. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Er is nog geen sms-connector ingesteld. Tot de configuratie klaar is, kunnen gebruikers niet met deze methode inloggen. <a>{{link}}</a> in "Connectors"',
+    no_connector_email:
+      'Er is nog geen e-mailconnector ingesteld. Tot de configuratie klaar is, kunnen gebruikers niet met deze methode inloggen. <a>{{link}}</a> in "Connectors"',
+    no_connector_social:
+      'Je hebt nog geen sociale connector ingesteld. Voeg eerst connectors toe om sociale inlogmethoden te gebruiken. <a>{{link}}</a> in "Connectors".',
+    no_connector_email_account_center:
+      'Er is nog geen e-mailconnector ingesteld. Stel er een in bij <a>"E-mail- en sms-connectors"</a>.',
+    no_connector_sms_account_center:
+      'Er is nog geen sms-connector ingesteld. Stel er een in bij <a>"E-mail- en sms-connectors"</a>.',
+    no_connector_social_account_center:
+      'Er is nog geen sociale connector ingesteld. Stel er een in bij <a>"Sociale connectors"</a>.',
+    no_mfa_factor: 'Er is nog geen MFA-factor ingesteld. Stel er een in bij <a>{{link}}</a>.',
+    setup_link: 'Instellen',
+  },
+  save_alert: {
+    description:
+      'Je voert nieuwe procedures voor inloggen en registreren in. Al je gebruikers kunnen hierdoor worden beïnvloed. Weet je zeker dat je de wijziging wilt doorvoeren?',
+    before: 'Voor',
+    after: 'Na',
+    sign_up: 'Registreren',
+    sign_in: 'Inloggen',
+    social: 'Sociaal',
+    forgot_password_migration_notice:
+      'We hebben de verificatie bij wachtwoord vergeten uitgebreid met eigen methoden. Voorheen werd dit automatisch bepaald door je e-mail- en sms-connectors. Klik op <strong>Bevestigen</strong> om de upgrade te voltooien.',
+  },
+  preview: {
+    title: 'Voorbeeld inloggen',
+    live_preview: 'Live preview',
+    live_preview_tip: 'Sla op om wijzigingen te bekijken',
+    native: 'Native',
+    desktop_web: 'Desktop-web',
+    mobile_web: 'Mobiel web',
+    desktop: 'Desktop',
+    mobile: 'Mobiel',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Profielveld toevoegen',
+      title: {
+        field_label: 'Veldlabel',
+        type: 'Type',
+        user_data_key: 'Sleutel gebruikersgegevens',
+      },
+      placeholder: {
+        title: 'Gebruikersprofiel verzamelen',
+        description:
+          'Pas velden aan om bij registratie meer profielgegevens van gebruikers te verzamelen.',
+      },
+    },
+    type: {
+      Text: 'Tekst',
+      Number: 'Getal',
+      Date: 'Datum',
+      Checkbox: 'Selectievakje (Boolean)',
+      Select: 'Keuzelijst (één keuze)',
+      Url: 'URL',
+      Regex: 'Reguliere expressie',
+      Address: 'Adres (samengesteld)',
+      Fullname: 'Volledige naam (samengesteld)',
+    },
+    modal: {
+      title: 'Profielveld toevoegen',
+      subtitle:
+        'Pas velden aan om bij registratie meer profielgegevens van gebruikers te verzamelen.',
+      built_in_properties: 'Basisgegevens van gebruiker',
+      custom_properties: 'Aangepaste gebruikersgegevens',
+      custom_data_field_name: 'Sleutel gebruikersgegevens',
+      custom_data_field_input_placeholder:
+        'Voer de sleutel voor gebruikersgegevens in, bijv. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Aangepaste gegevens',
+        description:
+          'Extra gebruikerseigenschappen die je kunt definiëren voor de specifieke eisen van je applicatie.',
+      },
+      type_required: 'Kies een type eigenschap',
+      create_button: 'Profielveld maken',
+      avatar: {
+        description:
+          'Laat gebruikers bij registratie hun profielfoto uploaden. De URL van de geüploade afbeelding wordt als avatar van de gebruiker opgeslagen.',
+        storage_not_configured:
+          'Voor het uploaden van avatars is een geconfigureerde opslagprovider nodig. Configureer opslag voordat je dit veld toevoegt.',
+      },
+    },
+    details: {
+      page_title: 'Details profielveld',
+      back_to_sie: 'Terug naar inlogervaring',
+      enter_field_name: 'Voer de naam van het profielveld in',
+      delete_description:
+        'Deze actie kan niet ongedaan worden gemaakt. Weet je zeker dat je dit profielveld wilt verwijderen?',
+      field_deleted: 'Het profielveld {{name}} is verwijderd.',
+      key: 'Sleutel gebruikersgegevens',
+      field_name: 'Veldnaam',
+      field_type: 'Veldtype',
+      settings: 'Instellingen',
+      settings_description:
+        'Pas velden aan om bij registratie meer profielgegevens van gebruikers te verzamelen.',
+      address_format: 'Adresformaat',
+      single_line_address: 'Adres op één regel',
+      multi_line_address:
+        'Adres op meerdere regels (bijv. straat, plaats, provincie, postcode, land)',
+      components: 'Onderdelen',
+      components_tip: 'Kies de onderdelen waaruit het samengestelde veld bestaat.',
+      label: 'Veldlabel',
+      label_placeholder: 'Label',
+      label_tip: 'Lokalisatie nodig? Voeg talen toe bij <a>Inlogervaring > Inhoud</a>',
+      label_tooltip:
+        'Zwevend label dat aangeeft waarvoor het veld dient. Het staat in het invoerveld en schuift erboven zodra het veld focus of een waarde heeft.',
+      placeholder: 'Placeholder van veld',
+      placeholder_placeholder: 'Placeholder',
+      placeholder_tooltip:
+        'Voorbeeld of formaathint in het invoerveld. Verschijnt meestal nadat het label omhoog is geschoven en moet kort zijn (bijv. DD-MM-JJJJ).',
+      description: 'Veldbeschrijving',
+      description_placeholder: 'Beschrijving',
+      description_tooltip:
+        'Ondersteunende tekst onder het tekstveld. Gebruik deze voor langere instructies of toegankelijkheidsnotities.',
+      options: 'Opties',
+      options_tip:
+        'Voer elke optie op een nieuwe regel in. Gebruik waarde:label (bijv. red:Rood). Je kunt ook alleen een waarde invoeren; zonder label wordt de waarde als label getoond.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Reguliere expressie',
+      regex_tip: 'Definieer een reguliere expressie om de invoer te valideren.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Datumformaat',
+      date_format_us: 'MM/dd/yyyy (bijv. Verenigde Staten)',
+      date_format_uk: 'dd/MM/yyyy (bijv. VK en Europa)',
+      date_format_iso: 'yyyy-MM-dd (internationale standaard)',
+      custom_date_format: 'Aangepast datumformaat',
+      custom_date_format_placeholder: 'Voer het aangepaste datumformaat in, bijv. "MM-dd-yyyy"',
+      custom_date_format_tip: 'Zie de documentatie van <a>date-fns</a> voor geldige opmaaktokens.',
+      input_length: 'Invoerlengte',
+      value_range: 'Waardebereik',
+      min: 'Minimum',
+      max: 'Maximum',
+      default_value: 'Standaardwaarde',
+      checkbox_checked: 'Aangevinkt (True)',
+      checkbox_unchecked: 'Niet aangevinkt (False)',
+      required: 'Verplicht',
+      required_description:
+        'Als dit is ingeschakeld, moeten gebruikers dit veld invullen. Anders is het optioneel.',
+      avatar_upload_description:
+        'Eindgebruikers uploaden hun avatar bij registratie. De opgeslagen waarde is de URL van de geüploade afbeelding.',
+    },
   },
 };
 

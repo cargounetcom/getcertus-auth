@@ -423,6 +423,192 @@ const sign_in_exp = {
         manual: 'Bifă de acceptare atât la înregistrare, cât și la autentificare',
       },
     },
+    languages: {
+      title: 'LIMBI',
+      enable_auto_detect: 'Activați detectarea automată',
+      description:
+        'Software-ul detectează setarea de limbă a utilizatorului și trece la limba locală. Puteți adăuga limbi noi traducând interfața din engleză.',
+      manage_language: 'Gestionați limbile',
+      default_language: 'Limba implicită',
+      default_language_description_auto:
+        'Limba implicită este folosită când limba detectată a utilizatorului nu se află în biblioteca de limbi actuală.',
+      default_language_description_fixed:
+        'Când detectarea automată este dezactivată, limba implicită este singura limbă afișată de software. Activați detectarea automată pentru mai multe limbi.',
+    },
+    support: {
+      title: 'ASISTENȚĂ',
+      subtitle: 'Afișați canalele de asistență pe paginile de eroare, pentru ajutor rapid.',
+      support_email: 'E-mail de asistență',
+      support_email_placeholder: 'support@email.com',
+      support_website: 'Site de asistență',
+      support_website_placeholder: 'https://your.website/support',
+    },
+    manage_language: {
+      title: 'Gestionați limbile',
+      subtitle:
+        'Localizați experiența produsului adăugând limbi și traduceri. Contribuția dvs. poate fi setată ca limbă implicită.',
+      add_language: 'Adăugați limbă',
+      logto_provided: 'Oferit de GetCertus',
+      key: 'Cheie',
+      logto_source_values: 'Valori sursă GetCertus',
+      custom_values: 'Valori personalizate',
+      clear_all_tip: 'Ștergeți toate valorile',
+      unsaved_description: 'Modificările nu vor fi salvate dacă părăsiți pagina fără să salvați.',
+      deletion_tip: 'Ștergeți limba',
+      deletion_title: 'Doriți să ștergeți limba adăugată?',
+      deletion_description: 'După ștergere, utilizatorii nu vor mai putea folosi acea limbă.',
+      default_language_deletion_title: 'Limba implicită nu poate fi ștearsă.',
+      default_language_deletion_description:
+        '{{language}} este setată ca limbă implicită și nu poate fi ștearsă. ',
+    },
+  },
+  setup_warning: {
+    no_connector_sms:
+      'Nu a fost configurat încă niciun conector SMS. Până la finalizarea configurării, utilizatorii nu se vor putea autentifica prin această metodă. <a>{{link}}</a> în "Conectori"',
+    no_connector_email:
+      'Nu a fost configurat încă niciun conector de e-mail. Până la finalizarea configurării, utilizatorii nu se vor putea autentifica prin această metodă. <a>{{link}}</a> în "Conectori"',
+    no_connector_social:
+      'Nu ați configurat încă niciun conector social. Adăugați mai întâi conectori pentru a folosi metode de autentificare socială. <a>{{link}}</a> în "Conectori".',
+    no_connector_email_account_center:
+      'Nu a fost configurat încă niciun conector de e-mail. Configurați-l în <a>"Conectori e-mail și SMS"</a>.',
+    no_connector_sms_account_center:
+      'Nu a fost configurat încă niciun conector SMS. Configurați-l în <a>"Conectori e-mail și SMS"</a>.',
+    no_connector_social_account_center:
+      'Nu a fost configurat încă niciun conector social. Configurați-l în <a>"Conectori sociali"</a>.',
+    no_mfa_factor: 'Nu a fost configurat încă niciun factor MFA. Configurați-l în <a>{{link}}</a>.',
+    setup_link: 'Configurați',
+  },
+  save_alert: {
+    description:
+      'Implementați noi proceduri de autentificare și înregistrare. Toți utilizatorii pot fi afectați de noua configurare. Sigur doriți să aplicați modificarea?',
+    before: 'Înainte',
+    after: 'După',
+    sign_up: 'Înregistrare',
+    sign_in: 'Autentificare',
+    social: 'Social',
+    forgot_password_migration_notice:
+      'Am actualizat verificarea pentru parola uitată ca să accepte metode personalizate. Anterior, aceasta era stabilită automat de conectorii de e-mail și SMS. Faceți clic pe <strong>Confirmați</strong> pentru a finaliza actualizarea.',
+  },
+  preview: {
+    title: 'Previzualizarea autentificării',
+    live_preview: 'Previzualizare live',
+    live_preview_tip: 'Salvați pentru a previzualiza modificările',
+    native: 'Nativ',
+    desktop_web: 'Web desktop',
+    mobile_web: 'Web mobil',
+    desktop: 'Desktop',
+    mobile: 'Mobil',
+  },
+  custom_profile_fields: {
+    table: {
+      add_button: 'Adăugați câmp de profil',
+      title: {
+        field_label: 'Eticheta câmpului',
+        type: 'Tip',
+        user_data_key: 'Cheia datelor utilizatorului',
+      },
+      placeholder: {
+        title: 'Colectarea profilului utilizatorului',
+        description:
+          'Personalizați câmpurile pentru a colecta mai multe informații de profil la înregistrare.',
+      },
+    },
+    type: {
+      Text: 'Text',
+      Number: 'Număr',
+      Date: 'Dată',
+      Checkbox: 'Casetă de bifat (boolean)',
+      Select: 'Listă derulantă (o singură opțiune)',
+      Url: 'URL',
+      Regex: 'Expresie regulată',
+      Address: 'Adresă (compusă)',
+      Fullname: 'Nume complet (compus)',
+    },
+    modal: {
+      title: 'Adăugați câmp de profil',
+      subtitle:
+        'Personalizați câmpurile pentru a colecta mai multe informații de profil la înregistrare.',
+      built_in_properties: 'Date de bază ale utilizatorului',
+      custom_properties: 'Date personalizate ale utilizatorului',
+      custom_data_field_name: 'Cheia datelor utilizatorului',
+      custom_data_field_input_placeholder:
+        'Introduceți cheia datelor utilizatorului, de ex. `myFavoriteFieldName`',
+      custom_field: {
+        title: 'Date personalizate',
+        description:
+          'Proprietăți suplimentare ale utilizatorului pe care le puteți defini pentru cerințele specifice ale aplicației.',
+      },
+      type_required: 'Selectați un tip de proprietate',
+      create_button: 'Creați câmp de profil',
+      avatar: {
+        description:
+          'Permiteți utilizatorilor să își încarce fotografia de profil la înregistrare. URL-ul imaginii încărcate este salvat ca avatar.',
+        storage_not_configured:
+          'Încărcarea avatarului necesită un furnizor de stocare configurat. Configurați stocarea înainte de a adăuga acest câmp.',
+      },
+    },
+    details: {
+      page_title: 'Detalii câmp de profil',
+      back_to_sie: 'Înapoi la experiența de autentificare',
+      enter_field_name: 'Introduceți numele câmpului de profil',
+      delete_description:
+        'Această acțiune nu poate fi anulată. Sigur doriți să ștergeți acest câmp de profil?',
+      field_deleted: 'Câmpul de profil {{name}} a fost șters.',
+      key: 'Cheia datelor utilizatorului',
+      field_name: 'Numele câmpului',
+      field_type: 'Tipul câmpului',
+      settings: 'Setări',
+      settings_description:
+        'Personalizați câmpurile pentru a colecta mai multe informații de profil la înregistrare.',
+      address_format: 'Format adresă',
+      single_line_address: 'Adresă pe un singur rând',
+      multi_line_address:
+        'Adresă pe mai multe rânduri (de ex. stradă, oraș, județ, cod poștal, țară)',
+      components: 'Componente',
+      components_tip: 'Selectați componentele care formează câmpul compus.',
+      label: 'Eticheta câmpului',
+      label_placeholder: 'Etichetă',
+      label_tip:
+        'Aveți nevoie de localizare? Adăugați limbi în <a>Experiența de autentificare > Conținut</a>',
+      label_tooltip:
+        'Etichetă plutitoare care arată la ce servește câmpul. Apare în interiorul câmpului și urcă deasupra lui când câmpul este activ sau are o valoare.',
+      placeholder: 'Text substituent al câmpului',
+      placeholder_placeholder: 'Text substituent',
+      placeholder_tooltip:
+        'Exemplu sau indiciu de format afișat în câmp. De obicei apare după ce eticheta urcă și trebuie să fie scurt (de ex. ZZ.LL.AAAA).',
+      description: 'Descrierea câmpului',
+      description_placeholder: 'Descriere',
+      description_tooltip:
+        'Text de ajutor afișat sub câmpul de text. Folosiți-l pentru instrucțiuni mai lungi sau note de accesibilitate.',
+      options: 'Opțiuni',
+      options_tip:
+        'Introduceți fiecare opțiune pe un rând nou. Folosiți valoare:etichetă (de ex. red:Roșu). Puteți introduce și doar valoarea; fără etichetă, valoarea este afișată ca etichetă.',
+      options_placeholder: 'value1:label1\nvalue2:label2\nvalue3:label3',
+      regex: 'Expresie regulată',
+      regex_tip: 'Definiți o expresie regulată pentru validarea datelor introduse.',
+      regex_placeholder: '^[a-zA-Z0-9]+$',
+      date_format: 'Format dată',
+      date_format_us: 'MM/dd/yyyy (de ex. Statele Unite)',
+      date_format_uk: 'dd/MM/yyyy (de ex. Regatul Unit și Europa)',
+      date_format_iso: 'yyyy-MM-dd (standard internațional)',
+      custom_date_format: 'Format de dată personalizat',
+      custom_date_format_placeholder:
+        'Introduceți formatul de dată personalizat, de ex. "MM-dd-yyyy"',
+      custom_date_format_tip:
+        'Consultați documentația <a>date-fns</a> pentru simbolurile de formatare valide.',
+      input_length: 'Lungimea datelor introduse',
+      value_range: 'Interval de valori',
+      min: 'Minim',
+      max: 'Maxim',
+      default_value: 'Valoare implicită',
+      checkbox_checked: 'Bifat (adevărat)',
+      checkbox_unchecked: 'Nebifat (fals)',
+      required: 'Obligatoriu',
+      required_description:
+        'Când este activat, utilizatorii trebuie să completeze acest câmp. Altfel este opțional.',
+      avatar_upload_description:
+        'Utilizatorii finali își încarcă avatarul la înregistrare. Valoarea stocată este URL-ul imaginii încărcate.',
+    },
   },
 };
 
