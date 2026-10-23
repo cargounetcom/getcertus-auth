@@ -1,0 +1,68 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): admin console phrases. */
+const user = {
+  id_already_in_use: 'Dette bruger-ID er allerede i brug.',
+  username_already_in_use: 'Dette brugernavn er allerede i brug.',
+  username_starts_with_number: 'Brugernavnet må ikke starte med et tal.',
+  username_invalid_charset_hard:
+    'Brugernavnet må kun indeholde bogstaver, tal og understregninger.',
+  username_too_short: 'Brugernavnet er for kort.',
+  username_too_long: 'Brugernavnet er for langt.',
+  username_uppercase_not_allowed: 'Brugernavnet må ikke indeholde store bogstaver.',
+  username_lowercase_not_allowed: 'Brugernavnet må ikke indeholde små bogstaver.',
+  username_numbers_not_allowed: 'Brugernavnet må ikke indeholde tal.',
+  username_underscore_not_allowed: 'Brugernavnet må ikke indeholde understregninger.',
+  email_already_in_use: 'Denne e-mailadresse er knyttet til en eksisterende konto.',
+  phone_already_in_use: 'Dette telefonnummer er knyttet til en eksisterende konto.',
+  invalid_email: 'Ugyldig e-mailadresse.',
+  invalid_phone: 'Ugyldigt telefonnummer.',
+  email_not_exist: 'E-mailadressen er ikke registreret endnu.',
+  phone_not_exist: 'Telefonnummeret er ikke registreret endnu.',
+  identity_not_exist: 'Den sociale konto er ikke registreret endnu.',
+  sso_identity_not_exist: 'Enterprise SSO-kontoen er ikke registreret endnu.',
+  identity_already_in_use: 'Den sociale konto er allerede knyttet til en eksisterende konto.',
+  social_account_exists_in_profile: 'Du har allerede tilknyttet denne sociale konto.',
+  cannot_delete_self: 'Du kan ikke slette dig selv.',
+  sign_up_method_not_enabled: 'Denne tilmeldingsmetode er ikke slået til.',
+  sign_in_method_not_enabled: 'Denne loginmetode er ikke slået til.',
+  same_password: 'Den nye adgangskode må ikke være den samme som den gamle.',
+  password_required_in_profile: 'Du skal angive en adgangskode, før du logger ind.',
+  new_password_required_in_profile: 'Du skal angive en ny adgangskode.',
+  password_exists_in_profile: 'Der findes allerede en adgangskode i din profil.',
+  username_required_in_profile: 'Du skal angive et brugernavn, før du logger ind.',
+  username_exists_in_profile: 'Der findes allerede et brugernavn i din profil.',
+  email_required_in_profile: 'Du skal tilføje en e-mailadresse, før du logger ind.',
+  email_exists_in_profile: 'Din profil er allerede knyttet til en e-mailadresse.',
+  phone_required_in_profile: 'Du skal tilføje et telefonnummer, før du logger ind.',
+  phone_exists_in_profile: 'Din profil er allerede knyttet til et telefonnummer.',
+  email_or_phone_required_in_profile:
+    'Du skal tilføje en e-mailadresse eller et telefonnummer, før du logger ind.',
+  suspended: 'Denne konto er suspenderet.',
+  user_not_exist: 'Bruger med {{ identifier }} findes ikke.',
+  missing_profile: 'Du skal angive yderligere oplysninger, før du logger ind.',
+  role_exists: "Rolle-ID'et {{roleId}} er allerede tilføjet til denne bruger",
+  invalid_role_type: 'Ugyldig rolletype. En maskine-til-maskine-rolle kan ikke tildeles en bruger.',
+  suggest_mfa: 'For bedre kontosikkerhed anbefaler vi, at du tilknytter MFA til din konto.',
+  missing_mfa: 'Du skal tilknytte yderligere MFA, før du logger ind.',
+  totp_already_in_use: 'TOTP er allerede i brug.',
+  backup_code_already_in_use: 'Backupkoden er allerede i brug.',
+  password_algorithm_required: 'Adgangskodealgoritme er påkrævet.',
+  password_and_digest:
+    'Du kan ikke angive både en adgangskode i klartekst og et adgangskode-digest.',
+  personal_access_token_name_exists:
+    'Der findes allerede et personligt adgangstoken med dette navn.',
+  totp_secret_invalid: 'Ugyldig TOTP-hemmelighed angivet.',
+  wrong_backup_code_format: 'Backupkodens format er ugyldigt.',
+  username_required: 'Brugernavnet er en påkrævet identifikator og kan ikke sættes til null.',
+  email_or_phone_required:
+    'E-mailadresse eller telefonnummer er en påkrævet identifikator; mindst én er påkrævet.',
+  last_sign_in_method_required: 'Du skal beholde mindst én identifikator på din konto.',
+  email_required: 'E-mailadressen er en påkrævet identifikator og kan ikke sættes til null.',
+  phone_required: 'Telefonnummeret er en påkrævet identifikator og kan ikke sættes til null.',
+  enterprise_sso_identity_not_exists:
+    'Brugeren har ingen enterprise-identitet tilknyttet det angivne SSO-connector-ID: {{ ssoConnectorId }}.',
+  identity_not_exists_in_current_user:
+    'Den angivne identitet findes ikke på den aktuelle brugerkonto. Tilknyt identiteten, før du fortsætter.',
+  passkey_preferred: 'Opret en passkey for at gøre dit login nemmere.',
+};
+
+export default Object.freeze(user);

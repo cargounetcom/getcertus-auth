@@ -1,4 +1,5 @@
 /* GetCertus addition (MPL-2.0, see GETCERTUS.md): admin console phrases. */
+import actions from './actions.js';
 import admin_user from './admin-user.js';
 import api_resource_details from './api-resource-details.js';
 import api_resources from './api-resources.js';
@@ -14,12 +15,16 @@ import errors from './errors.js';
 import general from './general.js';
 import get_started from './get-started.js';
 import guide from './guide.js';
+import invitation from './invitation.js';
+import jwt_claims from './jwt-claims.js';
 import log_details from './log-details.js';
 import logs from './logs.js';
 import menu from './menu.js';
 import mfa from './mfa.js';
 import oidc_configs from './oidc-configs.js';
 import organization_details from './organization-details.js';
+import organization_role_details from './organization-role-details.js';
+import organization_template from './organization-template.js';
 import organizations from './organizations.js';
 import oss_onboarding from './oss-onboarding.js';
 import permissions from './permissions.js';
@@ -30,6 +35,7 @@ import roles from './roles.js';
 import security from './security.js';
 import session_expired from './session-expired.js';
 import sign_in_exp from './sign-in-exp.js';
+import signing_keys from './signing-keys.js';
 import system_app from './system-app.js';
 import tab_sections from './tab-sections.js';
 import tabs from './tabs.js';
@@ -38,6 +44,7 @@ import tenants from './tenants.js';
 import title from './title.js';
 import topbar from './topbar.js';
 import user_details from './user-details.js';
+import user_identity_details from './user-identity-details.js';
 import users from './users.js';
 import webhook_details from './webhook-details.js';
 import webhooks from './webhooks.js';
@@ -87,6 +94,13 @@ const admin_console = {
   oidc_configs,
   organization_details,
   protected_app,
+  jwt_claims,
+  invitation,
+  actions,
+  signing_keys,
+  organization_template,
+  organization_role_details,
+  user_identity_details,
 };
 
 export default Object.freeze(admin_console);

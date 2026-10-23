@@ -1,0 +1,31 @@
+/* GetCertus addition (MPL-2.0, see GETCERTUS.md): admin console phrases. */
+const oidc = {
+  aborted: 'משתמש הקצה ביטל את האינטראקציה.',
+  invalid_scope: 'scope לא תקין: {{scope}}.',
+  invalid_token: 'סופק טוקן לא תקין.',
+  invalid_client_metadata: 'סופקו מטא-נתוני לקוח לא תקינים.',
+  insufficient_scope: 'לטוקן חסר ה-scope `{{scope}}`.',
+  invalid_request: 'הבקשה אינה תקינה.',
+  invalid_grant: 'בקשת ה-grant אינה תקינה.',
+  invalid_issuer: 'מנפיק לא תקין.',
+  invalid_redirect_uri: '`redirect_uri` אינו תואם לאף אחד מה-`redirect_uris` הרשומים של הלקוח.',
+  access_denied: 'הגישה נדחתה.',
+  invalid_target: 'מחוון משאב לא תקין.',
+  unsupported_grant_type: 'ה-`grant_type` המבוקש אינו נתמך.',
+  unsupported_response_mode: 'ה-`response_mode` המבוקש אינו נתמך.',
+  unsupported_response_type: 'ה-`response_type` המבוקש אינו נתמך.',
+  provider_error: 'שגיאה פנימית של OIDC: {{message}}.',
+  server_error: 'אירעה שגיאת OIDC לא ידועה. יש לנסות שוב מאוחר יותר.',
+  provider_error_fallback: 'אירעה שגיאת OIDC: {{code}}.',
+  custom_claims_script_error: 'שגיאה בסקריפט ה-claims המותאמים אישית: {{error_description}}',
+  key_required: 'נדרש לפחות מפתח אחד.',
+  key_not_found: 'המפתח עם המזהה {{id}} לא נמצא.',
+  only_previous_key_can_be_deleted: 'ניתן למחוק רק מפתח קודם.',
+  invalid_session_payload: 'Payload לא תקין של הסשן.',
+  session_not_found: 'הסשן לא נמצא.',
+  invalid_session_account_id: 'ה-accountId של הסשן אינו תואם.',
+  failed_to_revoke_grant: 'ביטול ה-grant נכשל.',
+  failed_to_cleanup_session_authorization: 'ניקוי הרשאת הסשן נכשל.',
+};
+
+export default Object.freeze(oidc);
